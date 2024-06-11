@@ -170,7 +170,7 @@ const Header = () => {
             </ul>
             <div className="d-lg-none d-block">
               <ul className="topbar-right">
-                <li>Sun-Tue (9:00 am-7.00 pm)</li>
+                {/* <li>Sun-Tue (9:00 am-7.00 pm)</li> */}
                 <li>
                   <a href="mailto:infoaploxn@gmail.com">
                     <svg

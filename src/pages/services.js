@@ -60,8 +60,8 @@ const Services1Page = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h5>Research and Analysis</h5>
-                          <p>Gather relevant information through interviews &amp; surveys.</p>
+                          <h5>Credit Card</h5>
+                          <p>We offer a variety of credit card options from leading f inancial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle.</p>
                         </div>
                       </div>
                     </div>
@@ -76,8 +76,8 @@ const Services1Page = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h5>Development</h5>
-                          <p>Generate potential solutions or strategies to address.</p>
+                          <h5>SME Loans</h5>
+                          <p>We provide expert assistance in securing Small and Medium-sized Enterprise (SME) loans, enabling businesses to achieve their growth objectives.</p>
                         </div>
                       </div>
                     </div>
@@ -95,8 +95,8 @@ const Services1Page = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h5>Management</h5>
-                          <p>Provide training and support to help the client's team.</p>
+                          <h5>Account Opening</h5>
+                          <p>We streamline the account opening process for both personal and corporate accounts, making it quick and easy for our clients.</p>
                         </div>
                       </div>
                     </div>
@@ -113,8 +113,8 @@ const Services1Page = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h5>Monitoring</h5>
-                          <p>Generate potential solutions or strategies to address.</p>
+                          <h5>Corporate Banking</h5>
+                          <p>Our tailored corporate banking solutions are designed to meet the complex financial needs of businesses, enhancing their operational efficiency and growth.</p>
                         </div>
                       </div>
                     </div>
@@ -131,27 +131,8 @@ const Services1Page = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h5>Implementation</h5>
-                          <p>Develop a detailed plan outlining the steps, resources.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-xxl-3 col-lg-4 col-sm-6">
-                      <div className="eg-card-2 style-2">
-                        <div className="sl-no">
-                          <h3>06</h3>
-                        </div>
-                        <div className="icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} viewBox="0 0 60 60">
-                            <g>
-                              <path d="M30 0.703125C38.3203 0.703125 45.8203 3.98438 51.2109 9.25781C56.6016 14.5312 60 21.9141 60 30C60 38.0859 56.6016 45.4688 51.2109 50.7422C45.8203 56.0156 38.3203 59.2969 30 59.2969C21.6797 59.2969 14.1797 56.0156 8.78906 50.7422C3.39844 45.4688 0 38.0859 0 30C0 21.9141 3.39844 14.5312 8.78906 9.25781C14.1797 3.98438 21.6797 0.703125 30 0.703125ZM50.2734 10.3125C45 5.15625 37.8516 2.10938 30 2.10938C22.1484 2.10938 15 5.15625 9.72656 10.3125C4.57031 15.3516 1.40625 22.2656 1.40625 30C1.40625 37.7344 4.57031 44.6484 9.72656 49.6875C15 54.8438 22.1484 57.8906 30 57.8906C37.8516 57.8906 45 54.8438 50.2734 49.6875C55.4297 44.6484 58.5938 37.7344 58.5938 30C58.5938 22.2656 55.4297 15.3516 50.2734 10.3125Z" />
-                              <path d="M30 5.74219C29.6484 5.74219 29.2969 5.97656 29.2969 6.32812C29.2969 6.79688 29.6484 7.03125 30 7.03125H46.5234C46.875 7.03125 47.2266 6.79688 47.2266 6.32812C47.2266 5.97656 46.875 5.74219 46.5234 5.74219H30ZM30 11.6016C29.6484 11.6016 29.2969 11.9531 29.2969 12.3047C29.2969 12.6562 29.6484 13.0078 30 13.0078H52.9688C53.4375 13.0078 53.6719 12.6562 53.6719 12.3047C53.6719 11.9531 53.4375 11.6016 52.9688 11.6016H30ZM30 17.4609C29.6484 17.4609 29.2969 17.8125 29.2969 18.1641C29.2969 18.5156 29.6484 18.8672 30 18.8672H56.7188C57.0703 18.8672 57.4219 18.5156 57.4219 18.1641C57.4219 17.8125 57.0703 17.4609 56.7188 17.4609H30ZM30 23.4375C29.6484 23.4375 29.2969 23.6719 29.2969 24.1406C29.2969 24.4922 29.6484 24.7266 30 24.7266H58.7109C59.0625 24.7266 59.4141 24.4922 59.4141 24.1406C59.4141 23.6719 59.0625 23.4375 58.7109 23.4375H30ZM30 29.2969C29.6484 29.2969 29.2969 29.6484 29.2969 30C29.2969 30.3516 29.6484 30.7031 30 30.7031H59.2969C59.6484 30.7031 60 30.3516 60 30C60 29.6484 59.6484 29.2969 59.2969 29.2969H30ZM30 35.2734C29.6484 35.2734 29.2969 35.5078 29.2969 35.8594C29.2969 36.3281 29.6484 36.5625 30 36.5625H58.7109C59.0625 36.5625 59.4141 36.3281 59.4141 35.8594C59.4141 35.5078 59.0625 35.2734 58.7109 35.2734H30ZM30 41.1328C29.6484 41.1328 29.2969 41.4844 29.2969 41.8359C29.2969 42.1875 29.6484 42.5391 30 42.5391H56.7188C57.0703 42.5391 57.4219 42.1875 57.4219 41.8359C57.4219 41.4844 57.0703 41.1328 56.7188 41.1328H30ZM30 46.9922C29.6484 46.9922 29.2969 47.3438 29.2969 47.6953C29.2969 48.0469 29.6484 48.3984 30 48.3984H52.9688C53.4375 48.3984 53.6719 48.0469 53.6719 47.6953C53.6719 47.3438 53.4375 46.9922 52.9688 46.9922H30ZM30 52.9688C29.6484 52.9688 29.2969 53.2031 29.2969 53.6719C29.2969 54.0234 29.6484 54.2578 30 54.2578H46.5234C46.875 54.2578 47.2266 54.0234 47.2266 53.6719C47.2266 53.2031 46.875 52.9688 46.5234 52.9688H30Z" />
-                            </g>
-                          </svg>
-                        </div>
-                        <div className="content">
-                          <h5>Documentation</h5>
-                          <p>The consulting engagement, including reports, analysis.</p>
+                          <h5>Mortgage Finance</h5>
+                          <p>We assist clients in obtaining competitive mortgage f inance solutions with flexible terms to help them purchase their ideal properties.</p>
                         </div>
                       </div>
                     </div>
