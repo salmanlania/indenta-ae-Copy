@@ -39,11 +39,11 @@ function reducer(state, action) {
         ...state,
         isLeftSidebarOpen: !state.isLeftSidebarOpen,
       };
-      case "TOGGLE_LANG":
-        return {
-          ...state,
-          isLang: !state.isLang,
-        };
+    case "TOGGLE_LANG":
+      return {
+        ...state,
+        isLang: !state.isLang,
+      };
     case "TOGGLE_SEARCHBAR":
       return {
         ...state,
@@ -83,9 +83,10 @@ const Header = () => {
           <Link legacyBehavior href="/">
             <a>
               <img
+                style={{width : '200px'}}
                 alt="image"
                 className="img-fluid"
-                src="assets/img/black-logo.svg"
+                src="assets/img/logo.png"
               />
             </a>
           </Link>
@@ -98,7 +99,7 @@ const Header = () => {
               <div className="mobile-logo-wrap">
                 <Link legacyBehavior href="/">
                   <a>
-                    <img alt="image" src="assets/img/black-logo.svg" />
+                    <img style={{width : '200px'}} alt="image" src="assets/img/logo.png" />
                   </a>
                 </Link>
               </div>
@@ -113,9 +114,8 @@ const Header = () => {
                   >
                     <Link legacyBehavior href={link}>
                       <a
-                        className={`drop-down ${
-                          state.activeMenu === label ? "active" : ""
-                        }`}
+                        className={`drop-down ${state.activeMenu === label ? "active" : ""
+                          }`}
                       >
                         {label}
                       </a>
@@ -123,16 +123,14 @@ const Header = () => {
                     {icon && (
                       <i
                         onClick={() => toggleMenu(label)}
-                        className={`bi bi-${
-                          state.activeMenu === label ? "dash" : "plus"
-                        } dropdown-icon`}
+                        className={`bi bi-${state.activeMenu === label ? "dash" : "plus"
+                          } dropdown-icon`}
                       />
                     )}
                     {subMenu && (
                       <ul
-                        className={`sub-menu ${
-                          state.activeMenu === label ? "d-block" : ""
-                        }`}
+                        className={`sub-menu ${state.activeMenu === label ? "d-block" : ""
+                          }`}
                       >
                         {subMenu.map((subItem, subIndex) => (
                           <li
@@ -147,11 +145,10 @@ const Header = () => {
                                 <i className="d-lg-flex d-none bi bi-chevron-right dropdown-icon" />
                                 <i
                                   onClick={() => toggleSubMenu(subItem.label)}
-                                  className={`d-lg-none d-flex bi bi-${
-                                    state.activeSubMenu === subItem.label
+                                  className={`d-lg-none d-flex bi bi-${state.activeSubMenu === subItem.label
                                       ? "dash"
                                       : "plus"
-                                  } dropdown-icon `}
+                                    } dropdown-icon `}
                                 />
                               </>
                             ) : (
@@ -159,11 +156,10 @@ const Header = () => {
                             )}
                             {subItem.subMenu && (
                               <ul
-                                className={`sub-menu ${
-                                  state.activeSubMenu === subItem.label
+                                className={`sub-menu ${state.activeSubMenu === subItem.label
                                     ? "d-block"
                                     : ""
-                                }`}
+                                  }`}
                               >
                                 {subItem.subMenu.map((subItem, subIndex) => (
                                   <li
@@ -254,9 +250,8 @@ const Header = () => {
                 </svg>
               </div>
               <div
-                className={`search-input ${
-                  state.isSearchBarOpen ? "active" : ""
-                }`}
+                className={`search-input ${state.isSearchBarOpen ? "active" : ""
+                  }`}
               >
                 <div className="serch-close" onClick={toggleSearchBar} />
                 <form>
@@ -355,9 +350,8 @@ const Header = () => {
               <span />
             </a>
             <div
-              className={`sidebar-button mobile-menu-btn ${
-                state.isSidebarOpen ? "active" : ""
-              }`}
+              className={`sidebar-button mobile-menu-btn ${state.isSidebarOpen ? "active" : ""
+                }`}
               onClick={toggleSidebar}
             >
               <span />

@@ -8,7 +8,7 @@ const SolutionSection = () => {
         <div className="row g-4">
           <div className="col-lg-3 d-flex justify-content-lg-center">
             <div className="sub-title">
-              <span>Solution Approach</span>
+              <span>Our Values</span>
             </div>
           </div>
           <div className="col-lg-9">
@@ -16,11 +16,11 @@ const SolutionSection = () => {
               <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
                 <div className="section-title1 one">
                   <h2>
-                    A structured and systematic approach to ensure you provide
-                    value.
+                    {/* A structured and systematic approach to ensure you provide
+                    value. */}
                   </h2>
                 </div>
-                <Link legacyBehavior href="/services1">
+                <Link legacyBehavior href="/services">
                   <a className="explore-btn">
                     Explore Area
                     <svg
@@ -60,10 +60,9 @@ const SolutionSection = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <h5>Research and Analysis</h5>
+                        <h5>Integrity</h5>
                         <p>
-                          Gather relevant information through interviews &amp;
-                          surveys.
+                          We uphold the highest standards of integrity in all our actions.
                         </p>
                       </div>
                     </div>
@@ -84,9 +83,9 @@ const SolutionSection = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <h5>Development</h5>
+                        <h5>Excellence</h5>
                         <p>
-                          Generate potential solutions or strategies to address.
+                          We strive for excellence in everything we do, from our services to our client relationships.
                         </p>
                       </div>
                     </div>
@@ -110,10 +109,9 @@ const SolutionSection = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <h5>Management</h5>
+                        <h5>Innovation</h5>
                         <p>
-                          Provide training and support to help the client's
-                          team.
+                          We are committed to continuously innovating and improving our offerings to better serve our clients.
                         </p>
                       </div>
                     </div>
@@ -136,14 +134,14 @@ const SolutionSection = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <h5>Monitoring</h5>
+                        <h5>Customer Focus</h5>
                         <p>
-                          Generate potential solutions or strategies to address.
+                          Our clients are at the core of our business, and we work tirelessly to meet and exceed their expectations.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-xxl-3 col-lg-4 col-sm-6">
+                  {/* <div className="col-xxl-3 col-lg-4 col-sm-6">
                     <div className="eg-card-2 style-2">
                       <div className="sl-no">
                         <h3>05</h3>
@@ -207,13 +205,13 @@ const SolutionSection = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="right-shape">
                   <img src="assets/img/home2/shape-01.png" alt="" />
                 </div>
                 <div className="company-logo">
-                  <h2>APLOXN</h2>
+                  <h2>Indenta Solution</h2>
                 </div>
               </div>
             </div>

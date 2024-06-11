@@ -29,7 +29,7 @@ const Footer2 = () => {
                       </form>
                     </div>
                     <div className="contact-area">
-                      <div className="hotline-area">
+                      {/* <div className="hotline-area">
                         <div className="icon">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const Footer2 = () => {
                             <a href="tel:+990737621432">+990-737 621 432</a>
                           </h6>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="hotline-area">
                         <div className="icon">
                           <svg
@@ -67,7 +67,7 @@ const Footer2 = () => {
                         <div className="content">
                           <span>To Send Mail</span>
                           <h6>
-                            <a href="mailto:info@gmail.com">info@gmail.com</a>
+                            <a href="mailto:info@gmail.com">info@indenta.ae</a>
                           </h6>
                         </div>
                       </div>
@@ -193,11 +193,11 @@ const Footer2 = () => {
               <div className="footer-logo">
                 <Link legacyBehavior href="/">
                   <a>
-                    <img src="/assets/img/footer-logo.svg" alt="footer-logo" />
+                    <img src="/assets/img/white_svg.svg" alt="footer-logo" />
                   </a>
                 </Link>
               </div>
-              <ul className="footer-menu">
+              {/* <ul className="footer-menu">
                 <li>
                   <Link legacyBehavior href="/services1">
                     <a>
@@ -312,12 +312,12 @@ const Footer2 = () => {
                     </a>
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="footer-btm">
               <div className="copyright-area">
                 <p>
-                  Copyright 2023 <a href="#">Aploxn</a> | Design By{" "}
+                  Copyright 2024 <a href="#">Indenta Solutions</a> | Design By{" "}
                   <a href="https://www.egenslab.com/">Egens Lab</a>
                 </p>
               </div>

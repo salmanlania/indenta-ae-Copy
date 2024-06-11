@@ -33,15 +33,11 @@ const AboutPage = () => {
                 <div className="mission-content-top">
                   <div className="section-title1 w-890">
                     <h2>
-                      Business consulting is a professional service provided by
-                      experts who offer advice.
+                      Our Vision
                     </h2>
                   </div>
                   <p>
-                    Business consulting is a professional service provided by
-                    experts who offer advice and guidance to businesses to help
-                    them improve their performance, solve specific problems, and
-                    achieve their goals.
+                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
                   </p>
                   <h5>
                     Mr. Daniel Scoot, <span>Company CEO</span>
@@ -68,9 +64,8 @@ const AboutPage = () => {
                   </p>
                   {/* <a className="moreless-button">Read More</a> */}
                   <a
-                    className={`moreless-button bi ${
-                      isExpanded ? "bi-chevron-up" : "bi-chevron-down"
-                    }`}
+                    className={`moreless-button bi ${isExpanded ? "bi-chevron-up" : "bi-chevron-down"
+                      }`}
                     onClick={toggleText}
                   >
                     {isExpanded ? "Read Less" : "Read More"}

@@ -4,7 +4,7 @@ import Banner from "../components/Home2/Banner";
 import SolutionSection from "../components/Home2/SolutionSection";
 import About from "../components/Home2/About";
 import Testimonial from "../components/Home2/Testimonial";
-import CoverSection from "../components/Home2/CoverSection";
+import CoverSection from "../components/Home2/OurServices";
 import EventAndConfarance from "../components/Home2/EventAndConfarance";
 import ProjectSection from "../components/Home2/ProjectSection";
 import WhyChooseSection from "../components/Home2/WhyChooseSection";
@@ -20,6 +20,7 @@ const HomepageTwo = () => {
     <>
       <Header2/>
       <Banner/>
+      <About/>
       <SolutionSection/>
       <About/>
       <Testimonial/>

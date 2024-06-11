@@ -79,7 +79,7 @@ const Header2 = () => {
   return (
     <div className="header-topbar-area">
       {/* Start Top Bar section */}
-      <div className="topbar-area style-2">
+      <div className="topbar-area style-2" style={{background: 'black'}}>
         <ul className="topbar-left">
           <li>
             <Link legacyBehavior href="/career">
@@ -140,7 +140,9 @@ const Header2 = () => {
               <img
                 alt="image"
                 className="img-fluid"
-                src="/assets/img/white-logo.svg"
+                // src="/assets/img/white-logo.svg"
+                src="/assets/img/logo1.png"
+                // src="/assets/img/LOGO-01.png"
               />
             </a>
           </Link>

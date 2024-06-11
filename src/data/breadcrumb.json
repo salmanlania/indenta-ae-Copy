@@ -50,7 +50,7 @@
     ,
     {
         "id":"8",
-        "path":"/services1",
+        "path":"/services",
         "title":"Our Services",
         "bg_img":"assets/img/inner-pages/braadcrumb-bg1.jpg"
     }
@@ -120,7 +120,7 @@
     ,
     {
         "id":"18",
-        "path":"/our-people1",
+        "path":"/our-people",
         "title":"Our People",
         "bg_img":"/assets/img/inner-pages/braadcrumb-bg5.jpg"
     }

@@ -50,21 +50,26 @@ const Testimonial = () => {
                       <div className="testimonal-content">
                         <span>Great Consulting!</span>
                         <p>
-                          The consulting engagement begins with the consultant
-                          or consulting team working closely with the client to
-                          understand the client's business, goals, challenges,
-                          and objectives.
+                          We can confidently say that Indenta Solutions provides
+                          us with a holistic support across our various phases,
+                          particularly when it provides banking and financial
+                          solutions, and enhances our online platform. Its
+                          professionalism, reliability, and proactive approach have
+                          significantly contributed to our growth and success.
+                          With Indenta Solutions, we will continue to revolutionize
+                          the real estate industry and provide unparalleled service
+                          to our brokers and clients worldwide.
                         </p>
                         <div className="author-area">
                           <div className="content">
-                            <h6>Mrs. Emily Sophia</h6>
-                            <span>Froxio, CEO</span>
+                            <h6>Be Brokr</h6>
+                            {/* <span>Froxio, CEO</span> */}
                           </div>
                         </div>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
+                  {/* <SwiperSlide className="swiper-slide">
                     <div className="testimonial-card">
                       <div className="testimonial-img magnetic-item">
                         <img
@@ -138,7 +143,7 @@ const Testimonial = () => {
                         </div>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                 </div>
               </Swiper>
               <div className="slider-btn-area">

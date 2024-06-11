@@ -12,9 +12,7 @@ const About = () => {
                 <div className="section-title1 two white mb-50">
                   <span>About Us</span>
                   <h2>
-                    Business consulting is a professional service provided by
-                    individuals or firms to help organizations improve their
-                    performance, solve specific problems.
+                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
                   </h2>
                 </div>
                 <Link legacyBehavior href="/about">
@@ -34,12 +32,13 @@ const About = () => {
                     </svg>
                   </a>
                 </Link>
-                <div className="review-and-feature">
+                {/* <div className="review-and-feature">
                   <a href="https://clutch.co/" className="review-area white">
                     <div className="review-name">
                       <span>Review On</span>
                       <img
-                        src="assets/img/home1/clutch-logo-white.svg"
+                        // src="assets/img/home1/clutch-logo-white.svg"
+                        // src="assets/img/home1/clutch-logo-white.svg"
                         alt=""
                       />
                     </div>
@@ -69,18 +68,19 @@ const About = () => {
                     <li>Determine Probelm</li>
                     <li>Cost-Efficiency</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
                 <img src="assets/img/home2/about-img.jpg" alt="" />
+                {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="about-bottom">
+      {/* <div className="about-bottom">
         <div className="container-fluid one pl--95">
           <div className="row">
             <div className="col-xxl-8 col-lg-7">
@@ -175,7 +175,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

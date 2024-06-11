@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Aploxn- Business Consulting Next Js Template</title>
+        <title>Indenta Solution</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta

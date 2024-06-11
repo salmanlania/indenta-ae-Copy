@@ -35,7 +35,7 @@ const Banner = () => {
               className="banner-wrapper"
               style={{
                 backgroundImage:
-                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/banner-img-01.jpg)",
+                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/business-people-office.jpg)",
               }}
             >
               <div className="container-fluid one pl--95">
@@ -44,10 +44,9 @@ const Banner = () => {
                     <div className="banner-left-content">
                       <span>Real Estate</span>
                       <h1>
-                        Unlocking Your Business's Potential With Innovate
-                        Consulting.
+                        Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/service-details">
+                      <Link legacyBehavior href="/services">
                         <a className="primary-btn1 btn-hover">
                           Explore More
                           <svg
@@ -66,7 +65,7 @@ const Banner = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-5 d-flex align-items-end">
+                  {/* <div className="col-lg-5 d-flex align-items-end">
                     <div className="banner-right-content pl--95">
                       <h5>
                         The primary goal of business consulting is to help
@@ -82,7 +81,7 @@ const Banner = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -92,7 +91,7 @@ const Banner = () => {
               className="banner-wrapper"
               style={{
                 backgroundImage:
-                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/banner-img-03.jpg)",
+                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/General-2.jpg)",
               }}
             >
               <div className="container-fluid one pl--95">
@@ -101,10 +100,9 @@ const Banner = () => {
                     <div className="banner-left-content">
                       <span>Real Estate</span>
                       <h1>
-                        Unlocking Your Business's Potential With Innovate
-                        Consulting.
+                        Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/service-details">
+                      <Link legacyBehavior href="/services">
                         <a className="primary-btn1 btn-hover">
                           Explore More
                           <svg
@@ -123,7 +121,7 @@ const Banner = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-5 d-flex align-items-end">
+                  {/* <div className="col-lg-5 d-flex align-items-end">
                     <div className="banner-right-content pl--95">
                       <h5>
                         The primary goal of business consulting is to help
@@ -139,7 +137,7 @@ const Banner = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -149,7 +147,7 @@ const Banner = () => {
               className="banner-wrapper"
               style={{
                 backgroundImage:
-                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/banner-img-02.jpg)",
+                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/shutterstock_1025018239.jpg)",
               }}
             >
               <div className="container-fluid one pl--95">
@@ -158,10 +156,9 @@ const Banner = () => {
                     <div className="banner-left-content">
                       <span>Real Estate</span>
                       <h1>
-                        Unlocking Your Business's Potential With Innovate
-                        Consulting.
+                        Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/service-details">
+                      <Link legacyBehavior href="/services">
                         <a className="primary-btn1 btn-hover">
                           Explore More
                           <svg
@@ -180,7 +177,7 @@ const Banner = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-5 d-flex align-items-end">
+                  {/* <div className="col-lg-5 d-flex align-items-end">
                     <div className="banner-right-content pl--95">
                       <h5>
                         The primary goal of business consulting is to help
@@ -196,7 +193,7 @@ const Banner = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -206,7 +203,7 @@ const Banner = () => {
               className="banner-wrapper"
               style={{
                 backgroundImage:
-                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/banner-img-04.jpg)",
+                  "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/home2/hand-shake.jpg)",
               }}
             >
               <div className="container-fluid one pl--95">
@@ -215,10 +212,9 @@ const Banner = () => {
                     <div className="banner-left-content">
                       <span>Real Estate</span>
                       <h1>
-                        Unlocking Your Business's Potential With Innovate
-                        Consulting.
+                        Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/service-details">
+                      <Link legacyBehavior href="/services">
                         <a className="primary-btn1 btn-hover">
                           Explore More
                           <svg
@@ -237,7 +233,7 @@ const Banner = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-5 d-flex align-items-end">
+                  {/* <div className="col-lg-5 d-flex align-items-end">
                     <div className="banner-right-content pl--95">
                       <h5>
                         The primary goal of business consulting is to help
@@ -253,7 +249,7 @@ const Banner = () => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

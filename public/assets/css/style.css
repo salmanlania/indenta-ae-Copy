@@ -824,7 +824,7 @@ body.tt-magic-cursor #magic-cursor {
 .section-title1 h2 {
   color: var(--title-color);
   font-family: var(--font-marcellus);
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 0;
   max-width: 740px;
@@ -832,7 +832,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 @media (max-width: 1199px) {
   .section-title1 h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .section-title1.two {
@@ -1516,7 +1516,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 .header-area.style-1 .header-logo {
   padding: 10px 26px;
-  border: 1px solid rgba(13, 23, 32, 0.0784313725);
+  /* border: 1px solid rgba(13, 23, 32, 0.0784313725); */
 }
 @media (max-width: 1399px) {
   .header-area.style-1 .header-logo {
@@ -5376,11 +5376,11 @@ body.tt-magic-cursor #magic-cursor {
 }
 .people-card1 .people-flip-box-layer.people-flip-box-back .social-and-btn {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 10px;
+  /* margin-bottom: 5px; */
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-right: 20px;
 }
 .people-card1 .people-flip-box-layer.people-flip-box-back .social-and-btn::after {
@@ -5434,13 +5434,14 @@ body.tt-magic-cursor #magic-cursor {
 }
 .people-card1 .people-flip-box-layer.people-flip-box-back p {
   margin-bottom: 0;
-  padding-right: 20px;
+  padding-right: 10px;
   color: #566064;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 10px;
 }
 .people-card1 .people-flip-box-layer.people-flip-box-back .phone-area {
   display: flex;
