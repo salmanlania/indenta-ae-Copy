@@ -288,7 +288,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-01.png" alt="" />
+                        <img src="assets/img/teams/Untitled-4.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Shahbaz Abdullah</a></h5>
@@ -313,7 +313,7 @@ const OurPeople1Page = () => {
                             </Link>
                           </div> */}
                         </div>
-                        <p>“ A highly skilled IT professional with over twenty years of extensive experience in telecom, networking, and system design and implementation. Shahbaz Abdullah has a proven track record of managing and executing complex IT projects, ensuring seamless integration and optimal performance of technology infrastructures. ”</p>
+                        <p>“ A highly skilled IT professional with over seventeen years of extensive experience in telecom, networking, and system design and implementation. Shahbaz Abdullah has a proven track record of managing and executing complex IT projects, ensuring seamless integration and optimal performance of technology infrastructures. ”</p>
                       </div>
                       {/* <div className="phone-area">
                         <div className="icon">

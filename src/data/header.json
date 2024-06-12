@@ -27,10 +27,5 @@
         "id": "5",
         "label": "Contact Us",
         "link": "/contact"
-    },
-    {
-        "id": "5",
-        "label": "Careers",
-        "link": "/career"
     }
 ]

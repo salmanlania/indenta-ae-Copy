@@ -79,8 +79,8 @@ const Header2 = () => {
   return (
     <div className="header-topbar-area">
       {/* Start Top Bar section */}
-      <div className="topbar-area style-2" style={{background: 'black'}}>
-        <ul className="topbar-left">
+      {/* <div className="topbar-area style-2" style={{background: 'black'}}> */}
+        {/* <ul className="topbar-left">
           <li>
             <Link legacyBehavior href="/career">
               <a>Careers</a>
@@ -96,8 +96,8 @@ const Header2 = () => {
               <a>Insight &amp; Events</a>
             </Link>
           </li>
-        </ul>
-        <ul className="topbar-right">
+        </ul> */}
+        {/* <ul className="topbar-right">
           <li>Sun-Tue (9:00 am-7.00 pm)</li>
           <li>
             <a href="mailto:infoaploxn@gmail.com">
@@ -129,8 +129,8 @@ const Header2 = () => {
               +91 656 786 53
             </a>
           </li>
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
       {/* End Top Bar section */}
       {/* Start header section */}
       <header className="header-area style-2">

@@ -3,7 +3,7 @@ import MainLayout from "../components/layout/MainLayout";
 import Partner from "../components/common/Partner";
 import About from "../components/Home2/About";
 import Testimonial from "../components/Home2/Testimonial";
-import WhyChooseSection from "../components/Home2/WhyChooseSection";
+import WhyChooseSection from "../components/Home2/Choose";
 import VideoArea from "../components/Home2/VideoArea";
 import PeopleSection from "../components/Home2/PeopleSection";
 import Contact from "../components/Home2/Contact";
@@ -16,14 +16,20 @@ const AboutPage = () => {
   };
   return (
     <MainLayout>
-      <Partner gap="mb-130" />
-      <div className="mission-section mb-130">
+      {/* <Partner gap="mb-130" /> */}
+      <br />
+      {/* <br /> */}
+      <About />
+      <br />
+      <br />
+      <br />
+      <div className="mission-section mb-130 mt-130">
         <div className="container-fluid one pl--95">
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-4">
               <div className="mission-img">
                 <img
-                  src="assets/img/inner-pages/about-mission-section-img.jpg"
+                  src="assets/img/home2/about-img.jpg"
                   alt=""
                 />
               </div>
@@ -76,11 +82,10 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <About />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <WhyChooseSection />
       <VideoArea />
-      <PeopleSection />
+      {/* <PeopleSection /> */}
       <Contact />
     </MainLayout>
   );

@@ -14,7 +14,7 @@
 // import Footer from "../components/footer/Footer";
 
 import React from "react";
-import Header2 from "../components/header/Header";
+import Header2 from "../components/header/Header3";
 import Banner from "../components/Home2/Banner";
 import SolutionSection from "../components/Home2/SolutionSection";
 import About from "../components/Home2/About";

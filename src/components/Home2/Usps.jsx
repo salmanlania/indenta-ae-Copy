@@ -34,7 +34,7 @@ const PeopleSection = () => {
               <div className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="people-card2 magnetic-item">
                   <div className="people-img">
-                    <img src="assets/img/home2/people-01.png" alt="" />
+                    <img src="assets/img/pics/tailor.png" alt="" />
                   </div>
                   <div className="people-content">
                     <div className="name-deg">
@@ -51,7 +51,7 @@ const PeopleSection = () => {
               <div className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="people-card2 magnetic-item">
                   <div className="people-img">
-                    <img src="assets/img/home2/people-02.png" alt="" />
+                    <img src="assets/img/pics/record.jpeg" alt="" />
                   </div>
                   <div className="people-content">
                     <div className="name-deg">
@@ -68,7 +68,7 @@ const PeopleSection = () => {
               <div className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="people-card2 magnetic-item">
                   <div className="people-img">
-                    <img src="assets/img/home2/people-03.png" alt="" />
+                    <img src="assets/img/pics/24-7.png" alt="" />
                   </div>
                   <div className="people-content">
                     <div className="name-deg">
@@ -85,7 +85,7 @@ const PeopleSection = () => {
               <div className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="people-card2 magnetic-item">
                   <div className="people-img">
-                    <img src="assets/img/home2/people-04.png" alt="" />
+                    <img src="assets/img/pics/competitive-rates.png" alt="" />
                   </div>
                   <div className="people-content">
                     <div className="name-deg">

@@ -27,7 +27,7 @@ const Banner = () => {
     };
   }, []);
   return (
-    <div className="banner2-section mb-130">
+    <div className="banner2-section mb-10">
       <Swiper {...slideSetting} className="swiper banner2-slider">
         <div className="swiper-wrapper">
           <SwiperSlide className="swiper-slide">

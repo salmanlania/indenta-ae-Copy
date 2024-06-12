@@ -3,7 +3,7 @@ import React from "react";
 import CountUp from 'react-countup';
 const About = () => {
   return (
-    <div className="about-section2 mb-130">
+    <div className="about-section2 mb-150">
       <div className="about-top">
         <div className="container-fluid one pl--95">
           <div className="row">

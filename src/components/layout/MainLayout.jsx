@@ -1,5 +1,5 @@
 import React from "react";
-import Header2 from "../header/Header";
+import Header2 from "../header/Header3";
 import Footer2 from "../footer/Footer2";
 import Breadcrumb from "../common/Breadcrumb";
 import { useRouter } from "next/router";

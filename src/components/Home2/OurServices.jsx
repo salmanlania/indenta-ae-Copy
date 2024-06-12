@@ -28,14 +28,14 @@ const CoverSection = () => {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="cover-section2">
+    <div className="cover-section2" >
       <img
         className="left-vec"
         src="assets/img/home2/cover-left-vec.png"
         alt=""
       />
       <div className="container-fluid one">
-        <div className="row g-4">
+        <div className="row g-4 mt-130"> 
           <div className="col-lg-3 d-flex justify-content-lg-center">
             <div className="sub-title">
               <span>Our Services</span>
@@ -96,7 +96,7 @@ const CoverSection = () => {
                       </Link>
                     </h5>
                     <div className="services-img">
-                      <img src="assets/img/home2/services-01.jpg" alt="" />
+                      <img src="assets/img/pics/credit-card.png" alt="" />
                     </div>
                     <p>
                       We offer a variety of credit card options from leading f inancial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle
@@ -141,7 +141,7 @@ const CoverSection = () => {
                       </Link>
                     </h5>
                     <div className="services-img">
-                      <img src="assets/img/home2/services-02.jpg" alt="" />
+                      <img src="assets/img/pics/sme-loan.jpeg" alt="" />
                     </div>
                     <p>
                       We provide expert assistance in securing Small and Medium-sized Enterprise (SME) loans, enabling businesses to achieve their growth objectives
@@ -183,7 +183,7 @@ const CoverSection = () => {
                       </Link>
                     </h5>
                     <div className="services-img">
-                      <img src="assets/img/home2/services-03.jpg" alt="" />
+                      <img src="assets/img/pics/acc-opening.png" alt="" />
                     </div>
                     <p>
                       We streamline the account opening process for both personal and corporate accounts, making it quick and easy for our clients.
@@ -229,7 +229,7 @@ const CoverSection = () => {
                       </Link>
                     </h5>
                     <div className="services-img">
-                      <img src="assets/img/home2/services-04.jpg" alt="" />
+                      <img src="assets/img/pics/banking.png" alt="" />
                     </div>
                     <p>
                       Our tailored corporate banking solutions are designed to meet the complex financial needs of businesses, enhancing their operational efficiency and growth.
@@ -285,7 +285,7 @@ const CoverSection = () => {
                       </Link>
                     </h5>
                     <div className="services-img">
-                      <img src="assets/img/home2/services-05.jpg" alt="" />
+                      <img src="assets/img/pics/mortage.png" alt="" />
                     </div>
                     <p>
                     We assist clients in obtaining competitive mortgage f inance solutions with flexible terms to help them purchase their ideal properties.

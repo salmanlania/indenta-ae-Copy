@@ -11,7 +11,7 @@ const Footer2 = () => {
                 <div className="col-lg-4  col-md-8 d-flex justify-content-lg-start">
                   <div className="footer-widget">
                     <div className="subscribed-area">
-                      <h2>Don’t Missed Subscribed!</h2>
+                      <h2>Don’t Missed To Subscribed!</h2>
                       <form>
                         <div className="form-inner">
                           <input type="text" placeholder="Enter Email" />
@@ -123,45 +123,35 @@ const Footer2 = () => {
                     <div className="menu-container">
                       <ul>
                         <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Real Estate</a>
+                          <Link legacyBehavior href="/ services">
+                            <a>Credit Card</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Construction</a>
+                          <Link legacyBehavior href="/ services">
+                            <a>SME Loans</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Health Care</a>
+                          <Link legacyBehavior href="/ services">
+                            <a>Account Opening</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Finnace Service</a>
+                          <Link legacyBehavior href="/ services">
+                            <a>Corporate Banking</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Dealership</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Low Firm Service</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link legacyBehavior href="/industry-details">
-                            <a>Family Business</a>
+                          <Link legacyBehavior href="/ services">
+                            <a>Mortgage Finance</a>
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-6 d-flex justify-content-md-end">
+                {/* <div className="col-lg-2 col-md-6 d-flex justify-content-md-end">
                   <div className="footer-widget">
                     <div className="widget-title">
                       <h3>Legelity</h3>
@@ -184,7 +174,7 @@ const Footer2 = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -193,7 +183,7 @@ const Footer2 = () => {
               <div className="footer-logo">
                 <Link legacyBehavior href="/">
                   <a>
-                    <img src="/assets/img/white_svg.svg" alt="footer-logo" />
+                    <img src="/assets/img/logo1.png" alt="footer-logo" />
                   </a>
                 </Link>
               </div>

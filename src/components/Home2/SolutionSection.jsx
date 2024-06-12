@@ -3,7 +3,7 @@ import React from "react";
 
 const SolutionSection = () => {
   return (
-    <div className="solution-section mb-130">
+    <div className="solution-section mb-10 mt-120">
       <div className="container-fluid one">
         <div className="row g-4">
           <div className="col-lg-3 d-flex justify-content-lg-center">

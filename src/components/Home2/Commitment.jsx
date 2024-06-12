@@ -3,7 +3,7 @@ import React from "react";
 import CountUp from 'react-countup';
 const Commitment = () => {
   return (
-    <div className="about-section2 mb-130">
+    <div className="about-section2 mb-100">
       <div className="about-top">
         <div className="container-fluid one pl--95">
           <div className="row">
@@ -15,7 +15,7 @@ const Commitment = () => {
                     As a homegrown company, we are deeply committed to contributing to the UAE’s f inancial sector. We support the local economy by helping businesses grow and by enabling individuals to achieve their financial aspirations. Our understanding of the UAE’s unique market dynamics allows us to provide relevant and effective solutions.
                   </h2>
                 </div>
-                <Link legacyBehavior href="/about">
+                {/* <Link legacyBehavior href="/about">
                   <a className="primary-btn1 btn-hover">
                     Explore More
                     <svg
@@ -31,7 +31,7 @@ const Commitment = () => {
                       ></path>
                     </svg>
                   </a>
-                </Link>
+                </Link> */}
                 {/* <div className="review-and-feature">
                   <a href="https://clutch.co/" className="review-area white">
                     <div className="review-name">
@@ -73,7 +73,7 @@ const Commitment = () => {
             </div>
             <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
-                <img src="assets/img/home2/about-img.jpg" alt="" />
+                <img src="assets/img/home2/commitment.png" alt="" style={{zIndex : 1 , bottom: '-249px'}} />
                 {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
               </div>
             </div>

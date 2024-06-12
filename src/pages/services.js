@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import MainLayout from '../components/layout/MainLayout'
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
+import UseOfTech from '../components/Home2/UseOfTech'
 
 const Services1Page = () => {
   const followImageCursor = (event, serviceImgItem) => {
@@ -141,7 +142,7 @@ const Services1Page = () => {
                     <img src="assets/img/home2/shape-01.png" alt="" />
                   </div>
                   <div className="company-logo">
-                    <h2>APLOXN</h2>
+                    <h2>INDENTA</h2>
                   </div>
                 </div>
               </div>
@@ -149,23 +150,23 @@ const Services1Page = () => {
           </div>
         </div>
       </div>
-      <div className="cover-section2  overflow-hidden">
+      <div className="cover-section2  overflow-hidden mb-30">
         <img className="left-vec" src="assets/img/home2/cover-left-vec.png" alt="" />
         <div className="container-fluid one">
           <div className="row g-4">
             <div className="col-lg-3 d-flex justify-content-lg-center">
               <div className="sub-title">
-                <span>Our Cover Area</span>
+                <span>OUR PROCESS</span>
               </div>
             </div>
             <div className="col-lg-9">
               <div className="row">
-                <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
+                {/* <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
                   <div className="section-title1 w-890">
                     <h2>Conduct market research to understand industry trends, competition, and customer
                       behavior.</h2>
                   </div>
-                </div>
+                </div> */}
                 <div className="col-lg-12">
                   <div className="sevices-wrap">
                     <div className="single-services">
@@ -199,13 +200,13 @@ const Services1Page = () => {
                           </g>
                         </svg>
                       </div>
-                      <h5><Link legacyBehavior href="/services1"><a>Health Care<span>Consulting</span></a></Link></h5>
+                      <h5><Link legacyBehavior href="/services1"><a>Consultation</a></Link></h5>
                       <div className="services-img">
                         <img src="assets/img/home2/services-01.jpg" alt="" />
                       </div>
-                      <p>Health and care consulting refers to the practice of providing expert
-                        advice and guidance.</p>
-                      <Link legacyBehavior href="/services1">
+                      <p>We begin with a detailed consultation to understand the specific needs and objectives 
+                        of our clients.</p>
+                      {/* <Link legacyBehavior href="/services1">
                         <a className="explore-btn">
                           View More
                           <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -213,7 +214,7 @@ const Services1Page = () => {
                             </path>
                           </svg>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                     <div className="single-services">
                       <div className="icon">
@@ -224,13 +225,12 @@ const Services1Page = () => {
                           </g>
                         </svg>
                       </div>
-                      <h5><Link legacyBehavior href="/services1"><a>Marketing Research<span>Consulting</span></a></Link></h5>
+                      <h5><Link legacyBehavior href="/services1"><a>Implementation</a></Link></h5>
                       <div className="services-img">
                         <img src="assets/img/home2/services-02.jpg" alt="" />
                       </div>
-                      <p>Helping clients improve their marketing and sales strategies to increase
-                        revenue and market share.</p>
-                      <Link legacyBehavior href="/services1">
+                      <p>Our team assists in the smooth implementation of the chosen f inancial products and services.</p>
+                      {/* <Link legacyBehavior href="/services1">
                         <a className="explore-btn">
                           View More
                           <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -238,7 +238,7 @@ const Services1Page = () => {
                             </path>
                           </svg>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                     <div className="single-services">
                       <div className="icon">
@@ -246,13 +246,12 @@ const Services1Page = () => {
                           <path d="M14.7307 9.2794L13.5888 7.53242L15.5972 6.37588L16.5352 8.23887L14.7307 9.2794ZM24.993 6.23545V4.15039L22.6807 4.27666L22.9091 6.34941L24.993 6.23545ZM20.6479 6.74033L20.1666 4.71035L17.942 5.37012L18.6477 7.33291L20.6479 6.74033ZM29.4929 4.63701L27.2031 4.26641L26.9851 6.33916L29.0444 6.67305L29.4929 4.63701ZM7.7125 17.6171L5.7917 16.7966L4.99863 18.9731L6.99883 19.5759L7.7125 17.6171ZM9.89228 13.83L8.21611 12.588L6.93975 14.5202L8.74414 15.5687L9.89228 13.83ZM6.47275 21.8075L4.41533 21.4553L4.15039 23.7539L6.23428 23.8761L6.47275 21.8075ZM12.8874 10.6456L11.5418 9.05332L9.85537 10.6395L11.3684 12.0748L12.8874 10.6456ZM42.1529 17.3402L44.0594 16.4892L42.9953 14.4307L41.1947 15.4895L42.1529 17.3402ZM34.0889 6.22725L31.9458 5.33545L31.2525 7.30234L33.1773 8.10459L34.0889 6.22725ZM43.7639 25.8694L45.8496 25.9631L45.8292 23.6521L43.7455 23.7844L43.7639 25.8694ZM43.4599 21.5102L45.5111 21.1253L44.9564 18.8754L42.9604 19.4862L43.4599 21.5102ZM41.5678 12.3213L40.0589 10.5642L38.5521 12.0077L39.9122 13.5897L41.5678 12.3213ZM38.1852 8.83955L36.3112 7.47744L35.1777 9.22852L36.8659 10.4543L38.1852 8.83955ZM35.4692 40.5802L36.6334 42.3109L38.4827 40.9142L37.1331 39.324L35.4692 40.5802ZM27.3295 43.6201L27.5863 45.6908L29.8702 45.2775L29.385 43.2495L27.3295 43.6201ZM31.5788 42.5797L32.3109 44.5323L34.4353 43.5997L33.4892 41.7408L31.5788 42.5797ZM38.7906 37.7379L40.324 39.1551L41.8003 37.3714L40.1221 36.1334L38.7906 37.7379ZM39.6084 25C39.6084 33.0589 33.0632 39.5947 24.993 39.5947C16.9226 39.5947 10.3773 33.0589 10.3773 25C10.3773 16.9412 16.9226 10.4053 24.993 10.4053C33.0631 10.4053 39.6084 16.9412 39.6084 25ZM37.5204 25C37.5204 18.1018 31.9008 12.4902 24.993 12.4902C18.085 12.4902 12.4653 18.1017 12.4653 25C12.4653 31.8983 18.085 37.5099 24.993 37.5099C31.9008 37.5099 37.5204 31.8983 37.5204 25ZM43.0582 30.1799L45.0666 30.7541L45.5805 28.4939L43.5211 28.1478L43.0582 30.1799ZM41.37 34.2093L43.1887 35.2335L44.2145 33.1565L42.2916 32.3401L41.37 34.2093ZM7.01299 30.4689L5.01494 31.0758L5.81221 33.2503L7.73086 32.4258L7.01299 30.4689ZM9.89228 39.3973L11.5826 40.9813L12.924 39.3831L11.401 37.9578L9.89228 39.3973ZM22.7315 45.7296L24.9929 45.8496V43.7646L22.9559 43.6547L22.7315 45.7296ZM6.23828 26.1687L4.15439 26.297L4.42354 28.5957L6.48105 28.2395L6.23828 26.1687ZM8.7667 34.4699L6.96416 35.5246L8.24678 37.4549L9.9208 36.2068L8.7667 34.4699ZM13.6315 42.4962L15.6421 43.6466L16.5801 41.7835L14.7693 40.7472L13.6315 42.4962ZM17.9911 44.6483L20.2155 45.3019L20.6927 43.2719L18.6903 42.6835L17.9911 44.6483Z" />
                         </svg>
                       </div>
-                      <h5><Link legacyBehavior href="/services1"><a>Technology<span>Consulting</span></a></Link></h5>
+                      <h5><Link legacyBehavior href="/services1"><a>Customization</a></Link></h5>
                       <div className="services-img">
                         <img src="assets/img/home2/services-03.jpg" alt="" />
                       </div>
-                      <p>Providing financial advice, including cost reduction strategies,
-                        financial planning.</p>
-                      <Link legacyBehavior href="/services1">
+                      <p>Based on the consultation, we tailor our services to provide the most suitable financial solutions.</p>
+                      {/* <Link legacyBehavior href="/services1">
                         <a className="explore-btn">
                           View More
                           <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -260,7 +259,7 @@ const Services1Page = () => {
                             </path>
                           </svg>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
                     <div className="single-services">
                       <div className="icon">
@@ -272,13 +271,12 @@ const Services1Page = () => {
                           <path d="M25 29.6273C24.7454 29.6273 24.5454 29.4273 24.5454 29.1727C24.5454 28.9182 24.7454 28.7182 25 28.7182C27.0545 28.7182 28.7181 27.0546 28.7181 25.0091C28.7181 22.9546 27.0545 21.2909 25.009 21.2909C24.7545 21.2909 24.5545 21.0909 24.5545 20.8364C24.5545 20.5818 24.7545 20.3818 25.009 20.3818C27.5636 20.3818 29.6363 22.4546 29.6363 25C29.6272 27.5546 27.5545 29.6273 25 29.6273Z" />
                         </svg>
                       </div>
-                      <h5><Link legacyBehavior href="/services1"><a>Human Resource<span>Consulting</span></a></Link></h5>
+                      <h5><Link legacyBehavior href="/services1"><a>Support</a></Link></h5>
                       <div className="services-img">
                         <img src="assets/img/home2/services-04.jpg" alt="" />
                       </div>
-                      <p>Health and care consulting refers to the practice of providing expert
-                        advice and guidance.</p>
-                      <Link legacyBehavior href="/services1">
+                      <p>We offer ongoing support to ensure our clients achieve their financial goals and address any queries or concerns promptly.</p>
+                      {/* <Link legacyBehavior href="/services1">
                         <a className="explore-btn">
                           View More
                           <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -286,9 +284,9 @@ const Services1Page = () => {
                             </path>
                           </svg>
                         </a>
-                      </Link>
+                      </Link> */}
                     </div>
-                    <div className="single-services">
+                    {/* <div className="single-services">
                       <div className="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} viewBox="0 0 50 50">
                           <path fillRule="evenodd" clipRule="evenodd" d="M44.8219 24.513C44.7015 24.5118 44.5856 24.4664 44.4965 24.3854C44.4073 24.3043 44.3511 24.1933 44.3385 24.0735C43.9011 19.3366 41.8211 14.9017 38.4587 11.5365C35.0962 8.1714 30.663 6.0879 25.9264 5.64669C25.8051 5.62552 25.6962 5.55953 25.6213 5.46182C25.5464 5.36412 25.511 5.24182 25.522 5.11921C25.5331 4.9966 25.5898 4.88262 25.681 4.7999C25.7722 4.71717 25.8911 4.67174 26.0142 4.67262C30.977 5.13313 35.6225 7.31427 39.1467 10.8385C42.671 14.3628 44.8521 19.0083 45.3126 23.971C45.3187 24.0384 45.3107 24.1064 45.2893 24.1706C45.2678 24.2348 45.2333 24.2938 45.1879 24.3441C45.1425 24.3943 45.0872 24.4345 45.0255 24.4624C44.9637 24.4902 44.8969 24.5049 44.8292 24.5056L44.8219 24.513ZM24.0222 47.3634C12.2307 47.3634 2.63647 37.7691 2.63647 25.9777C2.63647 20.6093 4.62856 15.4826 8.25388 11.5278C11.8334 7.61506 16.7423 5.17629 22.0227 4.68727C22.1466 4.68436 22.2669 4.72839 22.3596 4.81052C22.4524 4.89266 22.5106 5.00682 22.5226 5.1301C22.5347 5.25337 22.4997 5.37665 22.4246 5.47518C22.3495 5.57372 22.24 5.64022 22.1179 5.66134C17.0479 6.11116 12.3317 8.44908 8.90396 12.2119C5.47621 15.9747 3.58696 20.8878 3.61055 25.9777C3.61636 31.3894 5.76873 36.5778 9.59539 40.4045C13.422 44.2312 18.6104 46.3835 24.0222 46.3893C29.1121 46.4129 34.0252 44.5237 37.788 41.0959C41.5508 37.6682 43.8887 32.952 44.3385 27.8819C44.3597 27.7607 44.4257 27.6518 44.5234 27.5769C44.6211 27.502 44.7434 27.4666 44.866 27.4776C44.9886 27.4887 45.1026 27.5454 45.1853 27.6366C45.2681 27.7278 45.3135 27.8467 45.3126 27.9698C44.8223 33.2515 42.3808 38.1607 38.4648 41.7387C34.5099 45.364 29.3832 47.3634 24.0222 47.3634Z" />
@@ -337,7 +335,7 @@ const Services1Page = () => {
                           </svg>
                         </a>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -345,7 +343,7 @@ const Services1Page = () => {
           </div>
         </div>
       </div>
-      <div className="event-and-confarance-section mb-130">
+      {/* <div className="event-and-confarance-section mb-130">
         <div className="title">
           <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 40 40">
             <path d="M25.789 12.721C21.8989 6.99787 16.7033 3.95612 13.9824 5.81985C13.6828 6.03084 13.4224 6.29267 13.2132 6.59348C13.2132 6.61546 6.91425 19.3627 6.91425 19.3627L3.39777 21.7451C2.85794 22.1116 2.3956 22.5808 2.03715 23.126C1.67871 23.6712 1.43119 24.2816 1.30873 24.9225C1.18627 25.5633 1.19127 26.2221 1.32346 26.861C1.45564 27.4999 1.7124 28.1066 2.07909 28.6462L2.23733 28.8792C2.97852 29.9589 4.11549 30.7028 5.40164 30.9497C6.68778 31.1966 8.01939 30.9264 9.10766 30.1979L14.756 38.5188C15.5868 39.5429 17.1824 40.5627 19.1516 39.3627C19.5005 39.1365 19.7981 38.8397 20.0252 38.4914C20.2523 38.1432 20.4039 37.7512 20.4703 37.3407C20.5499 36.9325 20.5477 36.5125 20.4639 36.1051C20.3802 35.6977 20.2165 35.3109 19.9824 34.9671L15.0066 27.6264C15.0066 27.6264 26.7692 26.6902 26.8132 26.6726C27.1804 26.5957 27.5286 26.4463 27.8373 26.233C29.2351 25.2836 29.7362 23.2924 29.2527 20.6242C28.8176 18.1671 27.5824 15.3847 25.789 12.721ZM3.51645 28.0133L3.35821 27.7803C3.10521 27.4078 2.92816 26.9891 2.83718 26.5482C2.74621 26.1072 2.74309 25.6526 2.82801 25.2104C2.91294 24.7683 3.08423 24.3472 3.3321 23.9713C3.57996 23.5954 3.89952 23.2721 4.27249 23.0198L7.30986 20.9539L11.3186 26.8572L8.28129 28.9231C7.90875 29.1765 7.48993 29.3539 7.04879 29.4453C6.60764 29.5366 6.15281 29.5402 5.7103 29.4557C5.26779 29.3712 4.84627 29.2003 4.46984 28.9528C4.0934 28.7053 3.76943 28.386 3.51645 28.0133ZM18.7165 35.833C18.9567 36.1905 19.0453 36.6287 18.9629 37.0514C18.8805 37.4741 18.6338 37.8469 18.2769 38.088C17.9187 38.3284 17.4799 38.4172 17.0564 38.3348C16.633 38.2524 16.2594 38.0056 16.0175 37.6484L10.3868 29.3539L12.6505 27.8155L13.2483 27.7671L18.7165 35.833ZM12.7736 26.2594L8.40436 19.8242L12.5714 11.3275C12.9758 13.7144 14.1582 16.5495 16.0483 19.3319C17.9384 22.1144 20.1362 24.2594 22.2022 25.5166L12.7736 26.2594ZM25.7406 25.2352C23.6395 25.099 20.2197 22.7297 17.323 18.4616C14.4263 14.1935 13.4857 10.1539 14.1318 8.14513C14.2485 7.76807 14.4814 7.43752 14.7971 7.2007C15.1129 6.96388 15.4954 6.83289 15.8901 6.82645C17.9736 6.82645 21.5208 9.20886 24.5011 13.6001C26.1802 16.0704 27.4022 18.655 27.7362 20.9144C28.3912 25.2352 25.7406 25.2352 25.7406 25.2352Z" />
@@ -374,16 +372,16 @@ const Services1Page = () => {
             </div>
           </Marquee>
         </div>
-      </div>
+      </div> */}
       <div className="people-section2 mb-130">
         <div className="container-fluid one">
           <div className="row">
             <div className="col-lg-12 pl--95 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-end justify-content-between mb-60">
               <div className="section-title1 two">
-                <span>Our People</span>
-                <h2>Excellent Service Provided by Our Superb Consultant.</h2>
+                <span>CLIENT ONBOARDING</span>
+                <h2>At Indenta Solutions, the client onboarding process sets the tone for our entire relationship. We've designed a seamless and efficient onboarding process that ensures our clients feel supported and informed throughout the process.</h2>
               </div>
-              <Link legacyBehavior href="/people-details">
+              {/*  
                 <a className="primary-btn1 btn-hover">
                   Explore People
                   <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -391,7 +389,7 @@ const Services1Page = () => {
                   </svg>
                   <span />
                 </a>
-              </Link>
+              </Link> */}
             </div>
             <div className="col-lg-12">
               <div className="row g-4">
@@ -402,25 +400,10 @@ const Services1Page = () => {
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
-                        <h5><Link legacyBehavior href="/people-details"><a>Mr. Daniel Scoot</a></Link></h5>
-                        <span>Health Consultant</span>
+                        <h5><a>Personalized Consultation</a></h5>
+                        <span>We start by scheduling a personalized consultation with each client to understand the financial goals, preferences, and constraints.</span>
                       </div>
-                      <div className="contact-area">
-                        <div className="contact-number">
-                          <div className="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16">
-                              <path d="M14.7156 10.5021C13.7361 10.5021 12.7742 10.3489 11.8628 10.0477C11.4084 9.89277 10.891 10.013 10.5945 10.3151L8.79549 11.6732C6.70912 10.5595 5.42396 9.27473 4.32546 7.20402L5.64358 5.45186C5.98604 5.10986 6.10887 4.61028 5.9617 4.14153C5.65921 3.22528 5.50554 2.26391 5.50554 1.28391C5.50558 0.575957 4.92962 0 4.22171 0H1.28334C0.575469 0 -0.000488281 0.575957 -0.000488281 1.28383C-0.000488281 9.39843 6.60108 16 14.7156 16C15.4236 16 15.9995 15.424 15.9995 14.7161V11.786C15.9995 11.0781 15.4235 10.5021 14.7156 10.5021ZM15.1106 14.7161C15.1106 14.934 14.9335 15.1111 14.7156 15.1111C7.09108 15.1111 0.888426 8.90839 0.888426 1.28387C0.888426 1.066 1.06551 0.888914 1.28338 0.888914H4.22175C4.43962 0.888914 4.61671 1.066 4.61671 1.28387C4.61671 2.35895 4.78554 3.41407 5.11583 4.41366C5.16183 4.56124 5.1245 4.71399 4.97521 4.8694L3.44742 6.89277C3.39725 6.95923 3.36675 7.03844 3.35938 7.12139C3.35201 7.20433 3.36808 7.28768 3.40575 7.36194C4.65271 9.81289 6.16791 11.3281 8.6362 12.5928C8.78636 12.6714 8.9704 12.6549 9.1067 12.5521L11.1766 10.9839C11.2283 10.9323 11.2934 10.8962 11.3646 10.8797C11.4358 10.8631 11.5101 10.8667 11.5794 10.8902C12.5859 11.2226 13.641 11.3911 14.7156 11.3911C14.9335 11.3911 15.1106 11.5681 15.1106 11.786V14.7161Z" />
-                            </svg>
-                          </div>
-                          <div className="content">
-                            <a href="tel:+9165678653">+91 656 786 53</a>
-                          </div>
-                        </div>
-                        <ul className="social-icon">
-                          <li><a href="https://www.linkedin.com/"><i className="bx bxl-linkedin" /></a></li>
-                          <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                        </ul>
-                      </div>
+                       
                     </div>
                   </div>
                 </div>
@@ -431,25 +414,10 @@ const Services1Page = () => {
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
-                        <h5><Link legacyBehavior href="/people-details"><a>Mrs. Emily Sophia</a></Link></h5>
-                        <span>Senior Consultant</span>
+                        <h5><a>Needs Assessment</a></h5>
+                        <span>Based on the consultation, we conduct a thorough needs assessment to identify the most suitable financial products and services for the client's unique situation.</span>
                       </div>
-                      <div className="contact-area">
-                        <div className="contact-number">
-                          <div className="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16">
-                              <path d="M14.7156 10.5021C13.7361 10.5021 12.7742 10.3489 11.8628 10.0477C11.4084 9.89277 10.891 10.013 10.5945 10.3151L8.79549 11.6732C6.70912 10.5595 5.42396 9.27473 4.32546 7.20402L5.64358 5.45186C5.98604 5.10986 6.10887 4.61028 5.9617 4.14153C5.65921 3.22528 5.50554 2.26391 5.50554 1.28391C5.50558 0.575957 4.92962 0 4.22171 0H1.28334C0.575469 0 -0.000488281 0.575957 -0.000488281 1.28383C-0.000488281 9.39843 6.60108 16 14.7156 16C15.4236 16 15.9995 15.424 15.9995 14.7161V11.786C15.9995 11.0781 15.4235 10.5021 14.7156 10.5021ZM15.1106 14.7161C15.1106 14.934 14.9335 15.1111 14.7156 15.1111C7.09108 15.1111 0.888426 8.90839 0.888426 1.28387C0.888426 1.066 1.06551 0.888914 1.28338 0.888914H4.22175C4.43962 0.888914 4.61671 1.066 4.61671 1.28387C4.61671 2.35895 4.78554 3.41407 5.11583 4.41366C5.16183 4.56124 5.1245 4.71399 4.97521 4.8694L3.44742 6.89277C3.39725 6.95923 3.36675 7.03844 3.35938 7.12139C3.35201 7.20433 3.36808 7.28768 3.40575 7.36194C4.65271 9.81289 6.16791 11.3281 8.6362 12.5928C8.78636 12.6714 8.9704 12.6549 9.1067 12.5521L11.1766 10.9839C11.2283 10.9323 11.2934 10.8962 11.3646 10.8797C11.4358 10.8631 11.5101 10.8667 11.5794 10.8902C12.5859 11.2226 13.641 11.3911 14.7156 11.3911C14.9335 11.3911 15.1106 11.5681 15.1106 11.786V14.7161Z" />
-                            </svg>
-                          </div>
-                          <div className="content">
-                            <a href="tel:+9165678653">+91 656 786 53</a>
-                          </div>
-                        </div>
-                        <ul className="social-icon">
-                          <li><a href="https://www.linkedin.com/"><i className="bx bxl-linkedin" /></a></li>
-                          <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                        </ul>
-                      </div>
+                       
                     </div>
                   </div>
                 </div>
@@ -460,25 +428,10 @@ const Services1Page = () => {
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
-                        <h5><Link legacyBehavior href="/people-details"><a>Mrs. Abigail Grace</a></Link></h5>
-                        <span>Senior Consultant </span>
+                        <h5><a>Tailored Solutions</a></h5>
+                        <span>Our team of experts then crafts personalized financial solutions tailored to meet the client's specific needs and objectives.</span>
                       </div>
-                      <div className="contact-area">
-                        <div className="contact-number">
-                          <div className="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16">
-                              <path d="M14.7156 10.5021C13.7361 10.5021 12.7742 10.3489 11.8628 10.0477C11.4084 9.89277 10.891 10.013 10.5945 10.3151L8.79549 11.6732C6.70912 10.5595 5.42396 9.27473 4.32546 7.20402L5.64358 5.45186C5.98604 5.10986 6.10887 4.61028 5.9617 4.14153C5.65921 3.22528 5.50554 2.26391 5.50554 1.28391C5.50558 0.575957 4.92962 0 4.22171 0H1.28334C0.575469 0 -0.000488281 0.575957 -0.000488281 1.28383C-0.000488281 9.39843 6.60108 16 14.7156 16C15.4236 16 15.9995 15.424 15.9995 14.7161V11.786C15.9995 11.0781 15.4235 10.5021 14.7156 10.5021ZM15.1106 14.7161C15.1106 14.934 14.9335 15.1111 14.7156 15.1111C7.09108 15.1111 0.888426 8.90839 0.888426 1.28387C0.888426 1.066 1.06551 0.888914 1.28338 0.888914H4.22175C4.43962 0.888914 4.61671 1.066 4.61671 1.28387C4.61671 2.35895 4.78554 3.41407 5.11583 4.41366C5.16183 4.56124 5.1245 4.71399 4.97521 4.8694L3.44742 6.89277C3.39725 6.95923 3.36675 7.03844 3.35938 7.12139C3.35201 7.20433 3.36808 7.28768 3.40575 7.36194C4.65271 9.81289 6.16791 11.3281 8.6362 12.5928C8.78636 12.6714 8.9704 12.6549 9.1067 12.5521L11.1766 10.9839C11.2283 10.9323 11.2934 10.8962 11.3646 10.8797C11.4358 10.8631 11.5101 10.8667 11.5794 10.8902C12.5859 11.2226 13.641 11.3911 14.7156 11.3911C14.9335 11.3911 15.1106 11.5681 15.1106 11.786V14.7161Z" />
-                            </svg>
-                          </div>
-                          <div className="content">
-                            <a href="tel:+9165678653">+91 656 786 53</a>
-                          </div>
-                        </div>
-                        <ul className="social-icon">
-                          <li><a href="https://www.linkedin.com/"><i className="bx bxl-linkedin" /></a></li>
-                          <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                        </ul>
-                      </div>
+                       
                     </div>
                   </div>
                 </div>
@@ -489,25 +442,38 @@ const Services1Page = () => {
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
-                        <h5><Link legacyBehavior href="/people-details"><a>Mr. Michael David</a></Link></h5>
-                        <span>Health Consultant</span>
+                        <h5><a>Clear Communication</a></h5>
+                        <span>Throughout the onboarding process, we maintain clear and open communication with our clients, keeping them informed of the progress and any additional requirements.</span>
                       </div>
-                      <div className="contact-area">
-                        <div className="contact-number">
-                          <div className="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 16 16">
-                              <path d="M14.7156 10.5021C13.7361 10.5021 12.7742 10.3489 11.8628 10.0477C11.4084 9.89277 10.891 10.013 10.5945 10.3151L8.79549 11.6732C6.70912 10.5595 5.42396 9.27473 4.32546 7.20402L5.64358 5.45186C5.98604 5.10986 6.10887 4.61028 5.9617 4.14153C5.65921 3.22528 5.50554 2.26391 5.50554 1.28391C5.50558 0.575957 4.92962 0 4.22171 0H1.28334C0.575469 0 -0.000488281 0.575957 -0.000488281 1.28383C-0.000488281 9.39843 6.60108 16 14.7156 16C15.4236 16 15.9995 15.424 15.9995 14.7161V11.786C15.9995 11.0781 15.4235 10.5021 14.7156 10.5021ZM15.1106 14.7161C15.1106 14.934 14.9335 15.1111 14.7156 15.1111C7.09108 15.1111 0.888426 8.90839 0.888426 1.28387C0.888426 1.066 1.06551 0.888914 1.28338 0.888914H4.22175C4.43962 0.888914 4.61671 1.066 4.61671 1.28387C4.61671 2.35895 4.78554 3.41407 5.11583 4.41366C5.16183 4.56124 5.1245 4.71399 4.97521 4.8694L3.44742 6.89277C3.39725 6.95923 3.36675 7.03844 3.35938 7.12139C3.35201 7.20433 3.36808 7.28768 3.40575 7.36194C4.65271 9.81289 6.16791 11.3281 8.6362 12.5928C8.78636 12.6714 8.9704 12.6549 9.1067 12.5521L11.1766 10.9839C11.2283 10.9323 11.2934 10.8962 11.3646 10.8797C11.4358 10.8631 11.5101 10.8667 11.5794 10.8902C12.5859 11.2226 13.641 11.3911 14.7156 11.3911C14.9335 11.3911 15.1106 11.5681 15.1106 11.786V14.7161Z" />
-                            </svg>
-                          </div>
-                          <div className="content">
-                            <a href="tel:+9165678653">+91 656 786 53</a>
-                          </div>
-                        </div>
-                        <ul className="social-icon">
-                          <li><a href="https://www.linkedin.com/"><i className="bx bxl-linkedin" /></a></li>
-                          <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                        </ul>
+                       
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-sm-6">
+                  <div className="people-card2 magnetic-item">
+                    <div className="people-img">
+                      <img src="assets/img/home2/people-03.png" alt="" />
+                    </div>
+                    <div className="people-content">
+                      <div className="name-deg">
+                        <h5><a>Efficient Execution</a></h5>
+                        <span>When our clients have chosen their preferred financial products and services, we ensure a swift and efficient execution process to get them started on their f inancial journey as soon as possible.</span>
                       </div>
+                       
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-lg-4 col-sm-6">
+                  <div className="people-card2 magnetic-item">
+                    <div className="people-img">
+                      <img src="assets/img/home2/people-03.png" alt="" />
+                    </div>
+                    <div className="people-content">
+                      <div className="name-deg">
+                        <h5><a>Ongoing Support</a></h5>
+                        <span>Our commitment to our clients continues after their onboarding. We provide continuous support and guidance to help them navigate the complexities of the financial world and achieve their long-term financial goals.</span>
+                      </div>
+                       
                     </div>
                   </div>
                 </div>
@@ -515,6 +481,9 @@ const Services1Page = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <UseOfTech />
       </div>
       <div className="contect-section6">
         <div className="container-fluid one pl--95">

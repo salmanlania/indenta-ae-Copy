@@ -15,7 +15,7 @@ const Breadcrumb = () => {
     id: "default",
     path: "/default",
     title: "Default Title",
-    bg_img: "assets/img/default-bg.jpg",
+    bg_img: "assets/pics/default-bg.jpg",
   };
 
   return (
@@ -26,7 +26,7 @@ const Breadcrumb = () => {
           backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.55) 101.02%), url(${displayData.bg_img})`,
         }}
       >
-        <div className="company-name">Aploxn</div>
+        {/* <div className="company-name">Indenta</div> */}
         <div className="container-fluid one pl--95">
           <div className="row">
             <div className="col-lg-12">
