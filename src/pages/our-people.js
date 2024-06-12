@@ -17,7 +17,7 @@ const OurPeople1Page = () => {
                     </svg>
                   </div>
                   <div className="content">
-                    <h4>Our Team Member around 30+</h4>
+                    <h4>Our Team Member</h4>
                     <p>The advantages of consulting services are often realized through improved outcomes</p>
                   </div>
                 </div>
@@ -30,7 +30,7 @@ const OurPeople1Page = () => {
                 <div className="section-title1 two mb-0">
                   <span>Our People</span>
                   <h2>Our People Who Helped to Complete This (IT)</h2>
-                  <Link legacyBehavior href="/career">
+                  {/* <Link legacyBehavior href="/career">
                     <a className="primary-btn1 btn-hover">
                       Join Our Team
                       <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
@@ -38,7 +38,7 @@ const OurPeople1Page = () => {
                       </svg>
                       <span />
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

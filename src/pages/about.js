@@ -29,7 +29,7 @@ const AboutPage = () => {
             <div className="col-lg-4">
               <div className="mission-img">
                 <img
-                  src="assets/img/home2/about-img.jpg"
+                  src="assets/img/vision-mission/vision-mission.png"
                   alt=""
                 />
               </div>
@@ -45,9 +45,9 @@ const AboutPage = () => {
                   <p>
                     Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
                   </p>
-                  <h5>
+                  {/* <h5>
                     Mr. Daniel Scoot, <span>Company CEO</span>
-                  </h5>
+                  </h5> */}
                 </div>
                 <div className="mission-content-bottom">
                   <h3>Our Mission</h3>

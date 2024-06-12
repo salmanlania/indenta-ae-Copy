@@ -43,7 +43,7 @@ const Testimonial = () => {
                     <div className="testimonial-card">
                       <div className="testimonial-img magnetic-item">
                         <img
-                          src="assets/img/home2/testimonial-img.jpg"
+                          src="assets/img/vision-mission/habibi.png"
                           alt=""
                         />
                       </div>

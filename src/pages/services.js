@@ -396,7 +396,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-01.png" alt="" />
+                      <img src="assets/img/vision-mission/personalized-consultation.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
@@ -410,7 +410,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-02.png" alt="" />
+                      <img src="assets/img/vision-mission/Needs Assessment2.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
@@ -424,7 +424,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-03.png" alt="" />
+                      <img src="assets/img/vision-mission/tailored-solutions.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
@@ -438,7 +438,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-04.png" alt="" />
+                      <img src="assets/img/vision-mission/clear-communication.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
@@ -452,7 +452,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-03.png" alt="" />
+                      <img src="assets/img/vision-mission/efficient-execution.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
@@ -466,7 +466,7 @@ const Services1Page = () => {
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <div className="people-card2 magnetic-item">
                     <div className="people-img">
-                      <img src="assets/img/home2/people-03.png" alt="" />
+                      <img src="assets/img/vision-mission/ongoing-support.png" alt="" />
                     </div>
                     <div className="people-content">
                       <div className="name-deg">
