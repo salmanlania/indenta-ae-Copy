@@ -6,7 +6,7 @@ const SolutionSection = () => {
     <div className="solution-section mb-10">
       <div className="container-fluid one">
         <div className="row g-4">
-          <div className="col-lg-3 d-flex justify-content-lg-center">
+          <div className="col-lg-2 d-flex justify-content-lg-center">
             <div className="sub-title">
               <span>USE OF TECHNOLOGY</span>
             </div>
