@@ -18,7 +18,7 @@ const OurPeople1Page = () => {
                   </div>
                   <div className="content">
                     <h4>Our Team Member</h4>
-                    <p>The advantages of consulting services are often realized through improved outcomes</p>
+                    <p>The advantages of services are often realized through improved outcomes</p>
                   </div>
                 </div>
               </div>
@@ -29,7 +29,7 @@ const OurPeople1Page = () => {
               <div className="people-left-content pr--95">
                 <div className="section-title1 two mb-0">
                   <span>Our People</span>
-                  <h2>Our People Who Helped to Complete This (IT)</h2>
+                  <h2>Our People Who Helped to Complete This</h2>
                   {/* <Link legacyBehavior href="/career">
                     <a className="primary-btn1 btn-hover">
                       Join Our Team
