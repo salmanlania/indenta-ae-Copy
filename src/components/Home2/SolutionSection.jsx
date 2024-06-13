@@ -6,7 +6,7 @@ const SolutionSection = () => {
     <div className="solution-section mb-10 mt-120">
       <div className="container-fluid one">
         <div className="row g-4">
-          <div className="col-lg-3 d-flex justify-content-lg-center">
+          <div className="col-lg-2 d-flex justify-content-lg-center">
             <div className="sub-title">
               <span>Our Values</span>
             </div>
@@ -39,7 +39,7 @@ const SolutionSection = () => {
                 </Link>
               </div>
               <div className="col-lg-12 d-flex align-items-center position-relative">
-                <div className="row g-4 justify-content-end">
+                <div className="row g-4 justify-content-start">
                   <div className="col-xxl-3 col-lg-4 col-sm-6">
                     <div className="eg-card-2 style-2">
                       <div className="sl-no">
