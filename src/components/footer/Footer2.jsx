@@ -118,27 +118,27 @@ const Footer2 = () => {
                     <div className="menu-container">
                       <ul>
                         <li>
-                          <Link legacyBehavior href="/ services">
+                          <Link legacyBehavior href="/services">
                             <a>Credit Card</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/ services">
+                          <Link legacyBehavior href="/services">
                             <a>SME Loans</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/ services">
+                          <Link legacyBehavior href="/services">
                             <a>Account Opening</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/ services">
+                          <Link legacyBehavior href="/services">
                             <a>Corporate Banking</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/ services">
+                          <Link legacyBehavior href="/services">
                             <a>Mortgage Finance</a>
                           </Link>
                         </li>
