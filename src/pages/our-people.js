@@ -48,7 +48,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-06.png" alt="" />
+                        <img src="assets/img/newest_team/sir3.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Mohsin Ahsan</a></h5>
@@ -96,7 +96,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-02.png" alt="" />
+                        <img src="assets/img/newest_team/sir1.png" alt="" style={{transform: 'scaleX(-1)'}} />
                       </div>
                       <div className="content">
                         <h5><a href="#">Adnan Aslam</a></h5>
@@ -144,7 +144,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-03.png" alt="" />
+                        <img src="assets/img/newest_team/sir2.png" alt="" style={{transform: 'scaleX(-1)'}} />
                       </div>
                       <div className="content">
                         <h5><a href="#">Adeel Hassan</a></h5>
@@ -192,7 +192,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-04.png" alt="" />
+                        <img src="assets/img/newest_team/sir6.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Ayesha Iqbal</a></h5>
@@ -240,7 +240,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/home1/people-05.png" alt="" />
+                        <img src="assets/img/newest_team/sir4.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Syed Hassan Aftab</a></h5>
@@ -288,7 +288,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/teams/Untitled-4.png" alt="" />
+                        <img src="assets/img/newest_team/sir7.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Shahbaz Abdullah</a></h5>

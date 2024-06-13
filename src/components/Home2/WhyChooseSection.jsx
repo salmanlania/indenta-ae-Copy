@@ -119,7 +119,12 @@ const WhyChooseSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-5 d-flex align-items-end">
+          <div class="col-lg-4">
+            <div class="mission-img">
+              <img src="assets/img/whychooseindenta.png" alt="" />
+            </div>
+          </div>
+          {/* <div className="col-xl-5 d-flex align-items-end">
             <div className="garph-content">
               <div className="graph-chart">
                 <ResponsiveContainer width="100%" height={450}>
@@ -142,7 +147,7 @@ const WhyChooseSection = () => {
                 </ResponsiveContainer>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

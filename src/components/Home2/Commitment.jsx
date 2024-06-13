@@ -73,7 +73,7 @@ const Commitment = () => {
             </div>
             <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
-                <img src="assets/img/home2/commitment.png" alt="" style={{zIndex : 1 , bottom: '-249px'}} />
+                <img src="assets/img/home2/commitment.png" alt="" style={{zIndex : 1 , bottom: '-195px'}} />
                 {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
               </div>
             </div>

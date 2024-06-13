@@ -28,7 +28,7 @@ const CoverSection = () => {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="cover-section2" style={{ zIndex: -1 }}>
+    <div className="cover-section2" style={{padding : '0'}}>
       <img
         className="left-vec"
         src="assets/img/home2/cover-left-vec.png"

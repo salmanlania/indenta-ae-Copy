@@ -82,33 +82,28 @@ const Footer2 = () => {
                     <div className="menu-container">
                       <ul>
                         <li>
+                          <Link legacyBehavior href="/">
+                            <a>Home</a>
+                          </Link>
+                        </li>
+                        <li>
                           <Link legacyBehavior href="/about">
                             <a>Our Story</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/contact">
-                            <a>Contact Us</a>
+                          <Link legacyBehavior href="/services">
+                            <a>Service</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/faq">
-                            <a>FAQ’s</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link legacyBehavior href="/our-people1">
+                          <Link legacyBehavior href="/our-people">
                             <a>Our Consultants</a>
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/career">
-                            <a>Careers</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link legacyBehavior href="/case-study1">
-                            <a>Case Study</a>
+                          <Link legacyBehavior href="/contact">
+                            <a>Contact Us</a>
                           </Link>
                         </li>
                       </ul>
@@ -307,8 +302,9 @@ const Footer2 = () => {
             <div className="footer-btm">
               <div className="copyright-area">
                 <p>
-                  Copyright 2024 <a href="#">Indenta Solutions</a> | Design By{" "}
-                  <a href="https://www.egenslab.com/">Egens Lab</a>
+                  Copyright 2024 <a href="#">Indenta Solutions</a>
+                   {/* | Design By{" "}
+                  <a href="https://www.egenslab.com/">Egens Lab</a> */}
                 </p>
               </div>
               <ul className="social-area">

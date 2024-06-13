@@ -18,7 +18,8 @@ const AboutPage = () => {
     <MainLayout>
       {/* <Partner gap="mb-130" /> */}
       <br />
-      {/* <br /> */}
+      <br />
+      <br />
       <About />
       <br />
       <br />
@@ -29,7 +30,7 @@ const AboutPage = () => {
             <div className="col-lg-4">
               <div className="mission-img">
                 <img
-                  src="assets/img/vision-mission/vision-mission.png"
+                  src="assets/img/newest_team/missionandvision.png"
                   alt=""
                 />
               </div>

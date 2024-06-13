@@ -27,7 +27,7 @@ const Banner = () => {
     };
   }, []);
   return (
-    <div className="banner2-section mb-10">
+    <div className="banner2-section mb-100">
       <Swiper {...slideSetting} className="swiper banner2-slider">
         <div className="swiper-wrapper">
           <SwiperSlide className="swiper-slide">
@@ -42,7 +42,7 @@ const Banner = () => {
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-7">
                     <div className="banner-left-content">
-                      <span>Real Estate</span>
+                      {/* <span>Real Estate</span> */}
                       <h1>
                         Your Strategic Advantage
                       </h1>
@@ -98,7 +98,7 @@ const Banner = () => {
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-7">
                     <div className="banner-left-content">
-                      <span>Real Estate</span>
+                      {/* <span>Real Estate</span> */}
                       <h1>
                         Your Strategic Advantage
                       </h1>
@@ -154,7 +154,7 @@ const Banner = () => {
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-7">
                     <div className="banner-left-content">
-                      <span>Real Estate</span>
+                      {/* <span>Real Estate</span> */}
                       <h1>
                         Your Strategic Advantage
                       </h1>
@@ -210,7 +210,7 @@ const Banner = () => {
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-7">
                     <div className="banner-left-content">
-                      <span>Real Estate</span>
+                      {/* <span>Real Estate</span> */}
                       <h1>
                         Your Strategic Advantage
                       </h1>
