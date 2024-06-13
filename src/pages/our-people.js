@@ -288,7 +288,7 @@ const OurPeople1Page = () => {
                   <div className="people-card1">
                     <div className="people-flip-box-layer people-flip-box-front">
                       <div className="people-img">
-                        <img src="assets/img/newest_team/sir7.png" alt="" />
+                        <img src="assets/img/newest_team/shahbaz.png" alt="" />
                       </div>
                       <div className="content">
                         <h5><a href="#">Shahbaz Abdullah</a></h5>
