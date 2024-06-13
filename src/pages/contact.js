@@ -188,8 +188,8 @@ const ContactPage = () => {
                     </div>
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
-                        <label>Consulting Area*</label>
-                        <input type="text" placeholder="Dealership" />
+                        <label>Phone Number*</label>
+                        <input type="number" placeholder="Phone Number" />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-15">
