@@ -32,7 +32,7 @@ const Services1Page = () => {
       <div className="solution-section pt-130 mb-130">
         <div className="container-fluid one">
           <div className="row g-4">
-            <div className="col-lg-3 d-flex justify-content-lg-center">
+            <div className="col-lg-2 d-flex justify-content-lg-center">
               <div className="sub-title">
                 <span>Solution Approach</span>
               </div>
@@ -154,7 +154,7 @@ const Services1Page = () => {
         <img className="left-vec" src="assets/img/home2/cover-left-vec.png" alt="" />
         <div className="container-fluid one">
           <div className="row g-4">
-            <div className="col-lg-3 d-flex justify-content-lg-center">
+            <div className="col-lg-2 d-flex justify-content-lg-center">
               <div className="sub-title">
                 <span>OUR PROCESS</span>
               </div>
