@@ -45,7 +45,7 @@ const Services1Page = () => {
                   </div>
                 </div>
                 <div className="col-lg-12 d-flex align-items-center position-relative">
-                  <div className="row g-4 justify-content-end">
+                  <div className="row g-4 justify-content-start">
                     <div className="col-xxl-3 col-lg-4 col-sm-6">
                       <div className="eg-card-2 style-2">
                         <div className="sl-no">
