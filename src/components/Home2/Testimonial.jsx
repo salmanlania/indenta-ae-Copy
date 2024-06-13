@@ -43,13 +43,13 @@ const Testimonial = () => {
                     <div className="testimonial-card">
                       <div className="testimonial-img magnetic-item">
                         <img
-                          src="assets/img/vision-mission/habibi.png"
+                          src="assets/img/vision-mission/brokr-sized.png"
                           alt=""
                         />
                       </div>
                       <div className="testimonal-content">
                         <span>Great Consulting!</span>
-                        <p>
+                        <p style={{fontSize : '20px'}}>
                           We can confidently say that Indenta Solutions provides
                           us with a holistic support across our various phases,
                           particularly when it provides banking and financial
@@ -62,8 +62,8 @@ const Testimonial = () => {
                         </p>
                         <div className="author-area">
                           <div className="content">
-                            <h6>Be Brokr</h6>
-                            {/* <span>Froxio, CEO</span> */}
+                            <h6>Be Broker</h6>
+                            <span>Managing Director</span>
                           </div>
                         </div>
                       </div>
