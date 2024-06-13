@@ -14,7 +14,7 @@ const Footer2 = () => {
                       <h2>Don’t Missed To Subscribed!</h2>
                       <form>
                         <div className="form-inner">
-                          <input type="text" placeholder="Enter Email" />
+                          <input type="text" placeholder="Enter Your Email" />
                           <button type="submit">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
