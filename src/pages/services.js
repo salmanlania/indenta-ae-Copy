@@ -62,7 +62,7 @@ const Services1Page = () => {
                         </div>
                         <div className="content">
                           <h5>Credit Card</h5>
-                          <p>We offer a variety of credit card options from leading f inancial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle.</p>
+                          <p>We offer a variety of credit card options from leading financial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle.</p>
                         </div>
                       </div>
                     </div>
@@ -229,7 +229,7 @@ const Services1Page = () => {
                       <div className="services-img">
                         <img src="assets/img/home2/services-02.jpg" alt="" />
                       </div>
-                      <p>Our team assists in the smooth implementation of the chosen f inancial products and services.</p>
+                      <p>Our team assists in the smooth implementation of the chosen financial products and services.</p>
                       {/* <Link legacyBehavior href="/services1">
                         <a className="explore-btn">
                           View More
@@ -457,7 +457,7 @@ const Services1Page = () => {
                     <div className="people-content">
                       <div className="name-deg">
                         <h5><a>Efficient Execution</a></h5>
-                        <span>When our clients have chosen their preferred financial products and services, we ensure a swift and efficient execution process to get them started on their f inancial journey as soon as possible.</span>
+                        <span>When our clients have chosen their preferred financial products and services, we ensure a swift and efficient execution process to get them started on their financial journey as soon as possible.</span>
                       </div>
                        
                     </div>
