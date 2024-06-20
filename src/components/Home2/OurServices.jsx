@@ -99,7 +99,7 @@ const CoverSection = () => {
                       <img src="assets/img/pics/credit-card.png" alt="" />
                     </div>
                     <p>
-                      We offer a variety of credit card options from leading f inancial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle
+                      We offer a variety of credit card options from leading financial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle
                     </p>
                     {/* <Link legacyBehavior href="/services1">
                       <a className="explore-btn">
