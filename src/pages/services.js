@@ -514,13 +514,13 @@ const Services1Page = () => {
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Company Name*</label>
-                        <input type="text" placeholder="Consult Pro" />
+                        <input type="text" placeholder="ABC Company" />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
-                        <label>Consulting Area*</label>
-                        <input type="text" placeholder="Dealership" />
+                        <label>Phone Number*</label>
+                        <input type="number" placeholder="123 456 7890" />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-15">
