@@ -137,7 +137,7 @@ const CoverSection = () => {
                       <img src="assets/img/home2/services-02.jpg" alt="" />
                     </div>
                     <p>
-                      We prioritize our clients' needs, working diligently to provide customized solutions that align with their financial goals.
+                      We prioritize our client's needs, working diligently to provide customized solutions that align with their financial goals.
                     </p>
                     {/* <Link legacyBehavior href="/services">
                       <a className="explore-btn">
