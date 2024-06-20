@@ -14,19 +14,19 @@
     {
         "id": "3",
         "label": "Service",
-        "link": "services",
+        "link": "/services",
         "icon": true
     },
     {
         "id": "4",
         "label": "Why us",
-        "link": "why-us",
+        "link": "/",
         "icon": true
     },
     {
         "id": "5",
         "label": "Our Process",
-        "link": "process",
+        "link": "/",
         "icon": true
     },
     {
