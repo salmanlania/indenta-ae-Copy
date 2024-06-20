@@ -135,7 +135,7 @@ const SolutionSection = () => {
                       <div className="content">
                         <h5>Security Measures</h5>
                         <p>
-                          We employ state-of-the-art security measures to protect our clients' sensitive information, ensuring that their data are safe and secure at all times.
+                          We employ state-of-the-art security measures to protect our client's sensitive information, ensuring that their data are safe and secure at all times.
                         </p>
                       </div>
                     </div>
@@ -143,7 +143,7 @@ const SolutionSection = () => {
                   <div className="col-xxl-3 col-lg-4 col-sm-6">
                     <div className="eg-card-2 style-2">
                       <div className="sl-no">
-                        <h3>04</h3>
+                        <h3>05</h3>
                       </div>
                       <div className="icon">
                         <svg
