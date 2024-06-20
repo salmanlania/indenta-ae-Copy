@@ -288,7 +288,7 @@ const CoverSection = () => {
                       <img src="assets/img/pics/mortage.png" alt="" />
                     </div>
                     <p>
-                    We assist clients in obtaining competitive mortgage f inance solutions with flexible terms to help them purchase their ideal properties.
+                    We assist clients in obtaining competitive mortgage finance solutions with flexible terms to help them purchase their ideal properties.
                     </p>
                     {/* <Link legacyBehavior href="/services1">
                       <a className="explore-btn">
