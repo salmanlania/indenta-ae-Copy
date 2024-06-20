@@ -12,7 +12,7 @@ const Commitment = () => {
                 <div className="section-title1 two white mb-50">
                   <span>OUR COMMITMENT TO THE UAE</span>
                   <h2>
-                    As a homegrown company, we are deeply committed to contributing to the UAE’s f inancial sector. We support the local economy by helping businesses grow and by enabling individuals to achieve their financial aspirations. Our understanding of the UAE’s unique market dynamics allows us to provide relevant and effective solutions.
+                    As a homegrown company, we are deeply committed to contributing to the UAE’s financial sector. We support the local economy by helping businesses grow and by enabling individuals to achieve their financial aspirations. Our understanding of the UAE’s unique market dynamics allows us to provide relevant and effective solutions.
                   </h2>
                 </div>
                 {/* <Link legacyBehavior href="/about">
