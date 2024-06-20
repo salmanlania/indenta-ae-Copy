@@ -19,12 +19,29 @@
     },
     {
         "id": "4",
+        "label": "Why us",
+        "link": "why-us",
+        "icon": true
+    },
+    {
+        "id": "5",
+        "label": "Our Process",
+        "link": "process",
+        "icon": true
+    },
+    {
+        "id": "6",
         "label": "People",
         "link": "/our-people",
         "icon": true
     },
     {
-        "id": "5",
+        "id": "7",
+        "label": "Testimonial",
+        "link": "/testimonial"
+    },
+    {
+        "id": "8",
         "label": "Contact Us",
         "link": "/contact"
     }

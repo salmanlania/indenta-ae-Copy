@@ -17,8 +17,8 @@ import React from "react";
 import Header2 from "../components/header/Header3";
 import Banner from "../components/Home2/Banner";
 import SolutionSection from "../components/Home2/SolutionSection";
-import About from "../components/Home2/About";
-import Commitment from "../components/Home2/Commitment";
+import Aboutus from "../components/Home2/Aboutus";
+import Commitment from "../components/Home2/Commitment1";
 import Testimonial from "../components/Home2/Testimonial";
 import OurServices from "../components/Home2/OurServices";
 import EventAndConfarance from "../components/Home2/EventAndConfarance-main";
@@ -51,7 +51,7 @@ export default function Home() {
       <Footer/> */}
       <Header2/>
       <Banner/>
-      <About/>
+      <Aboutus/>
       <SolutionSection/>
       <Commitment/>
       <OurServices/>

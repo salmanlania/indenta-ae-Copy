@@ -1,23 +1,41 @@
 import Link from "next/link";
 import React from "react";
 import CountUp from 'react-countup';
-const About = () => {
+const Commitment = () => {
   return (
-    <div className="about-section2 mb-150">
+    <div className="about-section2 mb-100">
       <div className="about-top">
         <div className="container-fluid one pl--95">
           <div className="row">
             <div className="col-xxl-8 col-lg-7">
               <div className="about-content pr--95">
                 <div className="section-title1 two white mb-50">
-                  <span>About Us</span>
+                  <span>OUR COMMITMENT TO THE UAE</span>
                   <h2>
-                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
+                    As a homegrown company, we are deeply committed to contributing to the UAE’s financial sector<Link legacyBehavior href="/about" style={{color : 'white !important'}}>...</Link> 
+                    {/* We support the local economy by helping businesses grow and by enabling individuals to achieve their financial aspirations. Our understanding of the UAE’s unique market dynamics allows us to provide relevant and effective solutions. */}
                   </h2>
                 </div>
+                <Link legacyBehavior href="/contact">
+                  <a className="primary-btn1 btn-hover">
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={12}
+                      height={12}
+                      viewBox="0 0 12 12"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </Link>
                 {/* <Link legacyBehavior href="/about">
                   <a className="primary-btn1 btn-hover">
-                    About More
+                    Explore More
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={12}
@@ -73,7 +91,7 @@ const About = () => {
             </div>
             <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
-                <img src="assets/img/home2/pic1.png" alt="" />
+                <img src="assets/img/home2/commitment.png" alt="" style={{zIndex : 1 , bottom: '-195px'}} />
                 {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
               </div>
             </div>
@@ -180,4 +198,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Commitment;

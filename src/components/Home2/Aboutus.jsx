@@ -12,12 +12,13 @@ const About = () => {
                 <div className="section-title1 two white mb-50">
                   <span>About Us</span>
                   <h2>
-                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
+                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions <Link legacyBehavior href="/about" style={{color : 'white !important'}}>...</Link> 
+                     {/* We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients */}
                   </h2>
                 </div>
-                {/* <Link legacyBehavior href="/about">
+                <Link legacyBehavior href="/about">
                   <a className="primary-btn1 btn-hover">
-                    About More
+                    Read More
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={12}
@@ -31,7 +32,7 @@ const About = () => {
                       ></path>
                     </svg>
                   </a>
-                </Link> */}
+                </Link>
                 {/* <div className="review-and-feature">
                   <a href="https://clutch.co/" className="review-area white">
                     <div className="review-name">

@@ -7,3 +7,7 @@
 @import url("../public/assets/css/slick-theme.css");
 @import url("../public/assets/css/slick.css");
 @import url("../public/assets/css/magnific-popup.css");/*# sourceMappingURL=style.css.map */
+
+a{
+    color: white;
+}

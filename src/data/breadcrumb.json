@@ -208,4 +208,11 @@
         "title":"Blog Details",
         "bg_img":"/assets/img/inner-pages/braadcrumb-bg1.jpg"
     }
+    ,
+    {
+        "id":"31",
+        "path":"/testimonial",
+        "title":"Testimonial",
+        "bg_img":"assets/img/pics/contact-us.png"
+    }
 ]
