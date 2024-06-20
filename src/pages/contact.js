@@ -189,12 +189,12 @@ const ContactPage = () => {
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Phone Number*</label>
-                        <input type="number" placeholder="Phone Number" />
+                        <input type="number" placeholder="123 456 7890" />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-15">
                       <div className="form-inner">
-                        <label>Write Your Massage*</label>
+                        <label>Write Your Message*</label>
                         <textarea
                           placeholder="What’s on your mind"
                           defaultValue={""}
@@ -214,7 +214,7 @@ const ContactPage = () => {
                           htmlFor="contactCheck"
                         >
                           Please save my name, email address for the next time I
-                          message with aploxn.
+                          message with indenta.
                         </label>
                       </div>
                     </div>
