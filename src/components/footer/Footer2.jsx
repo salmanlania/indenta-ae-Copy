@@ -113,7 +113,7 @@ const Footer2 = () => {
                 <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
                   <div className="footer-widget">
                     <div className="widget-title">
-                      <h3>Industries</h3>
+                      <h3>Our Services</h3>
                     </div>
                     <div className="menu-container">
                       <ul>
