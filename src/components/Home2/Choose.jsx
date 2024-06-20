@@ -179,7 +179,7 @@ const CoverSection = () => {
                       <img src="assets/img/home2/services-03.jpg" alt="" />
                     </div>
                     <p>
-                      By leveraging the latest technologies and market insights, we develop innovative strategies to deliver superior f inancial products and services.
+                      By leveraging the latest technologies and market insights, we develop innovative strategies to deliver superior financial products and services.
                     </p>
                     {/* <Link legacyBehavior href="/services1">
                       <a className="explore-btn">
@@ -326,7 +326,7 @@ const CoverSection = () => {
                       <img src="assets/img/home2/services-05.jpg" alt="" />
                     </div>
                     <p>
-                      We maintain complete transparency with our clients, ensuring they are fully informed and confident in the f inancial decisions they make.
+                      We maintain complete transparency with our clients, ensuring they are fully informed and confident in the financial decisions they make.
                     </p>
                     {/* <Link legacyBehavior href="/services1">
                       <a className="explore-btn">
