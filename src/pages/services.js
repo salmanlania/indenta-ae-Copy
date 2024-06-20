@@ -133,7 +133,7 @@ const Services1Page = () => {
                         </div>
                         <div className="content">
                           <h5>Mortgage Finance</h5>
-                          <p>We assist clients in obtaining competitive mortgage f inance solutions with flexible terms to help them purchase their ideal properties.</p>
+                          <p>We assist clients in obtaining competitive mortgage finance solutions with flexible terms to help them purchase their ideal properties.</p>
                         </div>
                       </div>
                     </div>
