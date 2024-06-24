@@ -35,8 +35,7 @@ const WhyChooseSection = () => {
                   individuals or firms to help organizations improve.
                 </h2> */}
               </div>
-              <div className="sulution-approach">
-                {/* <h3>Key Solution Approach :</h3> */}
+              {/* <div className="sulution-approach">
                 <ul>
                   <li>
                     <svg
@@ -116,7 +115,7 @@ const WhyChooseSection = () => {
                     Comprehensive Support
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           <div class="col-lg-4">

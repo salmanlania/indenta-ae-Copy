@@ -45,6 +45,7 @@
 
 import React from 'react'
 import ChatApp from '../components/ChatApp/ChatApp'
+import Header2 from "../components/header/Header3";
 
 export default function chatbot() {
     return (

@@ -16,11 +16,11 @@
 import React from "react";
 import Header2 from "../components/header/Header3";
 import Banner from "../components/Home2/Banner";
-import SolutionSection from "../components/Home2/SolutionSection";
+import SolutionSection from "../components/Home2/SolutionSectionHome";
 import Aboutus from "../components/Home2/Aboutus";
 import Commitment from "../components/Home2/Commitment1";
 import Testimonial from "../components/Home2/Testimonial1";
-import OurServices from "../components/Home2/OurServices";
+import OurServices from "../components/Home2/OurServicesHome";
 import EventAndConfarance from "../components/Home2/EventAndConfarance-main";
 import ProjectSection from "../components/Home2/ProjectSection";
 import WhyChooseSection from "../components/Home2/WhyChooseSection1";
@@ -53,16 +53,16 @@ export default function Home() {
       <Banner/>
       <Aboutus/>
       <SolutionSection/>
-      <Commitment/>
       <OurServices/>
       <EventAndConfarance/>
       {/* <ProjectSection/> */}
-      <WhyChooseSection/>
+      {/* <WhyChooseSection/> */}
       <VideoArea/>
       {/* <Usps/> */}
       {/* <ClientSection/> */}
       {/* <Blog/> */}
       <Testimonial/>
+      <Commitment/>
       {/* <Contact/> */}
       <Footer2/>
     </>

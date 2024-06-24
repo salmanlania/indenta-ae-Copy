@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import Link from "next/link";
 import SwiperCore, { Autoplay, EffectFade, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
@@ -49,16 +50,29 @@ const Testimonial = () => {
                       </div>
                       <div className="testimonal-content">
                         <span>Great Consulting!</span>
-                        <p style={{fontSize : '20px'}}>
+                        <p style={{ fontSize: '20px' }}>
                           We can confidently say that Indenta Solutions provides
-                          us with a holistic support across our various phases,
-                          particularly when it provides banking and financial
-                          solutions, and enhances our online platform....
+                          us with a holistic support across our various phases....
                         </p>
                         <div className="author-area">
                           <div className="content">
-                            <h6>Be Broker</h6>
-                            <span>Managing Director</span>
+                            <Link legacyBehavior href="/testimonial">
+                              <a className="primary-btn1 btn-hover">
+                                Read More
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width={12}
+                                  height={12}
+                                  viewBox="0 0 12 12"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
+                                    d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
