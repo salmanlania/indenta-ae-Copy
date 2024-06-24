@@ -69,7 +69,7 @@ const ChatApp = () => {
       <Header3 />
       <br />
       <br />
-      <div className="d-flex vh-100 bg-light">
+      <div style={{height : '92vh'}} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
           <div className="p-4 bg-white border-bottom d-flex align-items-center">
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
