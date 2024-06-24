@@ -43,12 +43,6 @@
     },
     {
         "id": "8",
-        "label": "Chatbot",
-        "link": "/chatbot",
-        "icon": true
-    },
-    {
-        "id": "9",
         "label": "Contact Us",
         "link": "/contact",
         "icon": true
