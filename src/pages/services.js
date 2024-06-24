@@ -151,7 +151,6 @@ const Services1Page = () => {
           </div>
         </div>
       </div>
-      <WhyChooseSection />
       {/* <div className="cover-section2  overflow-hidden mb-30">
         <img className="left-vec" src="assets/img/home2/cover-left-vec.png" alt="" />
         <div className="container-fluid one">

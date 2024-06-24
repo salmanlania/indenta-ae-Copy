@@ -19,11 +19,11 @@ import Banner from "../components/Home2/Banner";
 import SolutionSection from "../components/Home2/SolutionSection";
 import Aboutus from "../components/Home2/Aboutus";
 import Commitment from "../components/Home2/Commitment1";
-import Testimonial from "../components/Home2/Testimonial";
+import Testimonial from "../components/Home2/Testimonial1";
 import OurServices from "../components/Home2/OurServices";
 import EventAndConfarance from "../components/Home2/EventAndConfarance-main";
 import ProjectSection from "../components/Home2/ProjectSection";
-import WhyChooseSection from "../components/Home2/WhyChooseSection";
+import WhyChooseSection from "../components/Home2/WhyChooseSection1";
 import VideoArea from "../components/Home2/VideoArea";
 import Usps from "../components/Home2/Usps";
 import ClientSection from "../components/Home2/ClientSection";
@@ -59,11 +59,11 @@ export default function Home() {
       {/* <ProjectSection/> */}
       <WhyChooseSection/>
       <VideoArea/>
-      <Usps/>
+      {/* <Usps/> */}
       {/* <ClientSection/> */}
       {/* <Blog/> */}
       <Testimonial/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer2/>
     </>
   );

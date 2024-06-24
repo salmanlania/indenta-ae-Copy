@@ -7,7 +7,7 @@ const Footer2 = () => {
         <div className="row justify-content-center">
           <div className="col-lg-12 pl--95 mb-100 pr--95">
             <div className="footer-top">
-              <div className="row g-lg-4 gy-5">
+              <div className="row g-lg-4 gy-5" style={{display : 'flex' , justifyContent : 'space-around'}}>
                 <div className="col-lg-4  col-md-8 d-flex justify-content-lg-start">
                   <div className="footer-widget">
                     <div className="subscribed-area">
@@ -29,26 +29,6 @@ const Footer2 = () => {
                       </form>
                     </div>
                     <div className="contact-area">
-                      {/* <div className="hotline-area">
-                        <div className="icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={28}
-                            height={28}
-                            viewBox="0 0 28 28"
-                          >
-                            <path d="M27.2653 21.5995L21.598 17.8201C20.8788 17.3443 19.9147 17.5009 19.383 18.1798L17.7322 20.3024C17.6296 20.4377 17.4816 20.5314 17.3154 20.5664C17.1492 20.6014 16.9759 20.5752 16.8275 20.4928L16.5134 20.3196C15.4725 19.7522 14.1772 19.0458 11.5675 16.4352C8.95784 13.8246 8.25001 12.5284 7.6826 11.4893L7.51042 11.1753C7.42683 11.0269 7.39968 10.8532 7.43398 10.6864C7.46827 10.5195 7.56169 10.3707 7.69704 10.2673L9.81816 8.61693C10.4968 8.08517 10.6536 7.1214 10.1784 6.40198L6.39895 0.734676C5.91192 0.00208106 4.9348 -0.21784 4.18082 0.235398L1.81096 1.65898C1.06634 2.09672 0.520053 2.80571 0.286612 3.63733C-0.56677 6.74673 0.0752209 12.1131 7.98033 20.0191C14.2687 26.307 18.9501 27.9979 22.1677 27.9979C22.9083 28.0011 23.6459 27.9048 24.3608 27.7115C25.1925 27.4783 25.9016 26.932 26.3391 26.1871L27.7641 23.8187C28.218 23.0645 27.9982 22.0868 27.2653 21.5995ZM26.9601 23.3399L25.5384 25.7098C25.2242 26.2474 24.7142 26.6427 24.1152 26.8128C21.2447 27.6009 16.2298 26.9482 8.64053 19.3589C1.0513 11.7697 0.398595 6.75515 1.18669 3.88421C1.35709 3.28446 1.75283 2.77385 2.2911 2.45921L4.66096 1.03749C4.98811 0.840645 5.41221 0.93606 5.62354 1.25397L7.67659 4.3363L9.39976 6.92078C9.60612 7.23283 9.53831 7.65108 9.24392 7.88199L7.1223 9.53232C6.47665 10.026 6.29227 10.9193 6.68979 11.6283L6.85826 11.9344C7.45459 13.0281 8.19599 14.3887 10.9027 17.095C13.6095 19.8012 14.9696 20.5427 16.0628 21.139L16.3694 21.3079C17.0783 21.7053 17.9716 21.521 18.4653 20.8753L20.1157 18.7537C20.3466 18.4595 20.7647 18.3918 21.0769 18.5979L26.7437 22.3773C27.0618 22.5885 27.1572 23.0128 26.9601 23.3399ZM15.8658 4.66809C20.2446 4.67296 23.7931 8.22149 23.798 12.6003C23.798 12.858 24.0069 13.0669 24.2646 13.0669C24.5223 13.0669 24.7312 12.858 24.7312 12.6003C24.7257 7.7063 20.7598 3.74029 15.8658 3.73494C15.6081 3.73494 15.3992 3.94381 15.3992 4.20151C15.3992 4.45922 15.6081 4.66809 15.8658 4.66809Z" />
-                            <path d="M15.8658 7.46734C18.6991 7.47067 20.9951 9.76666 20.9984 12.5999C20.9984 12.7237 21.0476 12.8424 21.1351 12.9299C21.2226 13.0174 21.3412 13.0665 21.465 13.0665C21.5887 13.0665 21.7074 13.0174 21.7949 12.9299C21.8824 12.8424 21.9316 12.7237 21.9316 12.5999C21.9277 9.25147 19.2142 6.53801 15.8658 6.53418C15.6081 6.53418 15.3992 6.74306 15.3992 7.00076C15.3992 7.25846 15.6081 7.46734 15.8658 7.46734Z" />
-                            <path d="M15.8658 10.2671C17.1536 10.2687 18.1972 11.3123 18.1988 12.6001C18.1988 12.7239 18.248 12.8426 18.3355 12.9301C18.423 13.0176 18.5417 13.0667 18.6654 13.0667C18.7891 13.0667 18.9078 13.0176 18.9953 12.9301C19.0828 12.8426 19.132 12.7239 19.132 12.6001C19.1299 10.7972 17.6688 9.33601 15.8658 9.33398C15.6081 9.33398 15.3992 9.54286 15.3992 9.80056C15.3992 10.0583 15.6081 10.2671 15.8658 10.2671Z" />
-                          </svg>
-                        </div>
-                        <div className="content">
-                          <span>To More Inquiry</span>
-                          <h6>
-                            <a href="tel:+990737621432">+990-737 621 432</a>
-                          </h6>
-                        </div>
-                      </div> */}
                       <div className="hotline-area">
                         <div className="icon">
                           <svg
@@ -77,7 +57,16 @@ const Footer2 = () => {
                 <div className="col-lg-3 col-md-4 d-flex justify-content-lg-center justify-content-md-end">
                   <div className="footer-widget">
                     <div className="widget-title">
-                      <h3>About Us</h3>
+                      {/* <h3>About Us</h3> */}
+                      {/* <div className="footer-menu-wrap"> */}
+                      <div className="footer-logo">
+                        <Link legacyBehavior href="/">
+                          <a>
+                            <img src="/assets/img/logo1.png" alt="footer-logo" />
+                          </a>
+                        </Link>
+                      </div>
+                      {/* </div> */}
                     </div>
                     <div className="menu-container">
                       <ul>
@@ -88,7 +77,7 @@ const Footer2 = () => {
                         </li>
                         <li>
                           <Link legacyBehavior href="/about">
-                            <a>Our Story</a>
+                            <a>About Us</a>
                           </Link>
                         </li>
                         <li>
@@ -97,20 +86,35 @@ const Footer2 = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/our-people">
-                            <a>Our Consultants</a>
+                          <Link legacyBehavior href="/why-us">
+                            <a>Why Us</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link legacyBehavior href="/process">
+                            <a>Process</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link legacyBehavior href="/team">
+                            <a>Team</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link legacyBehavior href="/testimonial">
+                            <a>Testimonial</a>
                           </Link>
                         </li>
                         <li>
                           <Link legacyBehavior href="/contact">
-                            <a>Contact Us</a>
+                            <a>Contact</a>
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
+                {/* <div className="col-lg-3 col-md-6 d-flex justify-content-lg-center">
                   <div className="footer-widget">
                     <div className="widget-title">
                       <h3>Our Services</h3>
@@ -145,7 +149,7 @@ const Footer2 = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <div className="col-lg-2 col-md-6 d-flex justify-content-md-end">
                   <div className="footer-widget">
                     <div className="widget-title">
@@ -174,7 +178,7 @@ const Footer2 = () => {
             </div>
           </div>
           <div className="col-lg-12">
-            <div className="footer-menu-wrap">
+            {/* <div className="footer-menu-wrap">
               <div className="footer-logo">
                 <Link legacyBehavior href="/">
                   <a>
@@ -182,128 +186,12 @@ const Footer2 = () => {
                   </a>
                 </Link>
               </div>
-              {/* <ul className="footer-menu">
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      International Business
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      Marketing Research
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      Finance Consulting
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      Human Resources
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      Technology
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link legacyBehavior href="/services1">
-                    <a>
-                      Start-up
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={10}
-                        height={10}
-                        viewBox="0 0 10 10"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                        />
-                      </svg>
-                    </a>
-                  </Link>
-                </li>
-              </ul> */}
-            </div>
+            </div> */}
             <div className="footer-btm">
               <div className="copyright-area">
                 <p>
                   Copyright 2024 <a href="#">Indenta Solutions</a>
-                   {/* | Design By{" "}
+                  {/* | Design By{" "}
                   <a href="https://www.egenslab.com/">Egens Lab</a> */}
                 </p>
               </div>

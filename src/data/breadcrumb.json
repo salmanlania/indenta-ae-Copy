@@ -120,8 +120,8 @@
     ,
     {
         "id":"18",
-        "path":"/our-people",
-        "title":"Our People",
+        "path":"/team",
+        "title":"Our Team",
         "bg_img":"/assets/img/pics/team.png"
     }
     ,
@@ -163,7 +163,7 @@
     {
         "id":"24",
         "path":"/about",
-        "title":"Our Story",
+        "title":"About Us",
         "bg_img":"assets/img/pics/about.png"
     }
     ,
@@ -213,6 +213,20 @@
         "id":"31",
         "path":"/testimonial",
         "title":"Testimonial",
-        "bg_img":"assets/img/pics/contact-us.png"
+        "bg_img":"assets/img/pics/testomonial.jpg"
+    }
+    ,
+    {
+        "id":"32",
+        "path":"/process",
+        "title":"Process",
+        "bg_img":"assets/img/pics/process.jpg"
+    }
+    ,
+    {
+        "id":"33",
+        "path":"/why-us",
+        "title":"Why Us",
+        "bg_img":"assets/img/pics/why-us.jpg"
     }
 ]

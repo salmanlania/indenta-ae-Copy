@@ -87,7 +87,7 @@ const AboutPage = () => {
       {/* <WhyChooseSection /> */}
       <VideoArea />
       {/* <PeopleSection /> */}
-      <Contact />
+      {/* <Contact /> */}
     </MainLayout>
   );
 };

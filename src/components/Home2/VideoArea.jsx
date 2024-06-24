@@ -8,7 +8,7 @@ const VideoArea = () => {
           <div className="col-lg-12">
             <div className="video-wrapper">
               <div className="video-content-wrap">
-                <div className="video-content">
+                {/* <div className="video-content">
                   <h4>
                     <a href="#">
                       Business Strategy
@@ -31,7 +31,7 @@ const VideoArea = () => {
                     <li>Analysis</li>
                     <li>Strategy</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <video
                 autoPlay

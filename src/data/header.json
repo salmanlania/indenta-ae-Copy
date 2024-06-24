@@ -25,14 +25,14 @@
     },
     {
         "id": "5",
-        "label": "Our Process",
+        "label": "Process",
         "link": "/process",
         "icon": true
     },
     {
         "id": "6",
-        "label": "People",
-        "link": "/our-people",
+        "label": "Team",
+        "link": "/team",
         "icon": true
     },
     {

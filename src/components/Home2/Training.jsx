@@ -7,8 +7,8 @@ export default function Training() {
                 <div className="row">
                     <div className="col-lg-12 pl--95 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-end justify-content-between mb-60">
                         <div className="section-title1 two">
-                            <span>CLIENT ONBOARDING</span>
-                            <h2>At Indenta Solutions, the client onboarding process sets the tone for our entire relationship. We've designed a seamless and efficient onboarding process that ensures our clients feel supported and informed throughout the process.</h2>
+                            <span>CONTINUOUS EMPLOYEE TRAINING</span>
+                            <h2>At Indenta Solutions, we believe that our employees are our greatest asset. We invest heavily in continuous training and development programs to ensure that our team stays at the forefront of industry trends and best practices.</h2>
                         </div>
 
                     </div>
@@ -21,8 +21,8 @@ export default function Training() {
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
-                                            <h5><a>Personalized Consultation</a></h5>
-                                            <span>We start by scheduling a personalized consultation with each client to understand the financial goals, preferences, and constraints.</span>
+                                            <h5><a>Industry Knowledge</a></h5>
+                                            <span>Our employees undergo regular training to stay updated on the latest developments in the ﬁnancial services industry, ensuring that they can provide our clients with the most relevant and up-to-date advice..</span>
                                         </div>
 
                                     </div>
@@ -35,22 +35,8 @@ export default function Training() {
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
-                                            <h5><a>Needs Assessment</a></h5>
-                                            <span>Based on the consultation, we conduct a thorough needs assessment to identify the most suitable financial products and services for the client's unique situation.</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-4 col-sm-6">
-                                <div className="people-card2 magnetic-item">
-                                    <div className="people-img">
-                                        <img src="assets/img/vision-mission/tailored-solutions.png" alt="" />
-                                    </div>
-                                    <div className="people-content">
-                                        <div className="name-deg">
-                                            <h5><a>Tailored Solutions</a></h5>
-                                            <span>Our team of experts then crafts personalized financial solutions tailored to meet the client's specific needs and objectives.</span>
+                                            <h5><a>Compliance Training</a></h5>
+                                            <span>We place a strong emphasis on compliance and regulatory requirements, providing regular training to ensure that our team is fully compliant with all relevant laws and regulations.</span>
                                         </div>
 
                                     </div>
@@ -63,8 +49,8 @@ export default function Training() {
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
-                                            <h5><a>Clear Communication</a></h5>
-                                            <span>Throughout the onboarding process, we maintain clear and open communication with our clients, keeping them informed of the progress and any additional requirements.</span>
+                                            <h5><a>Product Training</a></h5>
+                                            <span>We provide in-depth training on the various ﬁnancial products and services we offer, equipping our team with the knowledge they need to recommend the best solutions for our clients.</span>
                                         </div>
 
                                     </div>
@@ -77,8 +63,8 @@ export default function Training() {
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
-                                            <h5><a>Efficient Execution</a></h5>
-                                            <span>When our clients have chosen their preferred financial products and services, we ensure a swift and efficient execution process to get them started on their financial journey as soon as possible.</span>
+                                            <h5><a>Career Growth Opportunities</a></h5>
+                                            <span>We believe in fostering a culture of continuous learning and growth, providing our employees with opportunities for career advancement and personal development.</span>
                                         </div>
 
                                     </div>
@@ -91,8 +77,8 @@ export default function Training() {
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
-                                            <h5><a>Ongoing Support</a></h5>
-                                            <span>Our commitment to our clients continues after their onboarding. We provide continuous support and guidance to help them navigate the complexities of the financial world and achieve their long-term financial goals.</span>
+                                            <h5><a>Soft Skills Development</a></h5>
+                                            <span>Our team of experts then crafts personalized ﬁnancial solutions tailored to meet the client's speciﬁc needs and objectives.</span>
                                         </div>
 
                                     </div>
