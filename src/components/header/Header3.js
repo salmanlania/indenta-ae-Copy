@@ -190,13 +190,13 @@ const Header3 = () => {
                         {label}
                       </a>
                     </Link>
-                    {icon && (
+                    {/* {icon && (
                       <i
                         onClick={() => toggleMenu(label)}
                         className={`bi bi-${state.activeMenu === label ? "dash" : "plus"
                           } dropdown-icon`}
                       />
-                    )}
+                    )} */}
                     {subMenu && (
                       <ul
                         className={`sub-menu ${state.activeMenu === label ? "d-block" : ""
