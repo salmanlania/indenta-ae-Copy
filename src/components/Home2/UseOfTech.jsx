@@ -3,7 +3,7 @@ import React from "react";
 
 const SolutionSection = () => {
   return (
-    <div className="solution-section mb-10">
+    <div className="solution-section mb-10" style={{padding : '2rem'}}>
       <div className="container-fluid one">
         <div className="row g-4">
           <div className="col-lg-2 d-flex justify-content-lg-center">
@@ -11,7 +11,7 @@ const SolutionSection = () => {
               <span>USE OF TECHNOLOGY</span>
             </div>
           </div>
-          <div className="col-lg-9">
+        <div className="col-lg-9" style={{marginLeft : '2rem'}}>
             <div className="row">
               <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
                 <div className="section-title1 one">

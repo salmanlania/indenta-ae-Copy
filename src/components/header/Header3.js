@@ -183,6 +183,7 @@ const Header3 = () => {
                   >
                     <Link legacyBehavior href={link}>
                       <a
+                      style={{padding : '1px 6px'}}
                         className={`drop-down ${state.activeMenu === label ? "active" : ""
                           }`}
                       >

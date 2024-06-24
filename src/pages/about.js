@@ -84,7 +84,7 @@ const AboutPage = () => {
         </div>
       </div>
       {/* <Testimonial /> */}
-      <WhyChooseSection />
+      {/* <WhyChooseSection /> */}
       <VideoArea />
       {/* <PeopleSection /> */}
       <Contact />
