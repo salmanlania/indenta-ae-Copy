@@ -59,10 +59,10 @@ const ChatApp = () => {
     <div className="d-flex vh-100 bg-light">
       <div className="d-flex flex-column flex-grow-1">
         <div className="p-4 bg-white border-bottom d-flex align-items-center">
-          <div className="bg-primary rounded-circle" style={{ width: '40px', height: '40px' }}>
+          {/* <div className="bg-primary rounded-circle" style={{ width: '40px', height: '40px' }}> */}
             {/* <img src={girlchat} alt="Bot" style={{ width: '100%', height: '100%', borderRadius: '50%' }}  /> */}
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
-          </div>
+          {/* </div> */}
           <div className="ms-3">
             <div className="fw-semibold">Ayesha</div>
             <div className="text-muted small">Active now</div>
