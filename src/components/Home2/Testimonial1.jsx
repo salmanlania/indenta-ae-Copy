@@ -156,9 +156,9 @@ const Testimonial = () => {
                 </div>
               </Swiper>
               <div className="slider-btn-area">
-                <div className="franctional-pagi2" />
+                {/* <div className="franctional-pagi2" /> */}
                 <span className="dash" />
-                <div className="slider-btn-group w-100">
+                {/* <div className="slider-btn-group w-100">
                   <div className="slider-btn prev-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@ const Testimonial = () => {
                       />
                     </svg>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
