@@ -65,9 +65,9 @@ const ChatApp = () => {
 
   return (
     <>
-      <Header3 />
+      {/* <Header3 />
       <br />
-      <br />
+      <br /> */}
       <div style={{ height: '92vh' }} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
           <div className="p-4 bg-white border-bottom d-flex align-items-center">
