@@ -48,7 +48,7 @@ const Testimonial = () => {
                         />
                       </div>
                       <div className="testimonal-content">
-                        <span>Great Consulting!</span>
+                        <span>Testomonials!</span>
                         <p style={{fontSize : '20px'}}>
                           We can confidently say that Indenta Solutions provides
                           us with a holistic support across our various phases,

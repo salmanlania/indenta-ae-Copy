@@ -10,14 +10,13 @@ export default function Training() {
                             <span>CONTINUOUS EMPLOYEE TRAINING</span>
                             <h2>At Indenta Solutions, we believe that our employees are our greatest asset. We invest heavily in continuous training and development programs to ensure that our team stays at the forefront of industry trends and best practices.</h2>
                         </div>
-
                     </div>
                     <div className="col-lg-12">
                         <div className="row g-4">
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="people-card2 magnetic-item">
                                     <div className="people-img">
-                                        <img src="assets/img/vision-mission/personalized-consultation.png" alt="" />
+                                        <img src="assets/img/training/Industry-Knowledge.jpg" alt="" />
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
@@ -31,7 +30,7 @@ export default function Training() {
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="people-card2 magnetic-item">
                                     <div className="people-img">
-                                        <img src="assets/img/vision-mission/Needs Assessment2.png" alt="" />
+                                        <img src="assets/img/training/Compliance-Training.jpg" alt="" />
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
@@ -45,7 +44,7 @@ export default function Training() {
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="people-card2 magnetic-item">
                                     <div className="people-img">
-                                        <img src="assets/img/vision-mission/clear-communication.png" alt="" />
+                                        <img src="assets/img/training/Product-Training.jpg" alt="" />
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
@@ -59,7 +58,7 @@ export default function Training() {
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="people-card2 magnetic-item">
                                     <div className="people-img">
-                                        <img src="assets/img/vision-mission/efficient-execution.png" alt="" />
+                                        <img src="assets/img/training/Career-Growth.jpg" alt="" />
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
@@ -73,7 +72,7 @@ export default function Training() {
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="people-card2 magnetic-item">
                                     <div className="people-img">
-                                        <img src="assets/img/vision-mission/ongoing-support.png" alt="" />
+                                        <img src="assets/img/training/Soft-Skills.jpg" alt="" />
                                     </div>
                                     <div className="people-content">
                                         <div className="name-deg">
