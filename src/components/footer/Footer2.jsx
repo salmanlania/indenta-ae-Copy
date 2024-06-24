@@ -7,12 +7,19 @@ const Footer2 = () => {
         <div className="row justify-content-center">
           <div className="col-lg-12 pl--95 mb-100 pr--95">
             <div className="footer-top">
-              <div className="row g-lg-4 gy-5" style={{display : 'flex' , justifyContent : 'space-around'}}>
+              <div className="row g-lg-4 gy-5" style={{ display: 'flex', justifyContent: 'space-around' }}>
                 <div className="col-lg-4  col-md-8 d-flex justify-content-lg-start">
                   <div className="footer-widget">
                     <div className="subscribed-area">
-                      <h2>Don’t Missed To Subscribed!</h2>
-                      <form>
+                      <div className="footer-logo">
+                        <Link legacyBehavior href="/">
+                          <a>
+                            <img src="/assets/img/logo1.png" alt="footer-logo" />
+                          </a>
+                        </Link>
+                      </div>
+                      {/* <p>Don’t Missed To Subscribed!</p> */}
+                      {/* <form>
                         <div className="form-inner">
                           <input type="text" placeholder="Enter Your Email" />
                           <button type="submit">
@@ -26,7 +33,7 @@ const Footer2 = () => {
                             </svg>
                           </button>
                         </div>
-                      </form>
+                      </form> */}
                     </div>
                     <div className="contact-area">
                       <div className="hotline-area">
@@ -59,13 +66,13 @@ const Footer2 = () => {
                     <div className="widget-title">
                       {/* <h3>About Us</h3> */}
                       {/* <div className="footer-menu-wrap"> */}
-                      <div className="footer-logo">
+                      {/* <div className="footer-logo">
                         <Link legacyBehavior href="/">
                           <a>
                             <img src="/assets/img/logo1.png" alt="footer-logo" />
                           </a>
                         </Link>
-                      </div>
+                      </div> */}
                       {/* </div> */}
                     </div>
                     <div className="menu-container">
