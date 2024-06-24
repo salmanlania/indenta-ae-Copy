@@ -38,7 +38,7 @@ const CoverSection = () => {
         <div className="row g-4 mt-130"> 
           <div className="col-lg-3 d-flex justify-content-lg-center">
             <div className="sub-title">
-              <span><Link href="/services" legacyBehavior><a href="" style={{color : 'black' , fontWeight : '500'}}>Our Services</a></Link></span>
+              <span><Link href="/services" legacyBehavior><a href="" style={{color : 'black' , fontWeight : '500'}}>Services</a></Link></span>
             </div>
           </div>
           <div className="col-lg-9">
