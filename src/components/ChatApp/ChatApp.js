@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import girlchat from './images/women1.jpg';
-// import girlchat from './images/girl.png';
 import Image from 'next/image';
 import Header3 from '../header/Header3Chatbot';
 
@@ -69,7 +68,7 @@ const ChatApp = () => {
       <Header3 />
       <br />
       <br />
-      <div style={{height : '92vh'}} className="d-flex bg-light">
+      <div style={{ height: '92vh' }} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
           <div className="p-4 bg-white border-bottom d-flex align-items-center">
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
@@ -111,8 +110,9 @@ const ChatApp = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
+              disabled={sendingMessage} // Disable input if sendingMessage is true
             />
-            <button className="btn btn-primary ms-2" onClick={handleSend}>
+            <button className="btn btn-primary ms-2" onClick={handleSend} disabled={sendingMessage}>
               Send
             </button>
           </div>
