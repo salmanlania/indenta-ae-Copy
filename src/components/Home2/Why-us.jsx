@@ -3,20 +3,20 @@ import React from "react";
 import CountUp from 'react-countup';
 const About = () => {
   return (
-    <div className="about-section2 mb-150">
+    <div className="about-section2 mb-150" style={{background : '#0D1701'}}>
       <div className="about-top">
         <div className="container-fluid one pl--95">
           <div className="row">
             <div className="col-xxl-8 col-lg-7">
               <div className="about-content pr--95">
                 <div className="section-title1 two white mb-50">
-                  <span>About Us</span>
+                  <span>Why Us</span>
                   <h2>
-                    Know who we are and why we are trusted by individuals and businesses across UAE. Click here to know our story, values, and commitment to excellence. <Link legacyBehavior href="/about" style={{ color: 'white !important' }}>...</Link>
+                    Why choose Indenta Solutions? Click here to discover our approach, service, and track record of excellence.<Link legacyBehavior href="/about" style={{ color: 'white !important' }}>...</Link>
                     {/* We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients */}
                   </h2>
                 </div>
-                <Link legacyBehavior href="/about">
+                <Link legacyBehavior href="/why-us">
                   <a className="primary-btn1 btn-hover">
                     Read More
                     <svg
@@ -72,12 +72,12 @@ const About = () => {
                 </div> */}
               </div>
             </div>
-            <div className="col-xxl-4 col-lg-5">
+            {/* <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
                 <img src="assets/img/home2/pic1.png" alt="" />
-                {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
+                <img src="assets/img/home1/construction-silhouette.jpg" alt="" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

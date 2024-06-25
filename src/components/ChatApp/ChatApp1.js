@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import girlchat from './images/women1.jpg';
+import girlchat from './images/ayesha.svg';
 import Image from 'next/image';
 import Header3 from '../header/Header3Chatbot';
 
 const ChatApp = () => {
-  const [messages, setMessages] = useState([]);
+  // const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
   const [inputValue, setInputValue] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
   const messagesEndRef = useRef(null);
@@ -28,7 +29,7 @@ const ChatApp = () => {
       try {
         const response = await axios.post('/api/proxy', {
           method: 'POST',
-          body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
+          body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
         });
 
         const botMessage = response.data.response;

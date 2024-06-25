@@ -50,13 +50,13 @@ const Testimonial = () => {
                         />
                       </div>
                       <div className="testimonal-content">
-                        <span>Testomonials!</span>
+                        <span>Process!</span>
                         <p style={{ fontSize: '20px' }}>
-                          Why do clients in UAE trust us with their financial success? Click here to read a firsthand testimonial!
+                          Discover how we transform financial problems and struggles into clear pathways to success. Click here to see our outstanding Process.
                         </p>
                         <div className="author-area">
                           <div className="content">
-                            <Link legacyBehavior href="/testimonial">
+                            <Link legacyBehavior href="/process">
                               <a className="primary-btn1 btn-hover">
                                 Read More
                                 <svg

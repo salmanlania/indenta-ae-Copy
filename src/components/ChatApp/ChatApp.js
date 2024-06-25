@@ -8,8 +8,8 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import Image from 'next/image';
 
-import user from './images/user.svg';
-import bot from './images/bot.svg';
+import user from './images/bilal.svg';
+import bot from './images/ayesha.svg';
 
 const BotIcon = () => <Image src={bot} alt="Bot" style={{ width: '30px', height: '27px', marginRight: '5px' }} />;
 const UserIcon = () => <Image src={user} alt="User" style={{ width: '30px', height: '27px', marginLeft: '5px' }} />;
@@ -96,7 +96,8 @@ const ChatApp = () => {
             try {
                 const response = await axios.post('/api/proxy', {
                     method: 'POST',
-                    body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: userMessage } },
+                    // body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: userMessage } },
+                    body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: userMessage } },
                 });
 
                 const { data } = response;
@@ -167,8 +168,9 @@ const ChatApp = () => {
                 onClick={handleDrawerOpen}
                 sx={{
                     borderRadius: '1rem',
-                    background: '#FFB400',
-                    color: 'black',
+                    // background: '#FFB400',
+                    background: '#2e448d;',
+                    color: 'white',
                     '&:hover': { background: '#FFB400' },
                     gap: '0.4rem',
                     minWidth: '100px',
@@ -186,7 +188,7 @@ const ChatApp = () => {
                     },
                 }}
             >
-                <Typography variant='body1' sx={{ fontSize: '0.9rem' }}>Chat</Typography>
+                <Typography variant='body1' sx={{ fontSize: '0.9rem', color : 'white' }}>Chat</Typography>
                 <SmartToyOutlinedIcon
                     sx={{
                         fontSize: '1.5rem',

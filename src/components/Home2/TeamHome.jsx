@@ -38,7 +38,7 @@ const CoverSection = () => {
         <div className="row g-4 mt-130">
           <div className="col-lg-3 d-flex justify-content-lg-center">
             <div className="sub-title">
-              <span>Services</span>
+              <span>Team</span>
             </div>
           </div>
           <div className="col-lg-9">
@@ -46,7 +46,7 @@ const CoverSection = () => {
               <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
                 <div className="section-title1 w-890">
                   <h2>
-                    How can we elevate your financial future? Click here to enter into a world of tailored solutions and expert consultancy!
+                    Meet the driving force behind our financial expertise. Click here to uncover the brilliance and diverse skills that power our innovative solutions
                   </h2>
                 </div>
               </div>
@@ -313,7 +313,7 @@ const CoverSection = () => {
             </div>
           </div>
         </div>
-        <div class="author-area" style={{display : 'flex' , justifyContent : 'flex-end' , marginRight : '5rem'}}>
+        <div class="author-area" style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5rem' }}>
           <div class="content">
             <a class="primary-btn1 btn-hover" href="/services">Read More<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"></path></svg></a></div></div>
       </div>
