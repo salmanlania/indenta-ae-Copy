@@ -204,22 +204,22 @@ const Footer2 = () => {
               </div>
               <ul className="social-area">
                 <li>
-                  <a href="https://www.facebook.com/">
+                  <a href="https://www.facebook.com/" target="_blank">
                     <i className="bx bxl-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/">
+                  <a href="https://twitter.com/" target="_blank">
                     <i className="bx bxl-twitter" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/">
+                  <a href="https://www.linkedin.com/" target="_blank">
                     <i className="bx bxl-linkedin" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/">
+                  <a href="https://www.instagram.com/" target="_blank">
                     <i className="bx bxl-instagram-alt" />
                   </a>
                 </li>

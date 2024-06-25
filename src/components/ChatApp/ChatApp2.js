@@ -6,12 +6,13 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import SendIcon from '@mui/icons-material/Send';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import Image from 'next/image';
 
 import user from './images/user.svg';
 import bot from './images/bot.svg';
 
-const BotIcon = () => <img src={bot} alt="Bot" style={{ width: '30px', height: '27px', marginRight: '5px' }} />;
-const UserIcon = () => <img src={user} alt="User" style={{ width: '30px', height: '27px', marginLeft: '5px' }} />;
+const BotIcon = () => <Image src={bot} alt="Bot" style={{ width: '30px', height: '27px', marginRight: '5px' }} />;
+const UserIcon = () => <Image src={user} alt="User" style={{ width: '30px', height: '27px', marginLeft: '5px' }} />;
 
 const ChatApp = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,121 +20,77 @@ const ChatApp = () => {
     const [inputMessage, setInputMessage] = useState('');
     const [token, setToken] = useState('');
     const [isBotTyping, setIsBotTyping] = useState(false);
+    const [userName, setUserName] = useState(''); // State to hold user's name
     const messagesEndRef = useRef(null);
 
-
     useEffect(() => {
-        setMessages([{ sender: 'ChatBot', message: 'Hello! I am a UAE Tax Consultant. How can I assist you?' }]);
-        const storedToken = sessionStorage.getItem('token'); // Retrieve token from sessionStorage
-        if (storedToken) {
-            setToken(storedToken);
-        }
-    }, []);
-
-    const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ ListItembehavior: 'smooth', block: 'end' });
-    };
+        setMessages([{ sender: 'ChatBot', message: `Hello ${userName}! I am Credit Card Service provider. How can I assist you?` }]);
+    }, [userName]);
 
     useEffect(() => {
         scrollToBottom();
     }, [messages]);
 
-    const handleDrawerOpen = () => {
-        setIsOpen(true);
+    const scrollToBottom = () => {
+        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const handleDrawerOpen = async () => {
+        const formValues = await openSwalPopup();
+        if (formValues) {
+            setUserName(formValues.name); // Set user's name when form is submitted
+            setIsOpen(true);
+        }
+    };
+
+    const openSwalPopup = async () => {
+        let formValues = null;
+
+        while (!formValues) {
+            const { value: userInput, dismiss } = await Swal.fire({
+                title: 'Enter Your Details',
+                html:
+                    '<input id="swal-input-name" class="swal2-input" placeholder="Name">' +
+                    '<input id="swal-input-email" class="swal2-input" placeholder="Email">' +
+                    '<input id="swal-input-phone" class="swal2-input" placeholder="Phone">',
+                focusConfirm: false,
+                showCloseButton: true, // Show close button (X)
+                preConfirm: () => {
+                    const name = document.getElementById('swal-input-name')?.value || '';
+                    const email = document.getElementById('swal-input-email')?.value || '';
+                    const phone = document.getElementById('swal-input-phone')?.value || '';
+
+                    // Check if any field is empty
+                    if (!name || !email || !phone) {
+                        Swal.showValidationMessage('Please fill out all fields');
+                        return false; // Prevent closing
+                    }
+
+                    return {
+                        name,
+                        email,
+                        phone,
+                    };
+                },
+            });
+
+            // Check if user dismissed the modal
+            if (dismiss === Swal.DismissReason.cancel || dismiss === Swal.DismissReason.backdrop) {
+                return null; // User canceled the input
+            }
+
+            // Validate formValues
+            if (userInput && userInput.name && userInput.email && userInput.phone) {
+                formValues = userInput;
+            }
+        }
+
+        return formValues;
     };
 
     const handleDrawerClose = () => {
         setIsOpen(false);
     };
-
-    // const handleSendMessage = async (e) => {
-    //     e.preventDefault();
-
-    //     const userMessage = inputMessage.trim();
-
-    //     if (userMessage !== '') {
-
-    //         // Append the user message immediately to the chat
-    //         appendMessage('You', userMessage);
-    //         setInputMessage(''); // Clear the input field
-
-    //         try {
-    //             const response = await axios.post(
-    //                 'http://127.0.0.1:8000/chatbot/chat/',
-    //                 { message: userMessage },
-    //                 {
-    //                     headers: {
-    //                         'Content-Type': 'application/json',
-    //                         'Authorization': `Bearer ${token}` // Use Bearer token format
-    //                     }
-    //                 }
-    //             );
-
-    //             const { data } = response;
-    //             console.log('Response data:', data);
-    //             appendMessage('ChatBot', data.response); // Assuming `data.access` contains the response you mentioned
-    //             setInputMessage('');
-    //         } catch (error) {
-    //             console.error("Error:", error);
-    //             Swal.fire('Error', 'Failed to send message. Please try again later.', 'error');
-    //         }
-    //     }
-    // };
-
-    // const handleSendMessage = async (e) => {
-    //     e.preventDefault();
-
-    //     const userMessage = inputMessage.trim();
-
-    //     if (userMessage !== '') {
-    //         // Append the user message immediately to the chat
-    //         appendMessage('You', userMessage);
-    //         setInputMessage(''); // Clear the input field
-
-    //         // Retrieve token from localStorage
-    //         const token = localStorage.getItem('authToken');
-
-    //         if (!token) {
-    //             Swal.fire('Error', 'You are not authorized. Please log in.', 'error');
-    //             return;
-    //         }
-
-    //         try {
-    //             console.log('Token:', token); // Log the token for debugging
-
-    //             const response = await axios.post(
-    //                 'http://127.0.0.1:8000/chatbot/chat/',
-    //                 { message: userMessage },
-    //                 {
-    //                     headers: {
-    //                         'Content-Type': 'application/json',
-    //                         'Authorization': `Bearer ${token}` // Use Bearer token format
-    //                     }
-    //                 }
-    //             );
-
-    //             const { data } = response;
-    //             console.log('Response data:', data);
-    //             appendMessage('ChatBot', data.response); // Assuming `data.response` contains the response you mentioned
-    //             setInputMessage('');
-    //         } catch (error) {
-    //             console.error("Error:", error);
-    //             if (error.response) {
-    //                 // The request was made and the server responded with a status code that falls out of the range of 2xx
-    //                 console.error("Response data:", error.response.data);
-    //                 console.error("Response status:", error.response.status);
-    //                 console.error("Response headers:", error.response.headers);
-    //             } else if (error.request) {
-    //                 // The request was made but no response was received
-    //                 console.error("Request data:", error.request);
-    //             } else {
-    //                 // Something happened in setting up the request that triggered an Error
-    //                 console.error("Error message:", error.message);
-    //             }
-    //             Swal.fire('Error', 'Failed to send message. Please try again later.', 'error');
-    //         }
-    //     }
-    // };
 
     const handleSendMessage = async (e) => {
         e.preventDefault();
@@ -141,124 +98,36 @@ const ChatApp = () => {
         const userMessage = inputMessage.trim();
 
         if (userMessage !== '') {
-            // Append the user message immediately to the chat
             appendMessage('You', userMessage);
-            setInputMessage(''); // Clear the input field
-
-            // Retrieve token from localStorage
-            const token = localStorage.getItem('token');
-
-            if (!token) {
-                Swal.fire('Error', 'You are not authorized. Please log in.', 'error');
-                return;
-            }
-
+            setInputMessage('');
             setIsBotTyping(true);
 
             try {
-                // console.log('Token:', token); // Log the token for debugging
-
-                const response = await axios.post(
-                    'http://127.0.0.1:8000/chatbot/chat/',
-                    { message: userMessage },
-                    {
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': `Bearer ${token}` // Use Bearer token format
-                        }
-                    }
-                );
+                const response = await axios.post('/api/proxy', {
+                    method: 'POST',
+                    body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: userMessage } },
+                });
 
                 const { data } = response;
-                // console.log('Response data:', data);
                 const formattedResponse = formatResponse(data.response);
                 appendMessage('ChatBot', formattedResponse);
                 setIsBotTyping(false);
-                // appendMessage('ChatBot', data.response); // Assuming `data.response` contains the response you mentioned
                 setInputMessage('');
             } catch (error) {
                 console.error("Error:", error);
                 if (error.response) {
-                    // The request was made and the server responded with a status code that falls out of the range of 2xx
                     console.error("Response data:", error.response.data);
                     console.error("Response status:", error.response.status);
                     console.error("Response headers:", error.response.headers);
                 } else if (error.request) {
-                    // The request was made but no response was received
                     console.error("Request data:", error.request);
                 } else {
-                    // Something happened in setting up the request that triggered an Error
                     console.error("Error message:", error.message);
                 }
                 Swal.fire('Error', 'Failed to send message. Please try again later.', 'error');
             }
         }
     };
-
-    // const handleSendMessage = async (e) => {
-    //     e.preventDefault();
-
-    //     const userMessage = inputMessage.trim();
-
-    //     if (userMessage !== '') {
-    //         appendMessage('You', userMessage);
-    //         setInputMessage('');
-
-    //         try {
-    //             console.log('Sending message:', userMessage); // Debugging: log the message being sent
-    //             const response = await fetch('http://127.0.0.1:8000/chatbot/chat/', {
-
-    //             });
-
-    //             if (!response.ok) {
-    //                 throw new Error(`HTTP error! Status: ${response.status}`);
-    //             }
-
-    //             const data = await response.json();
-    //             console.log('Response data:', data); // Debugging: log the response data
-    //             appendMessage('ChatBot', data.response);
-    //         } catch (error) {
-    //             console.error("Error:", error);
-    //             appendMessage('ChatBot', 'Something went wrong. Please try again later.');
-    //         }
-    //     }
-    // };
-
-    // const handleSendMessage = async (e) => {
-    //     e.preventDefault();
-
-    //     const userMessage = inputMessage.trim();
-
-    //     if (userMessage !== '') {
-    //         try {
-    //             const response = await axios.post('http://127.0.0.1:8000/chatbot/chat/', {
-    //                 message: userMessage
-    //             }, {
-    //                 headers: {
-    //                     'Content-Type': 'application/json',
-    //                     'Authorization': `JWT ${token}`
-    //                 }
-    //             });
-
-    //             const { data } = response;
-    //             console.log('Response data:', data);
-    //             appendMessage('ChatBot', data.access); // Assuming `data.access` contains the response you mentioned
-    //             setInputMessage('');
-    //         } catch (error) {
-    //             console.error("Error:", error);
-    //             Swal.fire('Error', 'Failed to send message. Please try again later.', 'error');
-    //         }
-    //     }
-    // };
-
-    // const formatResponse = (response) => {
-    //     return response.split('\n').map((line, index) => {
-    //         if (line.startsWith('- ')) {
-    //             return <div><span key={index}>{line}<br /></span></div>;
-    //         }
-    //         return line;
-    //     });
-    // };
 
     const formatResponse = (response) => {
         return (
@@ -279,15 +148,17 @@ const ChatApp = () => {
 
     const handleCloseChat = () => {
         handleDrawerClose();
-        
     };
 
-    // const handleClearChat = () => {
-    //     setMessages([]);
-    // };
-
     return (
-        <div>
+        <div
+            style={{
+                position: 'fixed',
+                bottom: '26px',
+                right: '19px',
+                zIndex: 1,
+            }}
+        >
             <Button
                 variant="contained"
                 color="primary"
@@ -379,6 +250,7 @@ const ChatApp = () => {
                                 </div>
                             </ListItem>
                         ))}
+
                         {isBotTyping && (
                             <ListItem style={{ justifyContent: 'flex-start', gap: '15px' }}>
                                 <div
@@ -429,13 +301,6 @@ const ChatApp = () => {
                         >
                             <SendIcon />
                         </Button>
-                        {/* <Button
-                            variant="outlined"
-                            color="secondary"
-                            onClick={handleClearChat}
-                        >
-                            <DeleteForeverIcon />
-                        </Button> */}
                     </form>
                 </div>
             </Drawer>

@@ -1,125 +1,315 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Drawer, List, ListItem, TextField, Button, Typography } from '@mui/material';
+import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
+import CloseIcon from '@mui/icons-material/Close';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import SendIcon from '@mui/icons-material/Send';
 import axios from 'axios';
-import girlchat from './images/women1.jpg';
+import Swal from 'sweetalert2';
 import Image from 'next/image';
-import Header3 from '../header/Header3Chatbot';
+
+import user from './images/user.svg';
+import bot from './images/bot.svg';
+
+const BotIcon = () => <Image src={bot} alt="Bot" style={{ width: '30px', height: '27px', marginRight: '5px' }} />;
+const UserIcon = () => <Image src={user} alt="User" style={{ width: '30px', height: '27px', marginLeft: '5px' }} />;
 
 const ChatApp = () => {
-  const [messages, setMessages] = useState([]);
-  const [inputValue, setInputValue] = useState('');
-  const [sendingMessage, setSendingMessage] = useState(false);
-  const messagesEndRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const [messages, setMessages] = useState([]);
+    const [inputMessage, setInputMessage] = useState('');
+    const [token, setToken] = useState('');
+    const [isBotTyping, setIsBotTyping] = useState(false);
+    const messagesEndRef = useRef(null);
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+    useEffect(() => {
+        setMessages([{ sender: 'ChatBot', message: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
+    }, []);
 
-  const handleSend = async () => {
-    if (inputValue.trim()) {
-      const newMessages = [...messages, { sender: 'user', text: inputValue }];
-      setMessages(newMessages);
-      setInputValue('');
-      setSendingMessage(true);
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages]);
 
-      try {
-        const response = await axios.post('/api/proxy', {
-          method: 'POST',
-          body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
-        });
+    const scrollToBottom = () => {
+        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
-        const botMessage = response.data.response;
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
-      } catch (error) {
-        console.error('Error sending message:', error);
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Error receiving message' }]);
-      } finally {
-        setSendingMessage(false);
-      }
-    }
-  };
+    useEffect(() => {
+        scrollToBottom();
+    }, [messages]);
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      handleSend();
-    }
-  };
+    const handleDrawerOpen = () => {
+        setIsOpen(true);
+    };
 
-  const generateDancingDots = () => {
-    const dots = ['.', '..', '...'];
-    return dots[Math.floor(Math.random() * dots.length)];
-  };
+    const handleDrawerClose = () => {
+        setIsOpen(false);
+    };
 
-  const handleDoubleClick = (text) => {
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        alert('Text copied to clipboard');
-      })
-      .catch((error) => {
-        console.error('Error copying text:', error);
-      });
-  };
+    // const handleSendMessage = async (e) => {
+    //     e.preventDefault();
 
-  return (
-    <>
-      {/* <Header3 />
-      <br />
-      <br /> */}
-      <div style={{ height: '92vh' }} className="d-flex bg-light">
-        <div className="d-flex flex-column flex-grow-1">
-          <div className="p-4 bg-white border-bottom d-flex align-items-center">
-            <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
-            <div className="ms-3">
-              <div className="fw-semibold">Ayesha</div>
-              <div className="text-muted small">Active now</div>
+    //     const userMessage = inputMessage.trim();
+
+    //     if (userMessage !== '') {
+    //         appendMessage('You', userMessage);
+    //         setInputMessage('');
+    //         setIsBotTyping(true);
+
+    //         try {
+    //             const response = await axios.post('/api/proxy', {
+    //                 method: 'POST',
+    //                 body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: userMessage } },
+    //             });
+
+    //             const { data } = response;
+    //             const formattedResponse = formatResponse(data.response);
+    //             appendMessage('ChatBot', formattedResponse);
+    //             setIsBotTyping(false);
+    //             setInputMessage('');
+    //         } catch (error) {
+    //             console.error("Error:", error);
+    //             if (error.response) {
+    //                 console.error("Response data:", error.response.data);
+    //                 console.error("Response status:", error.response.status);
+    //                 console.error("Response headers:", error.response.headers);
+    //             } else if (error.request) {
+    //                 console.error("Request data:", error.request);
+    //             } else {
+    //                 console.error("Error message:", error.message);
+    //             }
+    //             Swal.fire('Error', 'Failed to send message. Please try again later.', 'error');
+    //         }
+    //     }
+    // };
+    const handleSendMessage = async (e) => {
+        e.preventDefault();
+
+        const userMessage = inputMessage.trim();
+
+        if (userMessage !== '') {
+            appendMessage('You', userMessage);
+            setInputMessage('');
+            setIsBotTyping(true);
+
+            try {
+                const response = await axios.post('/api/proxy', {
+                    method: 'POST',
+                    body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: userMessage } },
+                });
+
+                const { data } = response;
+                const formattedResponse = formatResponse(data.response);
+                appendMessage('ChatBot', formattedResponse);
+                setIsBotTyping(false);
+                setInputMessage('');
+            } catch (error) {
+                console.error("Error:", error);
+                if (error.response) {
+                    console.error("Response data:", error.response.data);
+                    console.error("Response status:", error.response.status);
+                    console.error("Response headers:", error.response.headers);
+                    const errorMessage = error.response.data.error || 'Failed to send message. Please try again later.';
+                    appendMessage('ChatBot', errorMessage);
+                } else if (error.request) {
+                    console.error("Request data:", error.request);
+                    appendMessage('ChatBot', 'Something went wrong try again later.');
+                } else {
+                    console.error("Error message:", error.message);
+                    appendMessage('ChatBot', 'Something went wrong try again later.');
+                }
+                setIsBotTyping(false);
+                setInputMessage('');
+            }
+        }
+    };
+
+    const formatResponse = (response) => {
+        return (
+            <div>
+                {response.split('\n').map((line, index) => {
+                    if (line.startsWith('- ')) {
+                        return <span key={index}>{line}<br /></span>;
+                    }
+                    return <div key={index}>{line}<br /></div>;
+                })}
             </div>
-          </div>
-          <div className="flex-grow-1 p-4 overflow-auto">
-            {messages.map((message, index) => (
-              <div
-                key={index}
-                className={`d-flex ${message.sender === 'user' ? 'justify-content-end' : ''} mb-3`}
-                style={{
-                  marginLeft: message.sender === 'user' ? 'auto' : '0',
-                  width: '50%',
+        );
+    };
+
+    const appendMessage = (sender, message) => {
+        setMessages((prevMessages) => [...prevMessages, { sender, message }]);
+    };
+
+    const handleCloseChat = () => {
+        handleDrawerClose();
+    };
+
+    const handleBotMessageDoubleClick = (messageText) => {
+        navigator.clipboard.writeText(messageText); // Copy message text to clipboard
+        alert('Message copied to clipboard')
+    };
+    
+
+    return (
+        <div
+            style={{
+                position: 'fixed',
+                bottom: '46px',
+                right: '19px',
+                zIndex: 1,
+            }}
+        >
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={handleDrawerOpen}
+                sx={{
+                    borderRadius: '1rem',
+                    background: '#FFB400',
+                    color: 'black',
+                    '&:hover': { background: '#FFB400' },
+                    gap: '0.4rem',
+                    minWidth: '100px',
+                    height: '3rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    position: 'relative',
+                    bottom: '1.5rem',
+                    marginLeft: 'auto',
+                    marginRight: '3.5rem',
+                    justifyContent: 'flex-end',
+                    flexDirection: 'row-reverse',
+                    '@media (min-width:600px)': {
+                        flexDirection: 'row',
+                    },
                 }}
-              >
-                <div
-                  className={`p-2 rounded ${message.sender === 'user' ? 'bg-primary text-white' : 'bg-light border'} `}
-                  onDoubleClick={() => message.sender === 'bot' && handleDoubleClick(message.text)}
-                >
-                  {message.text}
+            >
+                <Typography variant='body1' sx={{ fontSize: '0.9rem' }}>Chat</Typography>
+                <SmartToyOutlinedIcon
+                    sx={{
+                        fontSize: '1.5rem',
+                        borderRadius: '50%',
+                        cursor: 'pointer',
+                        margin: 'auto',
+                    }}
+                />
+            </Button>
+            <Drawer
+                anchor="right"
+                open={isOpen}
+                onClose={handleDrawerClose}
+                sx={{
+                    '& .MuiDrawer-paper': {
+                        top: 'auto',
+                        left: 'auto',
+                        right: 0,
+                        bottom: 0,
+                        maxHeight: '130%',
+                        maxWidth: '100%',
+                        width: '28rem',
+                        borderTopLeftRadius: '20px',
+                        borderTopRightRadius: '20px',
+                        transition: 'transform 0.3s ease-in-out',
+                        transform: isOpen ? 'translateY(0)' : 'translateY(100%)',
+                    },
+                }}
+            >
+                <div style={{ padding: '8px', borderBottom: '2px black solid' }}>
+                    <Button
+                        color="secondary"
+                        style={{ background: 'red' }}
+                        onClick={handleCloseChat}
+                    >
+                        <CloseIcon style={{ color: 'white' }} />
+                    </Button>
                 </div>
-              </div>
-            ))}
-            <div ref={messagesEndRef} />
-            {sendingMessage && (
-              <div className="text-muted text-center mt-2" style={{ marginRight: 'auto' }}>
-                loading{generateDancingDots()}
-              </div>
-            )}
-          </div>
-          <div className="p-4 bg-white border-top d-flex align-items-center">
-            <input
-              type="text"
-              placeholder="Type a message..."
-              className="form-control flex-grow-1"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              onKeyPress={handleKeyPress}
-              disabled={sendingMessage} // Disable input if sendingMessage is true
-            />
-            <button className="btn btn-primary ms-2" onClick={handleSend} disabled={sendingMessage}>
-              Send
-            </button>
-          </div>
+                <div style={{ overflowY: 'auto', maxHeight: '100%' }}>
+                    <List>
+                        {messages.map((message, index) => (
+                            <ListItem key={index} style={{ justifyContent: message.sender === 'ChatBot' ? 'flex-start' : 'flex-end', gap: '15px' }}>
+                                <div
+                                    style={{
+                                        background: message.sender === 'You' ? '#F4CB69' : '#F5F5F5',
+                                        color: message.sender === 'You' ? 'black' : 'black',
+                                        borderRadius: '8px',
+                                        cursor: 'pointer',
+                                        fontWeight: '400',
+                                        padding: '8px',
+                                        maxWidth: '80%',
+                                        wordWrap: 'break-word',
+                                        alignSelf: message.sender === 'ChatBot' ? 'flex-start' : 'flex-end',
+                                        display: 'flex',
+                                        alignItems: 'flex-start',
+                                        gap: '1rem',
+                                        fontSize: '14px',
+                                        flexWrap: 'nowrap',
+                                    }}
+                                    onDoubleClick={() => handleBotMessageDoubleClick(message.message)}
+                                >
+                                    {message.sender === 'ChatBot' && <BotIcon />}
+                                    {message.message}
+                                    {message.sender === 'You' && <UserIcon />}
+                                </div>
+                            </ListItem>
+                        ))}
+
+                        {isBotTyping && (
+                            <ListItem style={{ justifyContent: 'flex-start', gap: '15px' }}>
+                                <div
+                                    style={{
+                                        background: '#F5F5F5',
+                                        color: 'black',
+                                        borderRadius: '8px',
+                                        fontWeight: '400',
+                                        padding: '8px',
+                                        maxWidth: '80%',
+                                        wordWrap: 'break-word',
+                                        alignSelf: 'flex-start',
+                                        display: 'flex',
+                                        alignItems: 'flex-start',
+                                        gap: '5px',
+                                        fontSize: '14px',
+                                        flexWrap: 'nowrap',
+                                    }}
+                                >
+                                    <BotIcon />
+                                    <span className="dot-animation">
+                                        <span className="dot"></span>
+                                        <span className="dot"></span>
+                                        <span className="dot"></span>
+                                    </span>
+                                </div>
+                            </ListItem>
+                        )}
+                        <div ref={messagesEndRef} />
+                    </List>
+                </div>
+                <div style={{ padding: '16px', marginTop: 'auto', display: 'flex', flexDirection: 'column-reverse' }}>
+                    <form onSubmit={handleSendMessage} style={{ display: 'flex', gap: '8px' }}>
+                        <TextField
+                            label="Type a message"
+                            variant="outlined"
+                            fullWidth
+                            value={inputMessage}
+                            onChange={(e) => {
+                                setInputMessage(e.target.value)
+                            }}
+                        />
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            color="primary"
+                            disabled={!inputMessage.trim()}
+                        >
+                            <SendIcon />
+                        </Button>
+                    </form>
+                </div>
+            </Drawer>
         </div>
-      </div>
-    </>
-  );
+    );
 };
 
 export default ChatApp;
