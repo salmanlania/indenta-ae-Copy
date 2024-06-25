@@ -23,7 +23,6 @@ import Commitment from "../components/Home2/Commitment1";
 import Testimonial from "../components/Home2/Testimonial1";
 import Process from "../components/Home2/Process1";
 import OurServices from "../components/Home2/OurServicesHome";
-// import TeamHome from "../components/Home2/TeamHome";
 import EventAndConfarance from "../components/Home2/EventAndConfarance-main";
 import ProjectSection from "../components/Home2/ProjectSection";
 import WhyChooseSection from "../components/Home2/WhyChooseSection1";
@@ -66,7 +65,7 @@ export default function Home() {
       {/* <ClientSection/> */}
       {/* <Blog/> */}
       <Process/>
-      {/* <TeamHome/> */}
+      <OurServices/>
       <Testimonial/>
       <Commitment/>
       {/* <Contact/> */}
