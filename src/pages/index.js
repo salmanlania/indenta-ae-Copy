@@ -18,12 +18,9 @@ import Header2 from "../components/header/Header3";
 import Banner from "../components/Home2/Banner";
 import SolutionSection from "../components/Home2/SolutionSectionHome";
 import Aboutus from "../components/Home2/Aboutus";
-import WhyUs from "../components/Home2/Why-us";
 import Commitment from "../components/Home2/Commitment1";
 import Testimonial from "../components/Home2/Testimonial1";
-import Process from "../components/Home2/Process1";
 import OurServices from "../components/Home2/OurServicesHome";
-import TeamHome from "../components/Home2/TeamHome";
 import EventAndConfarance from "../components/Home2/EventAndConfarance-main";
 import ProjectSection from "../components/Home2/ProjectSection";
 import WhyChooseSection from "../components/Home2/WhyChooseSection1";
@@ -57,16 +54,13 @@ export default function Home() {
       <Aboutus/>
       {/* <SolutionSection/> */}
       <OurServices/>
-      {/* <EventAndConfarance/> */}
-      <VideoArea/>
-      <WhyUs/>
+      <EventAndConfarance/>
       {/* <ProjectSection/> */}
       {/* <WhyChooseSection/> */}
+      <VideoArea/>
       {/* <Usps/> */}
       {/* <ClientSection/> */}
       {/* <Blog/> */}
-      <Process/>
-      <TeamHome/>
       <Testimonial/>
       <Commitment/>
       {/* <Contact/> */}
