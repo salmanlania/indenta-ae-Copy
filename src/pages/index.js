@@ -65,7 +65,7 @@ export default function Home() {
       {/* <ClientSection/> */}
       {/* <Blog/> */}
       <Process/>
-      <TeamHome/>
+      {/* <TeamHome/> */}
       <Testimonial/>
       <Commitment/>
       {/* <Contact/> */}
