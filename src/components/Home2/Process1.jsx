@@ -217,4 +217,4 @@ const Process1 = () => {
   );
 };
 
-export default Testimonial;
+export default Process1;
