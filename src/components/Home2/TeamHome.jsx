@@ -89,7 +89,7 @@ const CoverSection = () => {
                       </svg>
                     </div>
                     <h5>
-                      <Link legacyBehavior href="/services">
+                      <Link legacyBehavior href="/team">
                         <a>
                           Credit Card
                         </a>
