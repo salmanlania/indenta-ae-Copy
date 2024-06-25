@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 
-const CoverSection = () => {
+const TeamHome = () => {
   const followImageCursor = (event, serviceImgItem) => {
     const contentBox = serviceImgItem.getBoundingClientRect();
     const dx = event.clientX - contentBox.x;
@@ -321,4 +321,4 @@ const CoverSection = () => {
   );
 };
 
-export default CoverSection;
+export default TeamHome;
