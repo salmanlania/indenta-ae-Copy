@@ -4,7 +4,7 @@ import SwiperCore, { Autoplay, EffectFade, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
-const Testimonial = () => {
+const Process1 = () => {
   const slideSetting = useMemo(() => {
     return {
       slidesPerView: 1,
