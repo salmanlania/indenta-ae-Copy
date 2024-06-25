@@ -242,7 +242,6 @@ const ChatApp = () => {
                                         alignSelf: message.sender === 'ChatBot' ? 'flex-start' : 'flex-end',
                                         display: 'flex',
                                         alignItems: 'flex-start',
-                                        gap: '1rem',
                                         fontSize: '14px',
                                         flexWrap: 'nowrap',
                                     }}
