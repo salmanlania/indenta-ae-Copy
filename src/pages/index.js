@@ -68,7 +68,7 @@ export default function Home() {
       <Process/>
       <TeamHome/>
       <Testimonial/>
-      <Commitment/>
+      {/* <Commitment/> */}
       {/* <Contact/> */}
       <Footer2/>
     </>
