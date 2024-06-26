@@ -36,11 +36,11 @@ const TeamHome = () => {
       />
       <div className="container-fluid one">
         <div className="row g-4 mt-30">
-          <div className="col-lg-3 d-flex justify-content-lg-center" style={{display : 'none !important'}}>
+          {/* <div className="col-lg-3 d-flex justify-content-lg-center" style={{display : 'none !important'}}>
             <div className="sub-title">
               <span>Team</span>
             </div>
-          </div>
+          </div> */}
           <div className="col-lg-9" style={{marginLeft : 'auto' , marginRight : 'auto'}}>
             <div className="row">
               <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
