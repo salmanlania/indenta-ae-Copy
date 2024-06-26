@@ -20,7 +20,7 @@ const SolutionSection = () => {
                     value. */}
                   </h2>
                 </div>
-                <Link legacyBehavior href="/services">
+                {/* <Link legacyBehavior href="/services">
                   <a className="explore-btn">
                     Explore Area
                     <svg
@@ -36,7 +36,7 @@ const SolutionSection = () => {
                       />
                     </svg>
                   </a>
-                </Link>
+                </Link> */}
               </div>
               <div className="col-lg-12 d-flex align-items-center position-relative">
                 <div className="row g-4 justify-content-start">

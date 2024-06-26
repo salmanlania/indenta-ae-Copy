@@ -31,8 +31,8 @@
     },
     {
         "id": "6",
-        "label": "Team",
-        "link": "/team",
+        "label": "Our Team",
+        "link": "/ourteam",
         "icon": true
     },
     {

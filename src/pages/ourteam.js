@@ -28,8 +28,8 @@ const OurPeople1Page = () => {
             <div className="col-lg-5 position-relative">
               <div className="people-left-content pr--95">
                 <div className="section-title1 two mb-0">
-                  <span>Our People</span>
-                  <h2>Our People Who Helped to Complete This</h2>
+                  <span>Our Team</span>
+                  <h2>Our Team Who Helped to Complete This</h2>
                   {/* <Link legacyBehavior href="/career">
                     <a className="primary-btn1 btn-hover">
                       Join Our Team

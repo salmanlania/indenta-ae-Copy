@@ -103,8 +103,8 @@ const Footer2 = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link legacyBehavior href="/team">
-                            <a>Team</a>
+                          <Link legacyBehavior href="/ourteam">
+                            <a>Our Team</a>
                           </Link>
                         </li>
                         <li>

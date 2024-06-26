@@ -72,12 +72,12 @@ const About = () => {
                 </div> */}
               </div>
             </div>
-            {/* <div className="col-xxl-4 col-lg-5">
+            <div className="col-xxl-4 col-lg-5">
               <div className="about-img ">
-                <img src="assets/img/home2/pic1.png" alt="" />
-                <img src="assets/img/home1/construction-silhouette.jpg" alt="" />
+                <img src="assets/img/home2/commitment.png" alt="" />
+                {/* <img src="assets/img/home1/construction-silhouette.jpg" alt="" /> */}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

@@ -120,7 +120,7 @@
     ,
     {
         "id":"18",
-        "path":"/team",
+        "path":"/ourteam",
         "title":"Our Team",
         "bg_img":"/assets/img/pics/team.png"
     }

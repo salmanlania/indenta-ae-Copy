@@ -35,13 +35,13 @@ const CoverSection = () => {
         alt=""
       />
       <div className="container-fluid one">
-        <div className="row g-4 mt-130">
-          <div className="col-lg-3 d-flex justify-content-lg-center">
+        <div className="row g-4 mt-30">
+          <div className="col-lg-3 d-flex justify-content-lg-center" style={{display : 'none !important'}}>
             <div className="sub-title">
               <span>Services</span>
             </div>
           </div>
-          <div className="col-lg-9">
+          <div className="col-lg-9" style={{marginLeft : 'auto' , marginRight : 'auto'}}>
             <div className="row">
               <div className="col-lg-12 gap-lg-5 gap-4 d-flex flex-lg-nowrap flex-wrap align-items-start justify-content-between mb-60">
                 <div className="section-title1 w-890">

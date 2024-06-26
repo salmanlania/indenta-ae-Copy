@@ -14,7 +14,7 @@ const About = () => {
                 <div className="section-title1 two white mb-50">
                   {/* <span>About Us</span> */}
                   <h2>
-                    Know who we are and why we are trusted by individuals and businesses across UAE. Click here to know our story, values, and commitment to excellence. <Link legacyBehavior href="/about" style={{ color: 'white !important' }}>...</Link>
+                    Know who we are and why we are trusted by individuals and businesses across UAE. Click here to know our story, values, and commitment to excellence.
                     {/* We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients */}
                   </h2>
                 </div>
