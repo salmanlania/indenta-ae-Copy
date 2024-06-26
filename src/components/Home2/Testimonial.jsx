@@ -48,7 +48,7 @@ const Testimonial = () => {
                         />
                       </div>
                       <div className="testimonal-content">
-                        <span>Testomonials!</span>
+                        <span>Testomonials</span>
                         <p style={{fontSize : '20px'}}>
                           We can confidently say that Indenta Solutions provides
                           us with a holistic support across our various phases,
@@ -61,9 +61,10 @@ const Testimonial = () => {
                           to our brokers and clients worldwide.
                         </p>
                         <div className="author-area">
-                          <div className="content">
-                            <h6>Be Broker</h6>
+                          <div className="content" style={{display : "flex" , flexDirection : "column" , gap : "7px"}}>
                             <span>Managing Director</span>
+                            <br />
+                            <span>Brokr</span>
                           </div>
                         </div>
                       </div>
