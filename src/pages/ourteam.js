@@ -7,7 +7,7 @@ const OurPeople1Page = () => {
     <MainLayout>
       <div className="people-card-section two pt-130 mb-130 ">
         <div className="container-fluid one">
-          <div className="row mb-70">
+          {/* <div className="row mb-70">
             <div className="col-lg-12">
               <div className="people-card-top-area">
                 <div className="total-team-members-area">
@@ -23,26 +23,17 @@ const OurPeople1Page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row g-lg-4 gy-5">
-            <div className="col-lg-5 position-relative">
+            {/* <div className="col-lg-5 position-relative">
               <div className="people-left-content pr--95">
                 <div className="section-title1 two mb-0">
                   <span>Our Team</span>
                   <h2>Our Team Who Helped to Complete This</h2>
-                  {/* <Link legacyBehavior href="/career">
-                    <a className="primary-btn1 btn-hover">
-                      Join Our Team
-                      <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 12 12">
-                        <path fillRule="evenodd" clipRule="evenodd" d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z" />
-                      </svg>
-                      <span />
-                    </a>
-                  </Link> */}
                 </div>
               </div>
-            </div>
-            <div className="col-lg-7">
+            </div> */}
+            <div className="col-lg-7" style={{marginLeft : 'auto' , marginRight : 'auto'}}>
               <div className="row g-4">
                 <div className="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
                   <div className="people-card1">
