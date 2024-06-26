@@ -7,6 +7,7 @@ import SmoothPageScroll from "../utils/SmoothPageScroll";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import Head from "next/head";
 import { ScrollProvider } from "../components/Home2/ScrollContext";
+// import ChatApp from "../components/ChatApp/ChatApp4";
 export default function App({ Component, pageProps }) {
   useButtonHover();
   useMagneticHover();

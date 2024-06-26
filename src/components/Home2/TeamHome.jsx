@@ -101,7 +101,7 @@ const TeamHome = () => {
                     <p>
                       We offer a variety of credit card options from leading financial institutions, ensuring that our clients find the ideal card to suit their financial needs and lifestyle
                     </p>
-                    {/* <Link legacyBehavior href="/services1">
+                    {/* <Link legacyBehavior href="/ourteam1">
                       <a className="explore-btn">
                         View More
                         <svg
@@ -134,7 +134,7 @@ const TeamHome = () => {
                       </svg>
                     </div>
                     <h5>
-                      <Link legacyBehavior href="/services">
+                      <Link legacyBehavior href="/ourteam">
                         <a>
                           SME Loan
                         </a>
@@ -146,7 +146,7 @@ const TeamHome = () => {
                     <p>
                       We provide expert assistance in securing Small and Medium-sized Enterprise (SME) loans, enabling businesses to achieve their growth objectives
                     </p>
-                    {/* <Link legacyBehavior href="/services">
+                    {/* <Link legacyBehavior href="/ourteam">
                       <a className="explore-btn">
                         View More
                         <svg
@@ -176,7 +176,7 @@ const TeamHome = () => {
                       </svg>
                     </div>
                     <h5>
-                      <Link legacyBehavior href="/services">
+                      <Link legacyBehavior href="/ourteam">
                         <a>
                           Account Opening
                         </a>
@@ -188,7 +188,7 @@ const TeamHome = () => {
                     <p>
                       We streamline the account opening process for both personal and corporate accounts, making it quick and easy for our clients.
                     </p>
-                    {/* <Link legacyBehavior href="/services1">
+                    {/* <Link legacyBehavior href="/ourteam1">
                       <a className="explore-btn">
                         View More
                         <svg
@@ -222,7 +222,7 @@ const TeamHome = () => {
                       </svg>
                     </div>
                     <h5>
-                      <Link legacyBehavior href="/services">
+                      <Link legacyBehavior href="/ourteam">
                         <a>
                           Corporate Banking
                         </a>
@@ -234,7 +234,7 @@ const TeamHome = () => {
                     <p>
                       Our tailored corporate banking solutions are designed to meet the complex financial needs of businesses, enhancing their operational efficiency and growth.
                     </p>
-                    {/* <Link legacyBehavior href="/services1">
+                    {/* <Link legacyBehavior href="/ourteam1">
                       <a className="explore-btn">
                         View More
                         <svg
@@ -278,7 +278,7 @@ const TeamHome = () => {
                       </svg>
                     </div>
                     <h5>
-                      <Link legacyBehavior href="/services">
+                      <Link legacyBehavior href="/ourteam">
                         <a>
                           Mortgage Finance
                         </a>
@@ -290,7 +290,7 @@ const TeamHome = () => {
                     <p>
                       We assist clients in obtaining competitive mortgage finance solutions with flexible terms to help them purchase their ideal properties.
                     </p>
-                    <Link legacyBehavior href="/services1">
+                    <Link legacyBehavior href="/ourteam1">
                       <a className="explore-btn">
                         View More
                         <svg
@@ -315,7 +315,7 @@ const TeamHome = () => {
         </div>
         <div class="author-area" style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5.1rem' }}>
           <div class="content">
-            <a class="primary-btn1 btn-hover" href="/services">Read More<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"></path></svg></a></div></div>
+            <a class="primary-btn1 btn-hover" href="/ourteam">Read More<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"></path></svg></a></div></div>
       </div>
     </div>
   );
