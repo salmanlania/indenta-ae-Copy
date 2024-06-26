@@ -10,7 +10,7 @@ const About = () => {
             <div className="col-xxl-8 col-lg-7">
               <div className="about-content pr--95">
                 <div className="section-title1 two white mb-50">
-                  <span>Why Us</span>
+                  {/* <span>Why Us</span> */}
                   <h2>
                     Why choose Indenta Solutions? Click here to discover our approach, service, and track record of excellence.<Link legacyBehavior href="/about" style={{ color: 'white !important' }}>...</Link>
                     {/* We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients */}

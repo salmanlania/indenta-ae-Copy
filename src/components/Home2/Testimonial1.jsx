@@ -50,7 +50,7 @@ const Testimonial = () => {
                         />
                       </div>
                       <div className="testimonal-content">
-                        <span>Testomonials!</span>
+                        {/* <span>Testomonials!</span> */}
                         <p style={{ fontSize: '20px' }}>
                           Why do clients in UAE trust us with their financial success? Click here to read a firsthand testimonial!
                         </p>

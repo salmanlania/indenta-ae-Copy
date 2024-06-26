@@ -1,14 +1,14 @@
 import React from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import MainLayout from "../components/layout/MainLayout";
-import Commitment from "../components/Home2/Commitment";
+// import Commitment from "../components/Home2/Commitment";
 
 const ContactPage = () => {
   return (
     <MainLayout>
       <div className="contact-page pt-130 mb-130">
         <div className="container">
-          <Commitment />
+          {/* <Commitment /> */}
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-5">
               <div className="single-location mb-50">

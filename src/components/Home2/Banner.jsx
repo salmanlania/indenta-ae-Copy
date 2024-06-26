@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { useScroll } from './ScrollContext';
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -10,6 +11,7 @@ import SwiperCore, {
 SwiperCore.use([Pagination, Autoplay, EffectFade, Navigation]);
 
 const Banner = () => {
+  const { scrollToAboutUs } = useScroll();
   const slideSetting = useMemo(() => {
     return {
       slidesPerView: 1,
@@ -46,8 +48,8 @@ const Banner = () => {
                       <h1>
                         Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/services">
-                        <a className="primary-btn1 btn-hover">
+                      {/* <Link legacyBehavior href="" onClick={scrollToAboutUs} > */}
+                        <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
                           Explore More
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +64,7 @@ const Banner = () => {
                             ></path>
                           </svg>
                         </a>
-                      </Link>
+                      {/* </Link> */}
                     </div>
                   </div>
                   {/* <div className="col-lg-5 d-flex align-items-end">
@@ -102,8 +104,8 @@ const Banner = () => {
                       <h1>
                         Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/services">
-                        <a className="primary-btn1 btn-hover">
+                      {/* <Link legacyBehavior href="" onClick={scrollToAboutUs} > */}
+                        <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
                           Explore More
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +120,7 @@ const Banner = () => {
                             ></path>
                           </svg>
                         </a>
-                      </Link>
+                      {/* </Link> */}
                     </div>
                   </div>
                   {/* <div className="col-lg-5 d-flex align-items-end">
@@ -158,8 +160,8 @@ const Banner = () => {
                       <h1>
                         Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/services">
-                        <a className="primary-btn1 btn-hover">
+                      {/* <Link legacyBehavior href="" onClick={scrollToAboutUs} > */}
+                        <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
                           Explore More
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +176,7 @@ const Banner = () => {
                             ></path>
                           </svg>
                         </a>
-                      </Link>
+                      {/* </Link> */}
                     </div>
                   </div>
                   {/* <div className="col-lg-5 d-flex align-items-end">
@@ -214,8 +216,8 @@ const Banner = () => {
                       <h1>
                         Your Strategic Advantage
                       </h1>
-                      <Link legacyBehavior href="/services">
-                        <a className="primary-btn1 btn-hover">
+                      {/* <Link legacyBehavior href="" onClick={scrollToAboutUs} > */}
+                        <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
                           Explore More
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +232,7 @@ const Banner = () => {
                             ></path>
                           </svg>
                         </a>
-                      </Link>
+                      {/* </Link> */}
                     </div>
                   </div>
                   {/* <div className="col-lg-5 d-flex align-items-end">

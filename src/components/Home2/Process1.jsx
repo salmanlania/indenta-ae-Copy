@@ -50,7 +50,7 @@ const Process1 = () => {
                         />
                       </div>
                       <div className="testimonal-content">
-                        <span>Process!</span>
+                        {/* <span>Process!</span> */}
                         <p style={{ fontSize: '20px' }}>
                           Discover how we transform financial problems and struggles into clear pathways to success. Click here to see our outstanding Process.
                         </p>

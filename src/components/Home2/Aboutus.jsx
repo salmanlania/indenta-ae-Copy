@@ -1,16 +1,18 @@
 import Link from "next/link";
 import React from "react";
+import { useScroll } from './ScrollContext';
 import CountUp from 'react-countup';
 const About = () => {
+  const { aboutUsRef } = useScroll();
   return (
-    <div className="about-section2 mb-150">
+    <div className="about-section2 mb-150" id="about-us" ref={aboutUsRef}>
       <div className="about-top">
         <div className="container-fluid one pl--95">
           <div className="row">
             <div className="col-xxl-8 col-lg-7">
               <div className="about-content pr--95">
                 <div className="section-title1 two white mb-50">
-                  <span>About Us</span>
+                  {/* <span>About Us</span> */}
                   <h2>
                     Know who we are and why we are trusted by individuals and businesses across UAE. Click here to know our story, values, and commitment to excellence. <Link legacyBehavior href="/about" style={{ color: 'white !important' }}>...</Link>
                     {/* We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients */}

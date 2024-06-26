@@ -40,11 +40,5 @@
         "label": "Testimonial",
         "link": "/testimonial",
         "icon": true
-    },
-    {
-        "id": "8",
-        "label": "Contact Us",
-        "link": "/contact",
-        "icon": true
     }
 ]
