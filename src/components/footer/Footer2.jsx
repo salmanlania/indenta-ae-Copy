@@ -197,7 +197,7 @@ const Footer2 = () => {
             <div className="footer-btm">
               <div className="copyright-area">
                 <p>
-                  Copyright 2024 <a href="#">Indenta Solutions</a>
+                  Copyright 2024 <a href="#">Indenta Solution</a>
                   {/* | Design By{" "}
                   <a href="https://www.egenslab.com/">Egens Lab</a> */}
                 </p>
