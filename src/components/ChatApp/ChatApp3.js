@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import girlchat from './images/aisha1.png'; // Bot image
-import userImage from './images/bilal1.png'; // User image (replace with your own image path)
+import girlchat from './images/ayesha.png'; // Bot image
+import userImage from './images/bilal.png'; // User image (replace with your own image path)
 import Image from 'next/image';
 import SendIcon from '@mui/icons-material/Send';
 
@@ -12,9 +12,12 @@ const ChatApp = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    setMessages([{ sender: 'bot', text: 'Welcome to the chat! How can I assist you today?' }]);
     scrollToBottom();
   }, [messages]);
+
+  useEffect(() => {
+    setMessages([{ sender: 'bot', text: `Hello! I'm Ayesha` }]);
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -73,14 +76,24 @@ const ChatApp = () => {
       <br /> */}
       <div style={{ height: '100vh' }} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
-          <div className="p-4 bg-white border-bottom d-flex align-items-center">
+          {/* <div className="p-4 bg-white border-bottom d-flex align-items-center">
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
             <div className="ms-3">
               <div className="fw-semibold">Ayesha</div>
               <div className="text-muted small">Active now</div>
             </div>
+          </div> */}
+          <div className="p-2 bg-white border-bottom d-flex align-items-center" style={{position : 'fixed' , width : '100%'}}>
+            <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
+            <div className="ms-3">
+              <div className="fw-semibold">Ayesha</div>
+              <div className="text-muted small" style={{ display: 'inline-block' }}>
+                <span style={{ height: '15px', width: '15px', backgroundColor: 'green', borderRadius: '50%', display: 'inline-block', marginTop: '2.6px', marginRight: '2px' }}></span>
+                <span>Active Now</span>
+              </div>
+            </div>
           </div>
-          <div className="flex-grow-1 p-4 overflow-auto">
+          <div className="flex-grow-1 p-4 overflow-auto" style={{marginTop : '4rem'}}>
             {messages.map((message, index) => (
               <div
                 key={index}
