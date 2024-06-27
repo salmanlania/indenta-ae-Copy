@@ -3,6 +3,7 @@ import axios from 'axios';
 import girlchat from './images/women1.jpg';
 import Image from 'next/image';
 import Header3 from '../header/Header3Chatbot';
+import SendIcon from '@mui/icons-material/Send';
 
 const ChatApp = () => {
   const [messages, setMessages] = useState([]);
@@ -28,7 +29,8 @@ const ChatApp = () => {
       try {
         const response = await axios.post('/api/proxy', {
           method: 'POST',
-          body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
+          body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
+          // body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
         });
 
         const botMessage = response.data.response;
@@ -113,7 +115,7 @@ const ChatApp = () => {
               disabled={sendingMessage} // Disable input if sendingMessage is true
             />
             <button className="btn btn-primary ms-2" onClick={handleSend} disabled={sendingMessage}>
-              Send
+              <SendIcon />
             </button>
           </div>
         </div>
