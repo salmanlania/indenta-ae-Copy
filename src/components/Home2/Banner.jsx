@@ -49,7 +49,7 @@ const Banner = () => {
                         Your Strategic Advantage
                       </h1>
                       {/* <Link legacyBehavior href="" onClick={scrollToAboutUs} > */}
-                        <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
+                        {/* <a className="primary-btn1 btn-hover" onClick={scrollToAboutUs}>
                           Explore More
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Banner = () => {
                               d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                             ></path>
                           </svg>
-                        </a>
+                        </a> */}
                       {/* </Link> */}
                     </div>
                   </div>

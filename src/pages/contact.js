@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import MainLayout from "../components/layout/MainLayout";
 // import Commitment from "../components/Home2/Commitment";
 
 const ContactPage = () => {
+  const [message , setMessages] = useState()
+  const [email , setEmail] = useState()
+  const [firstName , setFirstName] = useState()
+  const [company , setCompany] = useState()
+  const [phnumber , setPhnumber] = useState()
   return (
     <MainLayout>
       <div className="contact-page pt-130 mb-130">
@@ -170,13 +175,18 @@ const ContactPage = () => {
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Name*</label>
-                        <input type="text" placeholder="Daniel Scoot" />
+                        <input type="text" placeholder="Daniel Scoot"
+                          value={firstName}
+                          onChange={(e) => e.target.value}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Work Email*</label>
                         <input
+                          value={email}
+                          onChange={(e) => e.target.value}
                           type="email"
                           placeholder="infoexample@gmail.com"
                         />
@@ -185,19 +195,27 @@ const ContactPage = () => {
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Company Name*</label>
-                        <input type="text" placeholder="Consult Pro" />
+                        <input type="text" placeholder="Consult Pro"
+                          value={company}
+                          onChange={(e) => e.target.value}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-30">
                       <div className="form-inner">
                         <label>Phone Number*</label>
-                        <input type="number" placeholder="123 456 7890" />
+                        <input type="number" placeholder="123 456 7890"
+                          value={phnumber}
+                          onChange={(e) => e.target.value}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-15">
                       <div className="form-inner">
                         <label>Write Your Message*</label>
                         <textarea
+                          value={message}
+                          onChange={(e) => e.target.value}
                           placeholder="What’s on your mind"
                           defaultValue={""}
                         />
