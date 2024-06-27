@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import girlchat from './images/ayesha.svg'; // Bot image
-import userImage from './images/bilal.svg'; // User image (replace with your own image path)
+import girlchat from './images/aisha1.png'; // Bot image
+import userImage from './images/bilal1.png'; // User image (replace with your own image path)
 import Image from 'next/image';
 import SendIcon from '@mui/icons-material/Send';
 
@@ -12,6 +12,7 @@ const ChatApp = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
+    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
     scrollToBottom();
   }, [messages]);
 
