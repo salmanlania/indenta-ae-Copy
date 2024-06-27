@@ -9,13 +9,14 @@ const ChatApp = () => {
   const [inputValue, setInputValue] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
   const messagesEndRef = useRef(null);
-
+  // const welcomeMessage = `Hello! I'm Ayesha, here to help with your questions and provide information regarding our credit card services. Let's chat!`
+  const welcomeMessage = `Hello! I'm Ayesha.`
   useEffect(() => {
     // setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
     scrollToBottom();
   }, [messages]);
   useEffect(() => {
-    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
+    setMessages([{ sender: 'bot', text: welcomeMessage }]);
     // scrollToBottom();
   }, []);
 
