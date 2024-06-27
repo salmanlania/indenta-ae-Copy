@@ -77,7 +77,7 @@ const ChatApp = () => {
       <br /> */}
       <div style={{ height: '100vh' }} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
-          <div className="p-4 bg-white border-bottom d-flex align-items-center">
+          <div className="p-3 bg-white border-bottom d-flex align-items-center" style={{position : 'fixed' , width : '100%'}}>
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
             <div className="ms-3">
               <div className="fw-semibold">Ayesha</div>
@@ -87,7 +87,7 @@ const ChatApp = () => {
               </div>
             </div>
           </div>
-          <div className="flex-grow-1 p-4 overflow-auto">
+          <div className="flex-grow-1 p-4 overflow-auto" style={{marginTop : '5rem'}}>
             {messages.map((message, index) => (
               <div
                 key={index}
@@ -107,8 +107,8 @@ const ChatApp = () => {
             ))}
             <div ref={messagesEndRef} />
             {sendingMessage && (
-              <div className="text-muted text-center mt-2" style={{ marginRight: 'auto' }}>
-                loading{generateDancingDots()}
+              <div className="text-muted mt-2" style={{ marginRight: 'auto' }}>
+                typing{generateDancingDots()}
               </div>
             )}
           </div>
