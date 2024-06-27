@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import girlchat from './images/aisha1.png';
+import girlchat from './images/ayesha.png';
 import Image from 'next/image';
-import Header3 from '../header/Header3Chatbot';
 import SendIcon from '@mui/icons-material/Send';
 
 const ChatApp = () => {
@@ -12,6 +11,7 @@ const ChatApp = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
+    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
     scrollToBottom();
   }, [messages]);
 
@@ -76,7 +76,10 @@ const ChatApp = () => {
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
             <div className="ms-3">
               <div className="fw-semibold">Ayesha</div>
-              <div className="text-muted small">Active now</div>
+              <div className="text-muted small" style={{display : 'inline-block'}}>
+                <span style={{height: '15px', width : '15px', backgroundColor: 'green', borderRadius: '50%', display: 'inline-block', marginTop: '2.6px', marginRight : '2px'}}></span>
+                <span>Active Now</span>
+              </div>
             </div>
           </div>
           <div className="flex-grow-1 p-4 overflow-auto">
