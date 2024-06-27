@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import girlchat from './images/women1.jpg';
+import girlchat from './images/aisha1.png';
 import Image from 'next/image';
 import Header3 from '../header/Header3Chatbot';
 import SendIcon from '@mui/icons-material/Send';
