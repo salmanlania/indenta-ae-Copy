@@ -11,9 +11,13 @@ const ChatApp = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
+    // setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
     scrollToBottom();
   }, [messages]);
+  useEffect(() => {
+    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
+    // scrollToBottom();
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

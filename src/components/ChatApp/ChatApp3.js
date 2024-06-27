@@ -12,7 +12,7 @@ const ChatApp = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
-    setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
+    setMessages([{ sender: 'bot', text: 'Welcome to the chat! How can I assist you today?' }]);
     scrollToBottom();
   }, [messages]);
 
