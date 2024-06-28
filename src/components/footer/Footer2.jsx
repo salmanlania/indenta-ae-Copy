@@ -204,22 +204,22 @@ const Footer2 = () => {
               </div>
               <ul className="social-area">
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/indentasolution/" target="_blank">
                     <i className="bx bxl-facebook" />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://twitter.com/" target="_blank">
                     <i className="bx bxl-twitter" />
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="https://www.linkedin.com/" target="_blank">
+                  <a href="https://www.linkedin.com/company/indenta.solutions/" target="_blank">
                     <i className="bx bxl-linkedin" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/" target="_blank">
+                  <a href="https://www.instagram.com/indenta.sollutions/" target="_blank">
                     <i className="bx bxl-instagram-alt" />
                   </a>
                 </li>
