@@ -9,14 +9,12 @@ const ChatApp = () => {
   const [inputValue, setInputValue] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
   const messagesEndRef = useRef(null);
-  const welcomeMessage = `Hello! I'm Ayesha.<br>As a valued customer, we are eager to inform you about a special credit offer exclusively for you. We are proposing an opportunity to enhance your purchasing power and enjoy a more flexible shopping experience.<br>Here are the details of your special credit offer:<br><b style="font-size : 16px ">•</b> Credit Limit: Up to 4 Multiple of your salary
-<br><b style="font-size : 16px ">•</b> NO Interest % on BT and EPP<br><b style="font-size : 16px ">•</b> Airport lounge access for you through Lounge Key<br><b style="font-size : 16px ">•</b> Access to a digital concierge channel in addition to telephone and email service<br><b style="font-size : 16px ">•</b> 50% off on movie tickets at Novo, Reel & VOX cinemas<br><b style="font-size : 16px ">•</b> Complimentary valet parking service across 30 locations<br><b style="font-size : 16px ">•</b> Spend AED 500 for an entry into the lucky draw of AED 100,000 every week!<br><b style="font-size : 16px ">•</b> No annual fees on Credit cards<br><b style="font-size : 16px ">•</b> We are here to help and ensure that you have a seamless experience.<br><b style="font-size : 16px ">•</b> Thank you for being a valued customer. We look forward to continuing to serve you and providing you with the best possible service.
-`;
-
+  // const welcomeMessage = `Hello! I'm Ayesha, here to help with your questions and provide information regarding our credit card services. Let's chat!`
+  const welcomeMessage = `Hello! I'm Ayesha. <br><br>hello`
   useEffect(() => {
+    // setMessages([{ sender: 'bot', text: 'Hello! I am Credit Card Service provider. How can I assist you?' }]);
     scrollToBottom();
   }, [messages]);
-
   useEffect(() => {
     setMessages([{ sender: 'bot', text: welcomeMessage }]);
   }, []);
@@ -36,6 +34,7 @@ const ChatApp = () => {
         const response = await axios.post('/api/proxy', {
           method: 'POST',
           body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
+          // body: { url: 'https://zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
         });
 
         const botMessage = response.data.response;
@@ -72,19 +71,22 @@ const ChatApp = () => {
 
   return (
     <>
+      {/* <Header3 />
+      <br />
+      <br /> */}
       <div style={{ height: '100vh' }} className="d-flex bg-light">
         <div className="d-flex flex-column flex-grow-1">
-          <div className="p-3 bg-white border-bottom d-flex align-items-center" style={{ position: 'fixed', width: '100%' }}>
+          <div className="p-3 bg-white border-bottom d-flex align-items-center" style={{position : 'fixed' , width : '100%'}}>
             <Image src={girlchat} alt="Bot" width={60} height={60} style={{ borderRadius: '50%' }} />
             <div className="ms-3">
               <div className="fw-semibold">Ayesha</div>
-              <div className="text-muted small" style={{ display: 'inline-block' }}>
-                <span style={{ height: '15px', width: '15px', backgroundColor: 'green', borderRadius: '50%', display: 'inline-block', marginTop: '2.6px', marginRight: '2px' }}></span>
+              <div className="text-muted small" style={{display : 'inline-block'}}>
+                <span style={{height: '15px', width : '15px', backgroundColor: 'green', borderRadius: '50%', display: 'inline-block', marginTop: '2.6px', marginRight : '2px'}}></span>
                 <span>Active Now</span>
               </div>
             </div>
           </div>
-          <div className="flex-grow-1 p-4 overflow-auto" style={{ marginTop: '5rem' }}>
+          <div className="flex-grow-1 p-4 overflow-auto" style={{marginTop : '5rem'}}>
             {messages.map((message, index) => (
               <div
                 key={index}
@@ -94,19 +96,13 @@ const ChatApp = () => {
                   width: '50%',
                 }}
               >
-                {message.sender === 'bot' ? (
-                  <div
-                    className={`p-2 rounded bg-light border`}
-                    onDoubleClick={() => handleDoubleClick(message.text)}
-                    dangerouslySetInnerHTML={{ __html: message.text }}
-                  />
-                ) : (
-                  <div
-                    className={`p-2 rounded bg-primary text-white`}
-                  >
-                    {message.text}
-                  </div>
-                )}
+                <div
+                  className={`p-2 rounded ${message.sender === 'user' ? 'bg-primary text-white' : 'bg-light border'} `}
+                  onDoubleClick={() => message.sender === 'bot' && handleDoubleClick(message.text)}
+                  dangerouslySetInnerHTML={message.sender === 'bot' ? { __html: message.text } : undefined}
+                >
+                  {message.text}
+                </div>
               </div>
             ))}
             <div ref={messagesEndRef} />
@@ -124,7 +120,7 @@ const ChatApp = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
-              disabled={sendingMessage}
+              disabled={sendingMessage} // Disable input if sendingMessage is true
             />
             <button className="btn btn-primary ms-2" onClick={handleSend} disabled={sendingMessage}>
               <SendIcon />
