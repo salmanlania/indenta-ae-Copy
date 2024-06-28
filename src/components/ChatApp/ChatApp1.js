@@ -60,15 +60,15 @@ const ChatApp = () => {
     return dots[Math.floor(Math.random() * dots.length)];
   };
 
-  const handleDoubleClick = (text) => {
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        alert('Text copied to clipboard');
-      })
-      .catch((error) => {
-        console.error('Error copying text:', error);
-      });
-  };
+  // const handleDoubleClick = (text) => {
+  //   navigator.clipboard.writeText(text)
+  //     .then(() => {
+  //       alert('Text copied to clipboard');
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error copying text:', error);
+  //     });
+  // };
 
   return (
     <>
@@ -97,7 +97,7 @@ const ChatApp = () => {
                 {message.sender === 'bot' ? (
                   <div
                     className={`p-2 rounded bg-light border`}
-                    onDoubleClick={() => handleDoubleClick(message.text)}
+                    // onDoubleClick={() => handleDoubleClick(message.text)}
                     dangerouslySetInnerHTML={{ __html: message.text }}
                   />
                 ) : (
