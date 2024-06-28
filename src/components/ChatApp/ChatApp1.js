@@ -42,7 +42,7 @@ const ChatApp = () => {
         setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
       } catch (error) {
         console.error('Error sending message:', error);
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Error receiving message' }]);
+        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Something went wrong try again later!' }]);
       } finally {
         setSendingMessage(false);
       }
