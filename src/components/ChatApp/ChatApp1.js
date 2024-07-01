@@ -38,7 +38,11 @@ const ChatApp = () => {
           body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
         });
 
-        const botMessage = response.data.response;
+        // botMessage = response.data.response;
+        // botMessage = botMessage.replace(/(\d+\.\s)/g, '$1<br>');
+        let botMessage = response.data.response;
+        botMessage = botMessage.replace(/(\d+\.\s|•\s)/g, '<br>$1');
+
         setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
       } catch (error) {
         console.error('Error sending message:', error);
