@@ -11,7 +11,7 @@ const ChatApp = () => {
   const [sendingMessage, setSendingMessage] = useState(false);
   const messagesEndRef = useRef(null);
   const welcomeMessage = `Hello! I'm Ayesha.,<br><br>As a valued customer, we are eager to inform you about a special credit offer exclusively for you. We are proposing an opportunity to enhance your purchasing power and enjoy a more flexible shopping experience.<br>Here are the details of your special credit offer:<br><br><b style="font-size : 16px ">•</b> Credit Limit: Up to 4 Multiple of your salary
-  <br><b style="font-size : 16px ">•</b> NO Interest % on BT and EPP<br><b style="font-size : 16px ">•</b> Airport lounge access for you through Lounge Key<br><b style="font-size : 16px ">•</b> Access to a digital concierge channel in addition to telephone and email service<br><b style="font-size : 16px ">•</b> 50% off on movie tickets at Novo, Reel & VOX cinemas<br><b style="font-size : 16px ">•</b> Complimentary valet parking service across 30 locations<br><b style="font-size : 16px ">•</b> Spend AED 500 for an entry into the lucky draw of AED 100,000 every week!<br><b style="font-size : 16px ">•</b> No annual fees on Credit cards<br><br>We are here to help and ensure that you have a seamless experience.<br>Thank you for being a valued customer. We look forward to continuing to serve you and providing you with the best possible service.
+<br><b style="font-size : 16px ">•</b> NO Interest % on BT and EPP<br><b style="font-size : 16px ">•</b> Airport lounge access for you through Lounge Key<br><b style="font-size : 16px ">•</b> Access to a digital concierge channel in addition to telephone and email service<br><b style="font-size : 16px ">•</b> 50% off on movie tickets at Novo, Reel & VOX cinemas<br><b style="font-size : 16px ">•</b> Complimentary valet parking service across 30 locations<br><b style="font-size : 16px ">•</b> Spend AED 500 for an entry into the lucky draw of AED 100,000 every week!<br><b style="font-size : 16px ">•</b> No annual fees on Credit cards<br><br>We are here to help and ensure that you have a seamless experience.<br>Thank you for being a valued customer. We look forward to continuing to serve you and providing you with the best possible service.
 `;
 
   useEffect(() => {
@@ -34,25 +34,9 @@ const ChatApp = () => {
       setSendingMessage(true);
 
       try {
-        // const response = await axios.post('/api/proxy', {
-        //   method: 'POST',
-        //   // body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
-        //   body: { url: 'zohan123.pythonanywhere.com/chat/', data: { message: inputValue }, },
-        // });
-
-        // let botMessage = response.data.response;
         const response = await axios.post('/api/proxy', {
           method: 'POST',
-          body: {
-            url: 'http://chat.indenta.ai:8000/chat/',
-            // url: 'http://zohan123.pythonanywhere.com/chat/',
-            data: { message: inputValue },
-          },
-        }, {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
+          body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
         });
 
         let botMessage = response.data.response;

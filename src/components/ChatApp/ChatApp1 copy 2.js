@@ -26,46 +26,59 @@ const ChatApp = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // const handleSend = async () => {
+  //   if (inputValue.trim()) {
+  //     const newMessages = [...messages, { sender: 'user', text: inputValue }];
+  //     setMessages(newMessages);
+  //     setInputValue('');
+  //     setSendingMessage(true);
+
+  //     try {
+  //       const response = await axios.post('/api/proxy', {
+  //         method: 'POST',
+  //         // body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
+  //         body: { url: 'zohan123.pythonanywhere.com/chat/', data: { message: inputValue } },
+  //       });
+
+  //       let botMessage = response.data.response;
+
+  //       setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
+  //     } catch (error) {
+  //       console.error('Error sending message:', error);
+  //       setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Something went wrong try again later!' }]);
+  //     } finally {
+  //       setSendingMessage(false);
+  //     }
+  //   }
+  // };
   const handleSend = async () => {
     if (inputValue.trim()) {
       const newMessages = [...messages, { sender: 'user', text: inputValue }];
       setMessages(newMessages);
       setInputValue('');
       setSendingMessage(true);
-
+  
       try {
-        // const response = await axios.post('/api/proxy', {
-        //   method: 'POST',
-        //   // body: { url: 'http://chat.indenta.ai:8000/chat/', data: { message: inputValue } },
-        //   body: { url: 'zohan123.pythonanywhere.com/chat/', data: { message: inputValue }, },
-        // });
-
-        // let botMessage = response.data.response;
         const response = await axios.post('/api/proxy', {
-          method: 'POST',
-          body: {
-            url: 'http://chat.indenta.ai:8000/chat/',
-            // url: 'http://zohan123.pythonanywhere.com/chat/',
-            data: { message: inputValue },
-          },
+          url: 'http://zohan123.pythonanywhere.com/chat/',
+          data: { message: inputValue },
         }, {
           headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
+            'Content-Type': 'application/json'
+          }
         });
-
+  
         let botMessage = response.data.response;
-
+  
         setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
       } catch (error) {
         console.error('Error sending message:', error);
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Something went wrong try again later!' }]);
+        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Something went wrong, try again later!' }]);
       } finally {
         setSendingMessage(false);
       }
     }
-  };
+  };  
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
