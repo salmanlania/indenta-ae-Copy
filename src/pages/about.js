@@ -44,36 +44,35 @@ const AboutPage = () => {
                     </h2>
                   </div>
                   <p>
-                    Welcome to Indenta Solutions, a premier Direct Sales Agency in the UAE dedicated to delivering top-notch financial solutions. We specialize in a wide array of services including credit card sales, SME loans, account opening, corporate banking, and mortgage finance. Our commitment is to provide personalized, innovative, and effective financial solutions to meet the unique needs of our clients
+                    Our vision is to revolutionize the financial services industry in the UAE by setting new standards of excellence, innovation, and customer satisfaction. We aspire to be the leading direct sales agency known for our unwavering commitment to quality, transparency, and personalized service.
                   </p>
                 </div>
                 <div className="mission-content-bottom">
                   <h3>Our Mission</h3>
                   <p>
-                    To empower organizations to thrive and achieve their full
-                    potential by providing strategic insights, innovative
-                    solutions, and expert guidance. We partner with our clients
-                    to enhance efficiency, competitiveness, and sustainability
-                    in an ever-evolving business landscape.
+                    Our mission is to empower our clients with access to a comprehensive range
+of financial products and services. We aim to be the go-to partner for
+individuals and businesses, fostering long-term relationships built on trust,
+integrity, and excellence.
                   </p>
-                  <p
-                    className="moretext"
-                    style={{ display: isExpanded ? "block" : "none" }}
-                  >
-                    To empower organizations to thrive and achieve their full
-                    potential by providing strategic insights, innovative
-                    solutions, and expert guidance. We partner with our clients
-                    to enhance efficiency, competitiveness, and sustainability
-                    in an ever-evolving business landscape.
-                  </p>
+                  // <p
+                  //   className="moretext"
+                  //   style={{ display: isExpanded ? "block" : "none" }}
+                  // >
+                  //   To empower organizations to thrive and achieve their full
+                  //   potential by providing strategic insights, innovative
+                  //   solutions, and expert guidance. We partner with our clients
+                  //   to enhance efficiency, competitiveness, and sustainability
+                  //   in an ever-evolving business landscape.
+                  // </p>
                   {/* <a className="moreless-button">Read More</a> */}
-                  <a
-                    className={`moreless-button bi ${isExpanded ? "bi-chevron-up" : "bi-chevron-down"
-                      }`}
-                    onClick={toggleText}
-                  >
-                    {isExpanded ? "Read Less" : "Read More"}
-                  </a>
+                  // <a
+                  //   className={`moreless-button bi ${isExpanded ? "bi-chevron-up" : "bi-chevron-down"
+                  //     }`}
+                  //   onClick={toggleText}
+                  // >
+                  //   {isExpanded ? "Read Less" : "Read More"}
+                  // </a>
                 </div>
               </div>
             </div>
