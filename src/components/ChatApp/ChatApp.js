@@ -193,8 +193,7 @@ const ChatApp = () => {
         const response = await axios.post('/api/proxy', {
           method: 'POST',
           body: {
-            url: 'https://zohan123.pythonanywhere.com/chat/',
-            // url: 'http://chat.indenta.ai:8000/chat/',
+            url: 'http://chat.indenta.ai:8000/chat/',
             data: { message: inputValue },
           },
         }, {
