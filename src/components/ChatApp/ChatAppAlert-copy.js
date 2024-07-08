@@ -13,24 +13,19 @@ const ChatApp = () => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
-  const [sessionId, setSessionId] = useState('');
   const messagesEndRef = useRef(null);
 
   // Get the image URL using the Next.js router
   const router = useRouter();
   const offerImageURL = `${router.basePath}/images/women.jpg`;
 
-  useEffect(() => {
-    MySwal.fire({
-      title: 'Welcome TO',
-      confirmButtonText: 'Continue',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        initializeSession();
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   MySwal.fire({
+  //     title: 'Welcome TO',
+  //     confirmButtonText: 'Continue'
+  //   });
 
+  // }, []);
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
@@ -109,14 +104,17 @@ const ChatApp = () => {
       setSendingMessage(true);
 
       try {
-        const response = await axios.post('http://chat.indenta.ai/chat/', {
-          message: inputValue
+        const response = await axios.post('/api/proxy', {
+          method: 'POST',
+          body: {
+            url: 'https://zohan123.pythonanywhere.com/chat/',
+            data: { message: inputValue },
+          },
         }, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'session_id': sessionId
-          }
+          },
         });
 
         let botMessage = response.data.response;
@@ -139,16 +137,6 @@ const ChatApp = () => {
   const generateDancingDots = () => {
     const dots = ['.', '..', '...'];
     return dots[Math.floor(Math.random() * dots.length)];
-  };
-
-  const initializeSession = async () => {
-    try {
-      const response = await axios.post('http://chat.indenta.ai:8000/connect/');
-      const sessionId = response.data.session_id;
-      setSessionId(sessionId);
-    } catch (error) {
-      console.error('Error initializing session:', error);
-    }
   };
 
   return (
