@@ -1,40 +1,125 @@
 import React, { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import girlchat from './images/ayesha.png';
 import Image from 'next/image';
 import SendIcon from '@mui/icons-material/Send';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
-import { useRouter } from 'next/router';
+import axios from 'axios';
 
 const MySwal = withReactContent(Swal);
 
-const ChatApp = () => {
+const ChatAppAlert = () => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [sendingMessage, setSendingMessage] = useState(false);
-  const [sessionId, setSessionId] = useState('');
+  const [sessionId, setSessionId] = useState(null);
+  const [email, setEmail] = useState('');
   const messagesEndRef = useRef(null);
 
-  // Get the image URL using the Next.js router
-  const router = useRouter();
-  const offerImageURL = `${router.basePath}/images/women.jpg`;
-
   useEffect(() => {
-    MySwal.fire({
-      title: 'Welcome TO',
-      confirmButtonText: 'Continue',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        initializeSession();
+    const fetchSessionId = async () => {
+      const storedSessionId = localStorage.getItem('session_id');
+      if (storedSessionId) {
+        setSessionId(storedSessionId);
+        return;
       }
-    });
+      try {
+        const result = await MySwal.fire({
+          title: 'Welcome',
+          html: '<input type="email" id="email" class="swal2-input" placeholder="Enter your email" required>',
+          confirmButtonText: 'Continue',
+          allowOutsideClick: false,
+          preConfirm: () => {
+            const email = Swal.getPopup().querySelector('#email').value;
+            if (!email || !email.includes('@') || !email.includes('.')) {
+              Swal.showValidationMessage('Please enter a valid email address');
+              return false;
+            }
+            setEmail(email);
+            return email;
+          }
+        });
+
+        if (result.isConfirmed) {
+          const email = result.value;
+          const response = await axios.post('http://chat.indenta.ai:8000/init-session/', {
+            email
+          }, {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            }
+          });
+
+          if (response.status === 200) {
+            const data = response.data;
+            const sessionId = data.session_id;
+            setSessionId(sessionId);
+            localStorage.setItem('session_id', sessionId);
+          } else {
+            throw new Error('Failed to fetch session ID');
+          }
+        }
+      } catch (error) {
+        console.error('Error initializing session:', error.message);
+        Swal.fire('Error', 'Failed to initialize session. Please try again later.', 'error');
+      }
+    };
+
+    // Call fetchSessionId function when component mounts
+    fetchSessionId();
   }, []);
 
+  // Function to handle sending messages
+  const handleSend = async () => {
+    if (inputValue.trim()) {
+      const newMessages = [...messages, { sender: 'user', text: inputValue }];
+      setMessages(newMessages);
+      setInputValue('');
+      setSendingMessage(true);
+
+      try {
+        const sessionId = localStorage.getItem('session_id'); // Retrieve session ID from localStorage
+        console.log('bot session', sessionId);
+
+        const response = await axios.post('http://chat.indenta.ai:8000/message/', {
+          message: inputValue,
+          // url: 'http://chat.indenta.ai:8000/message/',
+          session_id: sessionId,
+        }, {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          }
+        });
+
+        if (response.status === 200) {
+          const data = response.data;
+          let botMessage = data.response;
+          setMessages(prevMessages => [...prevMessages, { sender: 'bot', text: botMessage }]);
+        } else {
+          throw new Error('Failed to send message');
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setMessages(prevMessages => [...prevMessages, { sender: 'bot', text: 'Something went wrong, try again later!' }]);
+      } finally {
+        setSendingMessage(false);
+      }
+    }
+  };
+
+  // Function to scroll to the bottom of messages
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // Effect to scroll to bottom when messages change
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
+  // Effect to initialize welcome message when component mounts
   useEffect(() => {
     const welcomeMessage = `
       Hello! I'm Ayesha,
@@ -57,100 +142,103 @@ const ChatApp = () => {
     setMessages([{ sender: 'bot', text: welcomeMessage }]);
   }, []);
 
+  // Effect to handle click events for offer details
+  // useEffect(() => {
+  //   const handleOkClick = (message, imageUrl, link) => {
+  //     const linkHtml = link ? `<a href="${link}" target="_blank">Click here for more details</a>` : '';
+  //     const handleImage = imageUrl ? `<img src="${imageUrl}" alt="Offer Image" style="width: 100%; max-height : 450px; height: 100%; max-width: 450px;"/>` : ''
+  //     MySwal.fire({
+  //       html: `
+  //         <div>
+  //           ${handleImage}
+  //           <p>${message}</p>
+  //           ${linkHtml}
+  //         </div>
+  //       `,
+  //       confirmButtonText: 'OK'
+  //     });
+  //   };
+
+  //   const offers = [
+  //     { id: 'cbdOne', message: 'Details about CBD One', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/cbd-one-credit-card' },
+  //     { id: 'platinum', message: 'Details about CBD Smiles Visa Platinum', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/Visa-Platinum' },
+  //     { id: 'signature', message: 'Details about CBD Smiles Visa Signature', imageUrl: '/assets/img/pics/cp.JPG' },
+  //     { id: 'reward', message: 'Details about CBD Yes Rewards Credit Card', imageUrl: '/assets/img/pics/cp2.jpg' },
+  //     { id: 'superSaver', message: 'Details about Super Saver Visa Signature', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/super-saver-credit-card' },
+  //     { id: 'visaPlatinum', message: 'Details about Visa Platinum', imageUrl: '/assets/img/pics/cp3.jpg' },
+  //     { id: 'infinite', message: 'Details about Visa Infinite', imageUrl: '/assets/img/pics/S2.jpg' },
+  //   ];
+
+  //   offers.forEach(offer => {
+  //     const element = document.getElementById(offer.id);
+  //     if (element) {
+  //       element.addEventListener('click', () => handleOkClick(offer.message, offer.imageUrl));
+  //     }
+  //   });
+
+  //   // Cleanup function to remove event listeners
+  //   return () => {
+  //     offers.forEach(offer => {
+  //       const element = document.getElementById(offer.id);
+  //       if (element) {
+  //         element.removeEventListener('click', () => handleOkClick(offer.message, offer.imageUrl));
+  //       }
+  //     });
+  //   };
+  // }, [messages]); 
+
   useEffect(() => {
-    const handleOkClick = (message, imageUrl) => {
+    const handleOkClick = (message, imageUrl, link) => {
+      const linkHtml = link ? `<a href="${link}" target="_blank" style="color : black;color: black; font-size: 15px; text-decoration: underline;">Click here for more details</a>` : '';
+      const imageHtml = imageUrl ? `<img src="${imageUrl}" alt="Offer Image" style="width: 100%; max-height: 450px; height: auto; max-width: 450px;" />` : '';
       MySwal.fire({
         html: `
           <div>
-            <img src="${imageUrl}" alt="Offer Image" style="width: 100%; height: auto; max-width: 400px;"/>
+            ${imageHtml}
             <p>${message}</p>
+            ${linkHtml}
           </div>
         `,
         confirmButtonText: 'OK'
       });
     };
-
+  
     const offers = [
-      { id: 'cbdOne', message: 'Details about CBD One', imageUrl: '/assets/img/pics/S2.jpg' },
-      { id: 'platinum', message: 'Details about CBD Smiles Visa Platinum', imageUrl: '/assets/img/pics/S2.jpg' },
-      { id: 'signature', message: 'Details about CBD Smiles Visa Signature', imageUrl: '/assets/img/pics/S2.jpg' },
-      { id: 'reward', message: 'Details about CBD Yes Rewards Credit Card', imageUrl: '/assets/img/pics/S2.jpg' },
-      { id: 'superSaver', message: 'Details about Super Saver Visa Signature', imageUrl: '/assets/img/pics/S2.jpg' },
-      { id: 'visaPlatinum', message: 'Details about Visa Platinum', imageUrl: '/assets/img/pics/S2.jpg' },
+      { id: 'cbdOne', message: 'Details about CBD One', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/cbd-one-credit-card' },
+      { id: 'platinum', message: 'Details about CBD Smiles Visa Platinum', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/Visa-Platinum' },
+      { id: 'signature', message: 'Details about CBD Smiles Visa Signature', imageUrl: '/assets/img/pics/cp.JPG' },
+      { id: 'reward', message: 'Details about CBD Yes Rewards Credit Card', imageUrl: '/assets/img/pics/cp2.jpg' },
+      { id: 'superSaver', message: 'Details about Super Saver Visa Signature', imageUrl: '', link: 'https://www.cbd.ae/cbdnowcm/Products-v3/super-saver-credit-card' },
+      { id: 'visaPlatinum', message: 'Details about Visa Platinum', imageUrl: '/assets/img/pics/cp3.jpg' },
       { id: 'infinite', message: 'Details about Visa Infinite', imageUrl: '/assets/img/pics/S2.jpg' },
     ];
-
+  
     offers.forEach(offer => {
       const element = document.getElementById(offer.id);
       if (element) {
-        element.addEventListener('click', () => handleOkClick(offer.message, offer.imageUrl));
+        element.addEventListener('click', () => handleOkClick(offer.message, offer.imageUrl, offer.link));
       }
     });
-
+  
+    // Cleanup function to remove event listeners
     return () => {
       offers.forEach(offer => {
         const element = document.getElementById(offer.id);
         if (element) {
-          element.removeEventListener('click', () => handleOkClick(offer.message, offer.imageUrl));
+          element.removeEventListener('click', () => handleOkClick(offer.message, offer.imageUrl, offer.link));
         }
       });
     };
   }, [messages]);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const handleSend = async () => {
-    if (inputValue.trim()) {
-      const newMessages = [...messages, { sender: 'user', text: inputValue }];
-      setMessages(newMessages);
-      setInputValue('');
-      setSendingMessage(true);
-
-      try {
-        const response = await axios.post('http://chat.indenta.ai/chat/', {
-          message: inputValue
-        }, {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'session_id': sessionId
-          }
-        });
-
-        let botMessage = response.data.response;
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: botMessage }]);
-      } catch (error) {
-        console.error('Error sending message:', error);
-        setMessages((prevMessages) => [...prevMessages, { sender: 'bot', text: 'Something went wrong, try again later!' }]);
-      } finally {
-        setSendingMessage(false);
-      }
-    }
-  };
-
+  
+  // Function to handle Enter key press
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       handleSend();
     }
   };
 
-  const generateDancingDots = () => {
-    const dots = ['.', '..', '...'];
-    return dots[Math.floor(Math.random() * dots.length)];
-  };
-
-  const initializeSession = async () => {
-    try {
-      const response = await axios.post('http://chat.indenta.ai:8000/connect/');
-      const sessionId = response.data.session_id;
-      setSessionId(sessionId);
-    } catch (error) {
-      console.error('Error initializing session:', error);
-    }
-  };
-
+  // Rendering JSX
   return (
     <>
       <div style={{ height: '100vh' }} className="d-flex bg-light">
@@ -192,7 +280,7 @@ const ChatApp = () => {
             <div ref={messagesEndRef} />
             {sendingMessage && (
               <div className="text-muted mt-2" style={{ marginRight: 'auto' }}>
-                typing{generateDancingDots()}
+                typing
               </div>
             )}
           </div>
@@ -216,4 +304,4 @@ const ChatApp = () => {
   );
 };
 
-export default ChatApp;
+export default ChatAppAlert;
